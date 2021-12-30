@@ -3,5 +3,5 @@
 Multimedia Grundkurs I
 (Prüfungsvorleistung)
 
-Schriftarten: Text - Inter, Überschriften - Raleway
-saffsd
+## Schriftarten: 
+Text - Inter, Überschriften - Raleway
