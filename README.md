@@ -3,5 +3,4 @@
 Multimedia Grundkurs I
 (Prüfungsvorleistung)
 
-Schriftarten         Text: Inter
-            Überschriften: Raleway
+Schriftarten: Text - Inter, Überschriften - Raleway
