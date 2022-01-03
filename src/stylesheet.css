@@ -1,0 +1,24 @@
+/*
+    HAUPT-STYLESHEET
+    Importieren: 
+        <link rel="stylesheet" href="../stylesheet.css">
+*/
+
+
+/*  
+    Importiert die Schriftarten (Raleway & Inter) von Google Fonts.
+    =>  "Raleway:400,800" bedeutet:
+        "Importiere Raleway mit den Stärken 400 und 800"
+        also mit "normal" und "extra-fett"
+*/
+@import url("https://fonts.googleapis.com/css?family=Raleway:400,800|Inter");
+
+/* Überschriften */
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Raleway";
+}
+
+/* Paragraphen */
+p {
+    font-family: "Inter";
+}
