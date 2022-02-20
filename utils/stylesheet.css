@@ -47,7 +47,7 @@ p b {
 /* Scrollbar */
 body::-webkit-scrollbar {width: 0.75rem;}
 body::-webkit-scrollbar-track {background: rgb(70, 70, 70);}
-body::-webkit-scrollbar-thumb {background: rgb(199, 199, 199); border-radius: 0.25rem;}
+body::-webkit-scrollbar-thumb {background: rgb(200, 200, 200); border-radius: 0.25rem;}
 
 
 /* Block 1 - Hintergrund */
