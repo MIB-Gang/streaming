@@ -1,0 +1,97 @@
+/*
+    HAUPT-STYLESHEET
+    Irgendwo einbinden: 
+        <link rel="stylesheet" href="../../utils/stylesheet.css">
+*/
+
+
+/*  
+    Hier werden die Schriftarten (Raleway & Inter) von Google Fonts importiert.
+    =>  "Raleway:400,800" bedeutet:
+        "Importiere Raleway mit den Stärken 400 und 800"
+        also mit "normal" und "extra-fett"
+*/
+@import url("https://fonts.googleapis.com/css?family=Raleway:400,800|Inter:400,800");
+
+
+/* Objektübergreifende Einstellungen */
+:root {
+    font-family: "Inter";
+    font-size: 12pt;
+    line-height: 20pt;
+    --primary: #3D30BD;
+    --on-primary: #FFFFFF; 
+    --secondary: #FFFFFF;
+    --on-secondary: #150A82;
+    --highlight: #FF2C6B; 
+}
+
+/* Entfernt weiße Ränder */
+body {
+    height: 100vh;
+    margin: 0;
+}
+
+/* Überschriften */
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Raleway";
+}
+
+/* Fettgedruckte Textstellen */
+p b {
+    font-weight: 800;
+    color: var(--highlight);
+}
+
+
+/* Scrollbar */
+body::-webkit-scrollbar {width: 0.75rem;}
+body::-webkit-scrollbar-track {background: rgb(70, 70, 70);}
+body::-webkit-scrollbar-thumb {background: rgb(199, 199, 199); border-radius: 0.25rem;}
+
+
+/* Block 1 - Hintergrund */
+.tile {
+    background-color: white;
+}
+
+/* Block 2 - Hintergrund*/
+main .tile:nth-child(even) {
+    /* background-image: 
+        linear-gradient(
+            to bottom right, 
+            rgba(79,82,255,0.95),
+            rgba(21,10,130,0.95)
+        ); */
+    background-color: var(--primary);
+    flex-direction: row-reverse;
+}
+
+/* Block 1 - Überschrift */
+.tile h1 {
+    flex-shrink: 0;    
+    padding-right: 96px;
+}
+
+/* Block 2 - Überschrift */
+main .tile:nth-child(even) h1 {
+    padding-right: 0;
+    padding-left: 96px;
+}
+
+/*  Block 1 - Inhalt */
+.tile-content {
+    display: flex;
+    flex-flow: row nowrap;
+    max-width: 60%;
+    margin: 0 auto;
+    padding-top: 96px;
+    padding-bottom: 96px;
+    color: var(--on-secondary);
+}
+
+/* Block 2 - Inhalt*/
+main .tile:nth-child(even) > .tile-content {
+    flex-direction: row-reverse;
+    color: var(--secondary);
+}
