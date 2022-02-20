@@ -52,7 +52,7 @@ body::-webkit-scrollbar-thumb {background: rgb(200, 200, 200); border-radius: 0.
 
 /* Block 1 - Hintergrund */
 .tile {
-    background-color: white;
+    background-color: var(--secondary);
 }
 
 /* Block 2 - Hintergrund*/
@@ -93,5 +93,5 @@ main .tile:nth-child(even) h1 {
 /* Block 2 - Inhalt*/
 main .tile:nth-child(even) > .tile-content {
     flex-direction: row-reverse;
-    color: var(--secondary);
+    color: var(--on-primary);
 }
