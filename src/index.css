@@ -1,5 +1,5 @@
 body, html {
-    height: 100%;
+    height: 100vh;
     margin: 0;
 }
 .hero {
@@ -10,11 +10,11 @@ body, html {
             rgba(21,10,130,0.95)
         ), 
         url("../assets/images/hero_image.jpg");
-    height: 100%;
+    height: 100vh;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    position: relative;
+    position: relative; 
 }
 .hero-content {
     position: absolute;
@@ -24,48 +24,54 @@ body, html {
 }
 .hero-content h1{
     text-align: center;
-    margin: 0em;
+    margin: 0;
     color: transparent;
     font-size:12vmax;
     font-weight: 800;
     -webkit-text-stroke: 2px white;
 }
 .hero-content p {
-    margin: 0em;
+    margin: 0;
     color: white;
     max-width: 35ch;
 }
 
-.box {
-    background-color: white,
+
+.tile {
+    background: white;
 }
 
-.box-content {
-    display: flex;
-    flex-flow: row nowrap;
-    max-width: 60%;
-    margin: 0 auto;
-    margin-top: 48px;
-    margin-bottom: 48px;
-    color: rgb(21,10,130);
-}
-
-.box2 {
+.tile:nth-of-type(odd) {
     background-image: 
         linear-gradient(
             to bottom right, 
             rgba(79,82,255,0.95),
             rgba(21,10,130,0.95)
         );
+    flex-direction: row-reverse;
 }
 
-.box2-content {
+.tile h1 {
+    flex-shrink: 0;    
+    padding-right: 96px;
+}
+
+.tile:nth-of-type(odd) h1 {
+    padding-right: 0;
+    padding-left: 96px;
+}
+
+.tile-content {
     display: flex;
     flex-flow: row nowrap;
     max-width: 60%;
     margin: 0 auto;
-    margin-top: 48px;
-    margin-bottom: 48px;
-    color: white;
+    padding-top: 96px;
+    padding-bottom: 96px;
+    color: rgba(21,10,130,0.95);
 }
 
+.tile:nth-of-type(odd) > .tile-content {
+    flex-direction: row-reverse;
+    color: white;
+}
