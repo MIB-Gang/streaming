@@ -10,8 +10,8 @@ script.src = "https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js";
 script.onload = function(){
     
     $(document).ready(function (){
-        $.get("../utils/navbar.html", function(data){
-            $("body").prepend(data);
+        $.get("../utils/navbar.html", function(content){
+            $("body").prepend(content);
         });
     });
 
