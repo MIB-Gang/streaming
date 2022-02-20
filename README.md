@@ -1,5 +1,4 @@
 ﻿# Streaming
-1. Semester
 Multimedia Grundkurs I
 (Prüfungsvorleistung)
 
