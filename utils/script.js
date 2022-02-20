@@ -1,4 +1,5 @@
-/**
+/** 
+ * HAUPT-SCRIPTFILE
  * Bevor JQuery benutzt werden kann, wird die API erst geladen.
  * Danach wird der eigentlich JQuery-Code ausgeführt (script.onload).
  */
