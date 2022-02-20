@@ -1,17 +1,17 @@
 /*
     HAUPT-STYLESHEET
-    Importieren: 
+    Irgendwo einbinden: 
         <link rel="stylesheet" href="../stylesheet.css">
 */
 
 
 /*  
-    Importiert die Schriftarten (Raleway & Inter) von Google Fonts.
+    Hier werden die Schriftarten (Raleway & Inter) von Google Fonts importiert.
     =>  "Raleway:400,800" bedeutet:
         "Importiere Raleway mit den Stärken 400 und 800"
         also mit "normal" und "extra-fett"
 */
-@import url("https://fonts.googleapis.com/css?family=Raleway:400,800|Inter");
+@import url("https://fonts.googleapis.com/css?family=Raleway:400,800|Inter:400,800");
 
 /* Überschriften */
 h1, h2, h3, h4, h5, h6 {
@@ -24,3 +24,28 @@ p {
     font-size: 12pt;
     line-height: 20pt;
 }
+
+/* Fettgedruckte Textstellen */
+p b {
+    font-weight: 800;
+    color: rgb(255,44,107);
+}
+
+
+body::-webkit-scrollbar {
+    width: 0.5rem;
+}
+
+body::-webkit-scrollbar-track {
+    background: rgb(21,10,130);
+}
+
+body::-webkit-scrollbar-thumb {
+    background: rgb(79,82,255);
+    border-radius: 10rem;
+}
+
+.navbar {
+    /*...*/
+}
+
