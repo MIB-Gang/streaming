@@ -50,6 +50,44 @@ body::-webkit-scrollbar-track {background: rgb(70, 70, 70);}
 body::-webkit-scrollbar-thumb {background: rgb(200, 200, 200); border-radius: 0.25rem;}
 
 
+/* Navigation */
+.navbar {
+    z-index: 1337;
+    width: 100vw;
+    height: 5rem;
+    position: fixed;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    background-color: transparent;
+}
+
+/* Navigation bei scrollen */
+.navbar-scroll {
+    background-color: var(--primary);
+}
+
+/* Navigation Links */
+.navbar div {
+    display: block;
+    text-decoration: none;
+    font-size: 14pt;
+    margin: 24px;
+    color: var(--on-primary);
+}
+
+#navbar-expanded {
+    z-index: 42;
+    position: fixed;
+    width: 100vw;
+    opacity: 0;
+    background-color: var(--secondary);
+    transform: translate(0, 5rem);
+    box-shadow: 0rem 2rem 20rem rgba(0, 0, 0, 0.7);
+}
+
+
+
 /* Block 1 - Hintergrund */
 .tile {
     background-color: var(--secondary);
