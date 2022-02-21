@@ -2,8 +2,8 @@
     background: 
         linear-gradient(
             to bottom right, 
-            rgba(79,82,255,0.98),
-            rgba(21,10,130,0.85)
+            rgba(79,82,255,0.9),
+            rgba(21,10,130,0.75)
         ), 
         url("../assets/images/hero_home.jpg");
     height: 98vh;
