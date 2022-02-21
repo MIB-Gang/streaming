@@ -23,7 +23,8 @@
     --on-primary: #FFFFFF; 
     --secondary: #FFFFFF;
     --on-secondary: #150A82;
-    --highlight: #FF2C6B; 
+    --highlight: #FF2C6B;
+    --hero-path:  url("../assets/images/hero_home.jpg");
 }
 
 /* Entfernt weiße Ränder */
@@ -84,6 +85,40 @@ body::-webkit-scrollbar-thumb {background: rgb(200, 200, 200); border-radius: 0.
     background-color: var(--secondary);
     transform: translate(0, 5rem);
     box-shadow: 0rem 2rem 20rem rgba(0, 0, 0, 0.7);
+}
+
+
+
+.hero {
+    /* background: var(--primary); */
+    background: 
+        linear-gradient(
+            to bottom right, 
+            var(--primary),
+            var(--on-secondary)
+        ),
+        var(--hero-path);
+    height: 48vh;
+    background-blend-mode: hard-light;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative; 
+}
+
+.hero-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.hero-content h1{
+    text-align: center;
+    color: var(--on-primary);
+    margin: 0rem;
+    font-size: 12vmax;
+    font-weight: 800;
 }
 
 
