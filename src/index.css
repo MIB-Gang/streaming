@@ -22,7 +22,7 @@
 }
 
 .hero-content p {
-    margin-top: 8rem;
+    margin-top: 6em;
     max-width: 35ch;
     color: var(--on-primary);
 }
