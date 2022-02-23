@@ -99,7 +99,7 @@ body::-webkit-scrollbar-thumb {background: rgb(200, 200, 200); border-radius: 0.
         ),
         var(--hero-path);
     height: 48vh;
-    background-blend-mode: hard-light;
+    background-blend-mode: multiply;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
