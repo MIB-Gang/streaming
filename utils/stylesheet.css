@@ -44,6 +44,11 @@ p b {
     /* color: var(--highlight); */
 }
 
+/* Bilder bleiben im Rahmen*/
+img {
+    overflow: hidden;
+}
+
 
 /* Scrollbar */
 body::-webkit-scrollbar {width: 0.75rem;}
@@ -167,4 +172,33 @@ main .tile:nth-child(even) h1 {
 main .tile:nth-child(even) > .tile-content {
     flex-direction: row-reverse;
     color: var(--on-primary);
+}
+
+
+/* Für kleinere Bildschirme */
+@media screen and (max-width: 1400px){
+    .tile-content {
+        flex-flow: row wrap;
+    }
+
+    tile h1, main .tile:nth-child(even) h1 {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    main .tile:nth-child(even) > .tile-content {
+        flex-direction: row;
+        color: var(--on-primary);
+    }
+}
+
+/* Für noch kleinere Bildschirme */
+@media screen and (max-width: 860px) {
+    .tile-content {
+        max-width: 90%;
+    }
+    
+    .navbar {
+        opacity: 0;
+    }
 }
