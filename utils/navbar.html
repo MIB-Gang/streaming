@@ -1,0 +1,87 @@
+<!-- Navigation -->
+<!-- DATEI WIRD MOMENTAN NICHT GENUTZT!! -->
+
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script>
+        $(".navbar").ready(function (){
+            $(".navbar").mouseenter(function() {
+                $("#navbar-expanded").animate({height:"15rem", opacity:"1"});
+            });
+            $("#navbar-expanded").mouseleave(function() {
+                $("#navbar-expanded").animate({height:"0rem", opacity:"0"});
+            });
+        });
+    
+        $(window).scroll(function() {
+            if($(this).scrollTop() > 50) {
+                $(".navbar").addClass("navbar-scroll");
+            } else {
+                $(".navbar").removeClass("navbar-scroll");
+            }
+        });
+    </script>
+    
+    <style>
+        .navbar {
+            z-index: 1337;
+            width: 100vw;
+            height: 5rem;
+            position: fixed;
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: center;
+            background-color: transparent;
+        }
+    
+        /* Navigation bei scrollen */
+        .navbar-scroll {
+            background-color: var(--primary);
+        }
+    
+        /* Navigation Links */
+        .navbar div {
+            display: block;
+            text-decoration: none;
+            font-size: 14pt;
+            margin: 24px;
+            color: var(--on-primary);
+        }
+    
+        #navbar-expanded {
+            z-index: 42;
+            position: fixed;
+            width: 100vw;
+            opacity: 0;
+            background-color: var(--secondary);
+            transform: translate(0, 5rem);
+            box-shadow: 0rem 2rem 20rem rgba(0, 0, 0, 0.7);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="navbar">
+        <div>Home</div>
+        <div>Live-Streaming</div>
+        <div>Video on Demand</div>
+        <div>Impressum</div>
+    </div>
+    <div id="navbar-expanded">
+        <p>>> Soll eigentlich tabellen-ähnlich unter den Hauptkategorien stehen. <br>>> Also z.B. YouTube steht unter "Live-Streaming" und Netflix unter "Video on Demand".</p>
+        <ul>
+            <li><a href="">Home</a></li>
+            <li><a href="/src/live/youtube.html">YouTube</a></li>
+            <li><a href="/src/vod/netflix.html">Netflix</a></li>
+            <li><a href="">...</a></li>
+            <li><a href="/src/impressum/impressum.html">Impressum</a></li>
+        </ul>
+    </div>
+</body>
+
+</html>

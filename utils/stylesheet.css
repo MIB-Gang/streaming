@@ -1,0 +1,215 @@
+/*
+    HAUPT-STYLESHEET
+    Irgendwo einbinden: 
+        <link rel="stylesheet" href="../../utils/stylesheet.css">
+*/
+
+
+/*  
+    Hier werden die Schriftarten (Raleway & Inter) von Google Fonts importiert.
+    =>  "Raleway:400,800" bedeutet:
+        "Importiere Raleway mit den Stärken 400 und 800"
+        also mit "normal" und "extra-fett"
+*/
+@import url("https://fonts.googleapis.com/css?family=Raleway:400,800|Inter:400,800");
+
+
+/* Objektübergreifende Einstellungen */
+:root {
+    font-family: "Inter";
+    font-size: 12pt;
+    line-height: 20pt;
+    --primary: #3D30BD;
+    --on-primary: #FFFFFF; 
+    --secondary: #FFFFFF;
+    --on-secondary: #150A82;
+    --highlight: #FF2C6B;
+    --hero-path:  url("../assets/images/hero_home.jpg");
+}
+
+/* Entfernt weiße Ränder */
+body {
+    height: 100vh;
+    margin: 0;
+}
+
+/* Überschriften */
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Raleway";
+}
+
+/* Tile-Überschriften */
+h2 {
+    font-size: 2rem;
+    margin-top: 0;
+}
+
+/* Texte */
+p {
+    margin: 0;
+}
+
+/* Fettgedruckte Textstellen */
+p b {
+    font-weight: 800;
+    /* color: var(--highlight); */
+}
+
+/* Bilder bleiben im Rahmen*/
+img {
+    overflow: hidden;
+}
+
+
+/* Scrollbar */
+body::-webkit-scrollbar {width: 0.75rem;}
+body::-webkit-scrollbar-track {background: rgb(70, 70, 70);}
+body::-webkit-scrollbar-thumb {background: rgb(200, 200, 200); border-radius: 0.25rem;}
+
+
+/* Navigation */
+.navbar {
+    z-index: 1337;
+    width: 100vw;
+    height: 5rem;
+    position: fixed;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    background-color: transparent;
+}
+
+/* Navigation bei scrollen */
+.navbar-scroll {
+    background-color: var(--primary);
+}
+
+/* Navigation Links */
+.navbar div {
+    display: block;
+    text-decoration: none;
+    font-size: 14pt;
+    margin: 24px;
+    color: var(--on-primary);
+}
+
+#navbar-expanded {
+    z-index: 42;
+    position: fixed;
+    width: 100vw;
+    opacity: 0;
+    background-color: var(--secondary);
+    transform: translate(0, 5rem);
+    box-shadow: 0rem 2rem 20rem rgba(0, 0, 0, 0.7);
+}
+
+
+
+.hero {
+    /* background: var(--primary); */
+    background: 
+        linear-gradient(
+            to bottom right, 
+            var(--primary),
+            var(--on-secondary)
+        ),
+        var(--hero-path);
+    height: 48vh;
+    background-blend-mode: multiply;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative; 
+}
+
+.hero-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.hero-content h1{
+    text-align: center;
+    color: var(--on-primary);
+    margin: 0rem;
+    font-size: 12vmax;
+    font-weight: 800;
+}
+
+
+
+/* Block 1 - Hintergrund */
+.tile {
+    background-color: var(--secondary);
+}
+
+/* Block 2 - Hintergrund*/
+main .tile:nth-child(even) {
+    /* background-image: 
+        linear-gradient(
+            to bottom right, 
+            rgba(79,82,255,0.95),
+            rgba(21,10,130,0.95)
+        ); */
+    background-color: var(--primary);
+    flex-direction: row-reverse;
+}
+
+/* Block 1 - Überschrift */
+.tile h2 {
+    flex-shrink: 0;    
+    padding-right: 96px;
+}
+
+/* Block 2 - Überschrift */
+main .tile:nth-child(even) h2 {
+    padding-right: 0;
+    padding-left: 96px;
+}
+
+/*  Block 1 - Inhalt */
+.tile-content {
+    display: flex;
+    flex-flow: row nowrap;
+    max-width: 60%;
+    margin: 0 auto;
+    padding-top: 96px;
+    padding-bottom: 96px;
+    color: var(--on-secondary);
+}
+
+/* Block 2 - Inhalt*/
+main .tile:nth-child(even) > .tile-content {
+    flex-direction: row-reverse;
+    color: var(--on-primary);
+}
+
+
+/* Für kleinere Bildschirme */
+@media screen and (max-width: 1400px){
+    .tile-content {
+        flex-flow: row wrap;
+    }
+
+    tile h2, main .tile:nth-child(even) h2 {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    main .tile:nth-child(even) > .tile-content {
+        flex-direction: row;
+        color: var(--on-primary);
+    }
+}
+
+/* Für noch kleinere Bildschirme */
+@media screen and (max-width: 860px) {
+    .tile-content {
+        max-width: 90%;
+    }
+    
+    .navbar {
+        opacity: 0;
+    }
+}
