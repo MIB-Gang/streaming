@@ -6,30 +6,50 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Disney +</title>
     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter&family=Raleway&display=swap');
         *{box-sizing: border-box;margin:0;}
-        h1, h2, h3{font-family: Verdana, Geneva, Tahoma, sans-serif;}
-        h1{font-size: 600%;color:white; text-shadow: darkblue;}
-        .angebot{display: flex; flex-wrap: nowrap;} 
-        .angebot .angebot-box{ display: flex; align-items: center; background-color: rgb(0, 0, 117); color: white; padding: 20px 3%; margin: 1% 2% 5px; border-radius: 10px ;}
-        .angebot .angebot-box:hover {background-color: coral;}
-        h3{text-align: center;}
-        .Abozahlen{height:400px; padding: 20px 40px; margin:20px; background-color:grey;}
+
+        h2,h3,h4,th,td,footer,small{font-family: 'Raleway', sans-serif;}
+        h1{font-size: 600%;font-family: 'Raleway', sans-serif;color: white; text-shadow: darkblue;}
+        p,span{font-family: 'Inter', sans-serif;}
+        h3, h4{text-align: center;}
+
+        #placeholder{height:50px;}
         .schloss
         {
             height:500px;background-image:linear-gradient(rgba(0, 0, 1, 0), rgba(0, 0, 0, 0.7)), url("https://images.unsplash.com/photo-1528041119984-da3a9f8d04d1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1409&q=80");
             background-size: cover;background-position: bottom; background-repeat: no-repeat; display: flex; justify-content: center;align-items: center; 
         }
-        .Tabelle{border: darkblue 4px solid;text-align: center; margin:20px auto; width: 60%; min-width: 400px; border-collapse: collapse;}
-        .Tabelle td{border: grey 2px solid; padding: 5px;}
 
-        th{padding: 20px 40px;font-size: 30px;}
-        td{padding: 20px 40px;}
+        .angebot{display: flex; flex-wrap: wrap;} 
+        .angebot .angebot-box{cursor:url(http://www.rw-designer.com/cursor-view/58768.png),auto; display: flex; align-items: center; background-color: rgb(0, 0, 117); color: white; padding: 20px 3%; margin: 1% 2% 5px; border: black 2px solid; border-radius: 10px ; flex: 1 1 10%}
+        .angebot .angebot-box:hover {background-color: coral;}
+        /*experimentell Infobox*/
+        .angebot-box:hover span{visibility: visible;}
+        .angebot-box span{visibility: hidden; position: absolute; margin:0 0px 110px; font-size: 13px; z-index: 1; width: 150px; background-color:rgb(0, 0, 66); color: white;text-align: center; border-radius: 6px; padding: 5px 1%;}
+
+        .Tabelle{border: darkblue 4px solid; text-align: center; margin: 20px auto; width: 60%; min-width: 330px; border-collapse: collapse;}
+        .Tabelle td{border: grey 2px solid; padding: 5px; }
+        th{padding: 20px 40px; font-size: 25px;}
+        .Abozahlen{height:400px; margin: 20px 40px; }
+
         .paragraph{margin:20px 40px;}
-        #ENCANTO-stat{height: 500px;}
+        .dark{background-color: rgb(0, 0, 73);color:white;padding: 20px 40px 0;}
+
+        .streaming{margin: auto; display:flex; flex-direction:row; flex-wrap:wrap; background-color: rgb(0, 0, 73); color: white; padding: 20px 40px;}
+        .streaming div{margin:0 auto; flex: 3 1 40%;}
+        #ENCANTO-stat{width: 500px; min-width:330px; margin-left: 20px;}
+        .statistik{text-align: center;}
         footer{text-align: center; margin:20px auto;}
+
+        @media (max-width: 600px) {
+        #ENCANTO-stat{width: 70%; min-width:330px; margin-left: 20px;}
+        .angebot-box span{visibility: hidden; position: absolute; margin:0 0px 60px; font-size: 10px; z-index: 1; width: 150px; background-color:rgb(0, 0, 66); color: white;text-align: center; border-radius: 6px; padding: 5px 1%;}}
     </style>
 </head>
+
 <body>
+<div id="placeholder"></div>
 <header class="schloss"><h1>Disney +</h1></header>
 <body>
     <div class="paragraph" >
@@ -41,21 +61,64 @@
     </div>     
 
 <div class="angebot">
-    <div class="angebot-box"><h3>Disney</h3></div>
-    <div class="angebot-box"><h3>PIXAR</h3></div>
-    <div class="angebot-box"><h3>MARVEL</h3></div>
-    <div class="angebot-box"><h3>STAR WARS</h3></div>
-    <div class="angebot-box"><h3>National Geographic</h3></div>
-    <div class="angebot-box"><h3>STAR</h3></div> 
-</div>    <p style="margin:0 40px;">STAR ist eine neu ins Leben gerufene Marke für “adult-content” auf Disney+. Beinhaltet The Walking Dead, Grey's Anatomy etc.</p>
+    <div class="angebot-box"><h3>Disney</h3>
+        <span>Disney-Filme: Animiert und Live-Action</span>
+    </div>
+    <div class="angebot-box"><h3>PIXAR</h3>
+        <span>PIXAR-Filme: Herzhafte Animationen</span>
+    </div>
+    <div class="angebot-box"><h3>MARVEL</h3>
+        <span>Das MARVEL-Cinematic-Universe</span>
+    </div>
+    <div class="angebot-box"><h3>STAR WARS</h3><span>Geschichten aus einer weit entfernten Galaxis</span>
+    </div>
+    <div class="angebot-box"><h3>National Geographic</h3>
+        <span>Naturdokumentationen, ferne Länder und Kulturen.</span>
+    </div>
+    <div class="angebot-box"><h3>STAR</h3>
+        <span>"adult-content" Bsp.: The Walking Dead, Grey's Anatomy</span>
+    </div> 
+</div>    
+<p style="margin:0 40px;">STAR ist eine neu ins Leben gerufene Marke für “adult-content” auf Disney+. Beinhaltet The Walking Dead, Grey's Anatomy etc.</p>
 
-<br> <br>
-<div class="Abozahlen"><h2>Abonnentenzahlen</h2>
-    <p>Statistik</p>
+<div class="Abozahlen"> 
+    <table class="Tabelle">
+        <h2>Abonnentenzahlen</h2><hr> <br>
+        <thead>
+          <tr>
+            <th>Jahr</th>
+            <th>Abonnenten</th>
+          </tr>
+        </thead>
+      
+        <tbody>
+          <tr>
+            <td>Quartal 1 2020</td>
+            <td>26,5 Millionen</td>
+          </tr>
+          <tr>
+            <td>Quartal 4 2020</td>
+            <td>73,7 Millionen</td>
+          </tr>
+          <tr>
+            <td>Quartal 1 2021</td>
+            <td>94,9 Millionen</td>
+          </tr>
+          <tr>
+            <td>Quartal 4 2021</td>
+            <td>118,1 Millionen</td>
+          </tr>
+          <tr>
+            <td>Quartal 1 2022</td>
+            <td>129,8 Millionen</td>
+          </tr>
+        </tbody>
+      </table>
+
+<h4>Disney Plus hat in 16 Monaten 100 Millionen Abonnenten erreicht — Netflix brauchte dafür 10 Jahre.</h4>
 </div>
-<br><h3>Disney Plus took 16 months to surpass 100 million sign-ups — it took Netflix 10 years.</h3><br>
-
-<div class="paragraph">
+<br>
+<div class="dark">
     <h2>Disney Plus</h2><hr> <br>
     <p>
     DisneyPlus startete erfolgreich und schaffte es in weniger als 1 und halb Jahren 100 Mio. Abonnenten zu fassen, eas Netflix ab 2007 10 Jahre gebrauch hatte. <br><br>
@@ -77,20 +140,25 @@
     </p><br>
 </div>     
 
-<div class="paragraph">
-    <h2>Angebot</h2><hr> <br>
-    <p>
+<div class="dark"><h2 >Streaming</h2><hr><br></div>
+<div class="streaming">
+
+    <div>
+        <p>
         Besonders wichtig für den Streaming-Anbieter ist der Besitz von MARVEL mit erfolgreichen Serien wie Wandavision und Filmen des MCU (Marvel Cinematic Universe), sowie STAR WARS mit The Mandalorian. <br>
 
         Der neueste Animationsfilm Encanto zeigt dabei die Stärke und des Einfluss des Streamingformats. Der Film gelang Ende November 2021 in die Kinos und hatte ein starkes Opening-Weekend, jedoch fiel das Engagement schnell und stark. Als der Film an Weihnachten auf Disney+ bereitgestellt wurde stieg das Interesse am Film rasant und stellte andere Filme wie "Luca" und "Raya und der letzte Drache" in den Schatten.<br> <br>
         
-        Raya Boxoffice: 130$ Mio. Worldwide | 54$ Mio. USA (Um Raya zu gucken, musste für den ersten Monat zuerst der Disney+ Premier Access gekauft werden für 30$/23,99€) <br>
+        Raya Boxoffice: 130$ Mio. Worldwide | 54$ Mio. USA <br>(Um Raya zu gucken, musste für den ersten Monat zuerst der Disney+ Premier Access gekauft werden für 30$/23,99€) <br> <br>
         Encanto Box Office: 228$ Mio. Worldwide | 93$ Mio. USA
-    </p><br>
-    <img id="ENCANTO-stat" src="https://i.insider.com/61f2f0d4792e7300116bed12?width=800&format=jpeg&auto=webp" alt="Statistik: ENCANTO's Zuschauerzahlen steigen rasant nach veröffentlichung auf dem Streaming Service">
-    <p>ENCANTO's Zuschauerzahlen steigen rasant nach veröffentlichung auf dem Streaming Service</p>
+        </p><br>
+    </div>
+    <div class="statistik">
+        <img id="ENCANTO-stat" src="https://i.insider.com/61f2f0d4792e7300116bed12?width=800&format=jpeg&auto=webp" alt="Statistik: ENCANTO's Zuschauerzahlen">
+        <p>ENCANTO's Zuschauerzahlen steigen rasant nach Veröffentlichung auf dem Streaming Service</p>
+    </div>
 </div>     
-</body>
+
 
 <table class="Tabelle">
     <thead>
@@ -118,6 +186,8 @@
 </table>
 
 <br>
+
+</body>
 <footer>-Quellenverzeichnis- <br>
 <a href="https://www.businessinsider.com/disney-plus-100-million-subscribers-16-months-launching-netflix-2021-3 ">Count of Suscribers</a> <br>
 <a href="https://www.businessinsider.com/disney-plus-launches-new-service-star-increases-price-next-week-2021-2">STAR Service</a> <br>
