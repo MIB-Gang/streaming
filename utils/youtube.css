@@ -1,0 +1,67 @@
+
+        #intro-tile{
+            background-color: lightgray;
+        }
+        #intro{
+            padding: 20px 96px;  display: flex; flex-flow: row nowrap; max-width: 60%; margin: 0 auto;
+        }
+        #intro a{
+            float: right;
+        }
+
+        .Tabelle{
+            border: 4px solid; text-align: center; margin: 20px auto; width: 60%; min-width: 300px; border-collapse: collapse;
+        }
+        .Tabelle td{
+            border:  rgba(0, 0, 0, 0.171) 2px solid; padding: 10px 5px;
+        }
+        th{
+            padding: 10px 1%; font-size: 17px;
+        }
+
+        .tile-together{
+            display: flex;
+            flex-flow: row nowrap;
+            max-width: 60%;
+            margin: 0 auto;
+            padding:96px 0 0;
+            color: var(--on-secondary);
+        }
+
+        .Nutzer{
+            display:flex; flex-direction:row; flex-wrap:wrap; padding: 0px 96px 20px; align-items: center;
+        }
+        .Nutzer div{
+            flex: 1 1 50%;
+        }
+        #Worldwide{
+            margin-right: 10px;
+        }
+
+        .Nutzer table{
+            border: 4px solid; border-collapse: collapse; text-align: center; height:400px
+        }
+        .Nutzer table td{
+
+            padding: auto 5px; width:150px; border: rgba(0, 0, 0, 0.171) 2px solid
+        }
+
+        footer{
+            text-align: center; margin:20px auto;
+        }
+
+    @media screen and (max-width: 860px) 
+    {
+        #intro, .tile-together{
+        width: 90%; padding-left: 0; padding-right: 0;
+        }
+        .Nutzer table{
+            align-items: center;
+        }
+    }
+    @media screen and (max-width: 560px) 
+    {
+        .Nutzer{
+        max-width: 90%; justify-content: center;
+        }
+    }

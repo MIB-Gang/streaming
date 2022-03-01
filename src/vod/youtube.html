@@ -8,6 +8,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../../utils/stylesheet.css">
+    <link rel="stylesheet" href="../../utils/youtube.css">
     <script src="../../utils/script.js"></script>
 
     <!--? Seiten-Einstellungen -->
@@ -19,53 +20,9 @@
             --secondary: #FFFFFF; /* Zweite Farbe (Abwechslung zur ersten Farbe) */
             --on-secondary: rgb(56, 0, 0); /* Objekte AUF der Zweiten Farbe (z.B. dunkelrot auf weißem Hintergrund) */
             --highlight: #98ff68; /* Hervorgehobene Objekte */
-            --hero-path: url("https://images.unsplash.com/photo-1454117096348-e4abbeba002c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"); /* Bildpfad vom Hero-Banner (im Assets-Ordner) */
+            --hero-path: url("../assets/images/grey_triangles.jpg"); /* Bildpfad vom Hero-Banner (im Assets-Ordner) */
         }
-
-        i{height:100px; color: red;margin: 0 0 15px;}
-        #intro-tile{background-color: lightgray;}
-        #intro{
-            padding: 20px 96px;  display: flex; flex-flow: row nowrap; max-width: 60%; margin: 0 auto;
-        }
-        #intro a{float: right;}
-
-        .Tabelle{border: 4px solid; text-align: center; margin: 20px auto; width: 60%; min-width: 300px; border-collapse: collapse;}
-        .Tabelle td{border: grey 2px solid; padding: 10px 5px;}
-        th{padding: 10px 1%; font-size: 17px;}
-
-        .tile-together {
-            display: flex;
-            flex-flow: row nowrap;
-            max-width: 60%;
-            margin: 0 auto;
-            padding:96px 0 0;
-            color: var(--on-secondary);
-        }
-
-        .Nutzer{display:flex; flex-direction:row; flex-wrap:wrap; padding: 0px 96px 20px; align-items: center;}
-        .Nutzer div{flex: 1 1 50%;}
-        #Worldwide{margin-right: 10px;}
-        .Nutzer table{border: 1px solid; border-collapse: collapse; text-align: center;}
-        .Nutzer table td{padding: 10px 5px; width:150px;}
-
-        footer{text-align: center; margin:20px auto;}
-
-    @media screen and (max-width: 860px) 
-    {
-        #intro, .tile-together{
-        max-width: 90%; padding-left: 0; padding-right: 0;
-        }
-        .Nutzer table{justify-content: center;}
-        i{visibility:collapse;}
-    }
-    @media screen and (max-width: 560px) 
-    {
-        .Nutzer{
-        max-width: 90%; justify-content: center;
-        }
-    }
     </style>
-    <script src="https://kit.fontawesome.com/66f6123398.js" crossorigin="anonymous"></script>
 
     <!--? Der Titel des Browser-Tabs -->
     <!-- (anpassbar)-->
@@ -102,7 +59,7 @@
     <div class="hero">
         
         <div class="hero-content">
-            <i class="fab fa-youtube fa-7x"></i><h1>YouTube</h1>
+            <h1>YouTube</h1>
         </div>
     </div>
 
@@ -111,10 +68,17 @@
     <main>
         <div id="intro-tile">
             <div id="intro">
-              <p >YouTube hat mehr als 2 Milliarden monatlich einloggende Nutzer. Jeden Tag werden über eine Milliarde Stunden Videos über die Website geschaut. Über 100 Länder haben eine offizielle regionale Version von YouTube. Jede Minute werden 500 Stunden an Content hochgeladen.<br> <a href="https://blog.youtube/press/">-YouTube for Press</a></p> <br>
-            </div>
+              <ul>
+                  <li>YouTube hat mehr als 2 Milliarden monatlich einloggende Nutzer.</li> 
+                  <li>Jeden Tag werden über eine Milliarde Stunden Videos über die Website geschaut.</li> 
+                  <li> Über 100 Länder haben eine offizielle regionale Version von YouTube.</li> 
+                  <li> Jede Minute werden 500 Stunden an Content hochgeladen.</li>
+                  <a href="https://blog.youtube/press/">-YouTube for Press</a></p>
+            </ul> 
         </div>
-        <div></div> 
+
+        </div>
+        <div></div> <!--wegen Farbumschlag leeres div-->
         <!-- Box mit Inhalt -->
         <div class="tile">
             <div class="tile-content">
@@ -201,7 +165,7 @@
         <div class="tile">
 
                 <div class="Nutzer">
-                    <div> 
+                    <div > 
                       <h3>Worldwide</h3>
                       <table id="Worldwide">
                         <tbody>  
@@ -230,13 +194,19 @@
                             <td>USA</td>
                             <td>86.8 Mio. Abonnenten</td>
                           </tr>
+                          <tr>
+                            <td><a href="https://www.youtube.com/channel/UCk8GzjMOrta8yxDcKfylJYw">✿ Kids Diana Show</a></td>
+                            <td>USA</td>
+                            <td>91 Mio. Abonnenten</td>
+                          </tr>
                         </tbody>
-                      </table> <br> <br>
+                      </table>
                     </div>
                 
                     <div>     
                       <h3>Deutschsprachig</h3>
                       <table id="Deutsch">
+                        
                         <tbody>  
                           <tr>
                             <td><a href="">freekickerz</a></td>
@@ -270,11 +240,10 @@
                           </tr>
                         </tbody>
                       </table>
-                      <small>(Zuletzt aktualisiert: 22.2.22)</small>
                     </div><!--Deutsch-->
                 
                 </div> <!--Nutzer-->
-            
+            <small>(Zuletzt aktualisiert: 22.2.22)</small>
         </div><!--tile-->
 
         <div class="tile">
