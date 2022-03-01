@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+
+    <!--? Grundsätzliche Parameter -->
+    <!-- (einfach lassen, wie's ist)-->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../utils/stylesheet.css">
+    <script src="../../utils/script.js"></script>
+
+    <!--? Seiten-Einstellungen -->
+    <!-- (alles anpassbar)-->
+    <style>
+        :root {
+            --primary: red; /* Hauptfarbe (Netflix = rot) */
+            --on-primary: #FFFFFF; /* Objekte AUF der Hauptfarbe */
+            --secondary: #FFFFFF; /* Zweite Farbe (Abwechslung zur ersten Farbe) */
+            --on-secondary: rgb(56, 0, 0); /* Objekte AUF der Zweiten Farbe (z.B. dunkelrot auf weißem Hintergrund) */
+            --highlight: #98ff68; /* Hervorgehobene Objekte */
+            --hero-path: url("https://images.unsplash.com/photo-1454117096348-e4abbeba002c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"); /* Bildpfad vom Hero-Banner (im Assets-Ordner) */
+        }
+
+        i{height:100px; color: red;margin: 0 0 15px;}
+        #intro-tile{background-color: lightgray;}
+        #intro{
+            padding: 20px 96px;  display: flex; flex-flow: row nowrap; max-width: 60%; margin: 0 auto;
+        }
+        #intro a{float: right;}
+
+        .Tabelle{border: 4px solid; text-align: center; margin: 20px auto; width: 60%; min-width: 300px; border-collapse: collapse;}
+        .Tabelle td{border: grey 2px solid; padding: 10px 5px;}
+        th{padding: 10px 1%; font-size: 17px;}
+
+        .tile-together {
+            display: flex;
+            flex-flow: row nowrap;
+            max-width: 60%;
+            margin: 0 auto;
+            padding:96px 0 0;
+            color: var(--on-secondary);
+        }
+
+        .Nutzer{display:flex; flex-direction:row; flex-wrap:wrap; padding: 0px 96px 20px; align-items: center;}
+        .Nutzer div{flex: 1 1 50%;}
+        #Worldwide{margin-right: 10px;}
+        .Nutzer table{border: 1px solid; border-collapse: collapse; text-align: center;}
+        .Nutzer table td{padding: 10px 5px; width:150px;}
+
+        footer{text-align: center; margin:20px auto;}
+
+    @media screen and (max-width: 860px) 
+    {
+        #intro, .tile-together{
+        max-width: 90%; padding-left: 0; padding-right: 0;
+        }
+        .Nutzer table{justify-content: center;}
+        i{visibility:collapse;}
+    }
+    @media screen and (max-width: 560px) 
+    {
+        .Nutzer{
+        max-width: 90%; justify-content: center;
+        }
+    }
+    </style>
+    <script src="https://kit.fontawesome.com/66f6123398.js" crossorigin="anonymous"></script>
+
+    <!--? Der Titel des Browser-Tabs -->
+    <!-- (anpassbar)-->
+    <title>YouTube</title>
+
+</head>
+<body>
+
+    <!--? Navigations-Leiste, die auf jeder Seite vorhanden sein sollte. -->
+    <!-- (einfach so lassen, wie's ist)-->
+    <div>
+        <!-- Die Oberkategorien -->
+        <div class="navbar"> 
+            <div>Home</div>
+            <div>Live-Streaming</div>
+            <div>Video on Demand</div>
+            <div>Music on Demand</div>
+            <div>Impressum</div>
+        </div>
+        <!-- Die Unterkategorien, die erst beim aufklappen sichtbar sind. -->
+        <div id="navbar-expanded"> 
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../live/youtube.html">YouTube</a></li>
+                <li><a href="../vod/netflix.html">Netflix</a></li>
+                <li><a href="">...</a></li>
+                <li><a href="../impressum/impressum.html">Impressum</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!--? Hero-Banner: Das große Bild mit Seitentitel, ganz oben auf der Seite -->
+    <!-- (der Titel <h1>...</h1> kann verändert werden)-->
+    <div class="hero">
+        
+        <div class="hero-content">
+            <i class="fab fa-youtube fa-7x"></i><h1>YouTube</h1>
+        </div>
+    </div>
+
+    <!--? Main: Hier kommt der eigentliche Seiteninhalt hin. -->
+    <!-- (einfach Box <div class="tile">...</div> kopieren und Inhalt anpassen) -->
+    <main>
+        <div id="intro-tile">
+            <div id="intro">
+              <p >YouTube hat mehr als 2 Milliarden monatlich einloggende Nutzer. Jeden Tag werden über eine Milliarde Stunden Videos über die Website geschaut. Über 100 Länder haben eine offizielle regionale Version von YouTube. Jede Minute werden 500 Stunden an Content hochgeladen.<br> <a href="https://blog.youtube/press/">-YouTube for Press</a></p> <br>
+            </div>
+        </div>
+        <div></div> 
+        <!-- Box mit Inhalt -->
+        <div class="tile">
+            <div class="tile-content">
+                <h2>Anfänge</h2>
+                <p>
+                    <p>Erscheinungsdatum: Februar 2005 Gründungstrio: Jawed Karim, Chad Hurley und Steve Chen Erstes Video: <a href="https://www.youtube.com/watch?v=jNQXAC9IVRw">Me at the zoo</a> von Jawed Karim (23.04.2005) <br> Die Website war von Anfang an ein großer Erfolg und wurde bereits im Oktober 2006 von Google für 1,65 Milliarden Dollar gekauft. <br> Mittlerweile ist YouTube die am zweitmeisten besuchte Website der Welt nach Google. An Werbeeinnahmen verdient Google jährlich mehrere Milliarde Dollar.</p>
+                </p>
+            </div>
+        </div>
+        <!--! HIER ANFÜGEN -->
+        <div class="tile">
+            <div class="tile-content">
+                <h2>YouTube Premium</h2>
+                <p>Im November 2014 wurde der Musik Key angeboten, mit dem werbungslos Musikvideos angeschaut werden konnten. Die Idee wurde überholt und Ende Oktober 2015 startete der Service von YouTube Red. Mit diesem zahlungsplichtigen Dienst konnte man Musikvideos ohne Werbung ansehen, aber die Anwendung war eben auch auf dieses Genre beschränkt. Es war ein Flop. <br>
+                Am 17. Mai 2018 wurden YouTube Premium und YouTube Music gestartet. Die Dienste wurden damit aufgeteilt. YouTube Music konzentrierte sich auf Musik und Musikvideos, während YouTube Premium die gesamte Website als werbungsloses Streamingportal anbietet mit weiteren Zusätzen. (Downloads, Hintergrundwiedergabe auf mobilen Geräten, YouTube Music-Abo) 
+                <br><br>
+                Aktueller Preis pro Monat: 11,99 Euro / Studententarif: 6,99 Euro / Nur YouTube Music: 9,99</p>
+            </div>
+        </div>
+        <div class="tile">
+            <div class="tile-content">
+                <h2>Nutzerzahlen</h2>
+                <!--Nutzerzahlen Tabelle-->
+                <table class="Tabelle">
+                    <thead>
+                    <tr>
+                        <th>Jahr</th>
+                        <th>Benutzerzahlen in Milliarden</th>
+                        <th>jährliches Einkommen in USD-$</th>
+                    </tr>
+                    </thead>
+                    <tbody>  
+                        <tr>
+                            <td>'12</td>
+                            <td>0,8</td>
+                            <td>1,7</td>
+                        </tr>
+                        <tr>
+                            <td>'14</td>
+                            <td>1,1</td>
+                            <td>4,2</td>
+                        </tr>
+                        <tr>
+                            <td>'16</td>
+                            <td>1,4</td>
+                            <td>6,7</td>
+                        </tr>
+                        <tr>
+                            <td>'18</td>
+                            <td>1,8</td>
+                            <td>11,1</td>
+                        </tr>
+                        <tr>
+                            <td>'19</td>
+                            <td>2</td>
+                            <td>15,1</td>
+                        </tr>
+                        <tr>
+                            <td>'20</td>
+                            <td>2,3</td>
+                            <td>19,7</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <div class="tile">
+            <div class="tile-content">
+                <h2>Marketing</h2>
+                <p>
+                    Die ersten Werbungen kamen nach der Übernahme durch Google auf deie Website. YouTube ist seither ein unverzichtbares Tool für die Marketingbranche geworden. 55% aller... <br>
+                    2020 investierte Apple Inc. als größter Vermarkter 237,15 Millionen US-Dollar in Werbeanzeigen.
+                </p>
+            </div>
+        </div>
+
+        <div class="tile">
+            <div class="tile-together">
+                <h2>Bekannte Nutzer</h2>
+            </div>
+        </div>
+        <div></div>
+        <div class="tile">
+
+                <div class="Nutzer">
+                    <div> 
+                      <h3>Worldwide</h3>
+                      <table id="Worldwide">
+                        <tbody>  
+                          <tr>
+                            <td><a href="https://www.youtube.com/aashiqui2">T-Series</a></td>
+                            <td>Indien</td>
+                            <td>202 Mio. Abonnenten</td>
+                          </tr>
+                          <tr>
+                            <td><a href="https://www.youtube.com/c/CoComelon">Cocomelon</a></td>
+                            <td>USA</td>
+                            <td>125 Mio. Abonnenten</td>
+                          </tr>
+                          <tr>
+                            <td><a href="https://www.youtube.com/c/setindia">SET India</a></td>
+                            <td>Indien</td>
+                            <td>122 Mio. Abonnenten</td>
+                          </tr>
+                          <tr>
+                            <td><a href="https://www.youtube.com/user/PewDiePie">PewDiePie</a></td>
+                            <td>Schweden</td>
+                            <td>111 Mio. Abonnenten</td>
+                          </tr>
+                          <tr>
+                            <td><a href="https://www.youtube.com/c/MrBeast6000">MrBeast</a></td>
+                            <td>USA</td>
+                            <td>86.8 Mio. Abonnenten</td>
+                          </tr>
+                        </tbody>
+                      </table> <br> <br>
+                    </div>
+                
+                    <div>     
+                      <h3>Deutschsprachig</h3>
+                      <table id="Deutsch">
+                        <tbody>  
+                          <tr>
+                            <td><a href="">freekickerz</a></td>
+                            <td>8,66 Mio. Abonnenten</td>
+                            <td>Fussball</td>
+                          </tr>
+                          <tr>
+                            <td><a href="">The Voice Kids</a></td>
+                            <td>6,82 Mio. Abonnenten</td>
+                            <td>Gesangsshow</td>
+                          </tr>
+                          <tr>
+                                <td><a href="">Rammstein</a></td>
+                                <td>6 Mio. Abonnente</td>
+                                <td>Heavy Metal Band</td>
+                          </tr>
+                          <tr>
+                            <td><a href="">BibisBeautyPalace</a></td>
+                            <td>5,9 Mio. Abonnenten</td>
+                            <td>Beauty Channel</td>
+                          </tr>
+                          <tr>
+                            <td><a href="">Julien Bam</a></td>
+                            <td>5,75 Mio. Abonnenten</td>
+                            <td>Entertainment</td>
+                          </tr>
+                          <tr>
+                            <td><a href="">Gronkh</a></td>
+                            <td>4,91 Mio. Abonnenten</td>
+                            <td>Gaming</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                      <small>(Zuletzt aktualisiert: 22.2.22)</small>
+                    </div><!--Deutsch-->
+                
+                </div> <!--Nutzer-->
+            
+        </div><!--tile-->
+
+        <div class="tile">
+            <div class="tile-content">
+                <h2>Live-Streaming</h2>
+                <p>
+                    Mit YouTube Live können Creator ihre Community ganz leicht in Echtzeit ansprechen. Egal, ob du eine Veranstaltung streamst, einen Kurs gibst oder einen Workshop anbietest: Mit unseren Tools kannst du Livestreams bequem verwalten und in Echtzeit mit deinen Zuschauern interagieren. <br> 
+
+                    YouTube-Livestreams sind per Webcam, Mobilgerät und Encoder möglich. Webcam und Mobilgeräte sind ideal für Einsteiger, die ohne große Vorbereitung sofort loslegen möchten. Encoder eignen sich besonders für komplexere Livestreams, in denen Creator beispielsweise ihren Bildschirm teilen oder ihr Gameplay übertragen, externe Audio- und Videohardware anschließen und aufwendigere Produktionstechniken wie mehrere Kameras und Mikrofone nutzen möchten.
+                </p>
+            </div>
+        </div>
+    </main>
+    <footer><a href="#intro">Quellen</a></footer>
+</body>
+</html>
