@@ -10,7 +10,7 @@
         }
 
         .Tabelle{
-            border: 4px solid; text-align: center; margin: 20px auto; width: 60%; min-width: 300px; border-collapse: collapse;
+            border: 4px solid; text-align: center; margin: 20px auto; width: 90%; min-width: 300px; border-collapse: collapse;
         }
         .Tabelle td{
             border:  rgba(0, 0, 0, 0.171) 2px solid; padding: 10px 5px;
@@ -43,7 +43,7 @@
         }
         .Nutzer table td{
 
-            padding: auto 5px; width:150px; border: rgba(0, 0, 0, 0.171) 2px solid
+            padding: auto 5px; width:150px; border: rgba(0, 0, 0, 0.171) 2px solid;
         }
 
         footer{
