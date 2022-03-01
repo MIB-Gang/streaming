@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+
+    <!--? Grundsätzliche Parameter -->
+    <!-- (einfach lassen, wie's ist)-->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../utils/stylesheet.css">
+    <script src="../../utils/script.js"></script>
+
+    <!--? Seiten-Einstellungen -->
+    <!-- (alles anpassbar)-->
+    <style>
+        :root {
+            --primary: #AF31BB; /* Hauptfarbe (Netflix = rot) */
+            --on-primary: #FFFFFF; /* Objekte AUF der Hauptfarbe */
+            --secondary: #ffffff; /* Zweite Farbe (Abwechslung zur ersten Farbe) */
+            --on-secondary: #000000; /* Objekte AUF der Zweiten Farbe (z.B. dunkelrot auf weißem Hintergrund) */
+            --highlight: #FF2C6B; /* Hervorgehobene Objekte */
+            --hero-path: url("https://nexusconsultancy.co.uk/wp-content/uploads/2019/04/shutterstock_428125384.jpg"); /* Bildpfad vom Hero-Banner (im Assets-Ordner) */
+        }
+    </style>
+
+    <!--? Der Titel des Browser-Tabs -->
+    <!-- (anpassbar)-->
+    <title>Soundcloud</title>
+
+</head>
+<body>
+
+    <!--? Navigations-Leiste, die auf jeder Seite vorhanden sein sollte. -->
+    <!-- (einfach so lassen, wie's ist)-->
+    <div>
+        <!-- Die Oberkategorien -->
+        <div class="navbar"> 
+            <div>Home</div>
+            <div>Live-Streaming</div>
+            <div>Video on Demand</div>
+            <div>Music on Demand</div>
+            <div>Impressum</div>
+        </div>
+        <!-- Die Unterkategorien, die erst beim aufklappen sichtbar sind. -->
+        <div id="navbar-expanded"> 
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../live/youtube.html">YouTube</a></li>
+                <li><a href="../vod/netflix.html">Netflix</a></li>
+                <li><a href="">...</a></li>
+                <li><a href="../impressum/impressum.html">Impressum</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!--? Hero-Banner: Das große Bild mit Seitentitel, ganz oben auf der Seite -->
+    <!-- (der Titel <h1>...</h1> kann verändert werden)-->
+    <div class="hero">
+        <div class="hero-content">
+            <h1>Soundcloud</h1>
+        </div>
+    </div>
+
+    <!--? Main: Hier kommt der eigentliche Seiteninhalt hin. -->
+    <!-- (einfach Box <div class="tile">...</div> kopieren und Inhalt anpassen) -->
+    <main>
+        <!-- Box mit Inhalt -->
+        <div class="tile">
+            <div class="tile-content">
+                <h2>Überschrift</h2>
+                <p>
+                    Textinhalt. Statt &lt;p&gt; kann man auch ein Bild mit &lt;img src="..."&gt; oder eine Tabelle nutzen.
+                    Um eine "Inhalt-Box" ("tile") der Seite hinzuzufügen, muss einfach dieser Abschnitt mit der Klasse "tile" kopiert 
+                    und innerhalb von &lt;main&gt;...&lt;/main&gt; angefügt werden. Die Text- und Hintergrund-Farben wechseln sich 
+                    automatisch ab.
+                </p>
+            </div>
+        </div>
+        <div class="tile">
+            <div class="tile-content">
+                <h2>Überschrift</h2>
+                <p>
+                    Textinhalt. Statt &lt;p&gt; kann man auch ein Bild mit &lt;img src="..."&gt; oder eine Tabelle nutzen.
+                    Um eine "Inhalt-Box" ("tile") der Seite hinzuzufügen, muss einfach dieser Abschnitt mit der Klasse "tile" kopiert 
+                    und innerhalb von &lt;main&gt;...&lt;/main&gt; angefügt werden. Die Text- und Hintergrund-Farben wechseln sich 
+                    automatisch ab.
+                </p>
+            </div>
+        </div>
+        <div class="tile">
+            <div class="tile-content">
+                <h2>Überschrift</h2>
+                <p>
+                    Textinhalt. Statt &lt;p&gt; kann man auch ein Bild mit &lt;img src="..."&gt; oder eine Tabelle nutzen.
+                    Um eine "Inhalt-Box" ("tile") der Seite hinzuzufügen, muss einfach dieser Abschnitt mit der Klasse "tile" kopiert 
+                    und innerhalb von &lt;main&gt;...&lt;/main&gt; angefügt werden. Die Text- und Hintergrund-Farben wechseln sich 
+                    automatisch ab.
+                </p>
+            </div>
+        </div>
+        <!--! HIER ANFÜGEN -->
+    </main>
+
+</body>
+</html>
