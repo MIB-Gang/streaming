@@ -18,7 +18,7 @@
             --primary: red !important; /* Hauptfarbe (Netflix = rot) */
             --on-primary: #FFFFFF; /* Objekte AUF der Hauptfarbe */
             --secondary: #FFFFFF; /* Zweite Farbe (Abwechslung zur ersten Farbe) */
-            --on-secondary: rgb(56, 0, 0); /* Objekte AUF der Zweiten Farbe (z.B. dunkelrot auf weißem Hintergrund) */
+            --on-secondary: rgb(56, 0, 0) !important; /* Objekte AUF der Zweiten Farbe (z.B. dunkelrot auf weißem Hintergrund) */
             --highlight: #98ff68; /* Hervorgehobene Objekte */
             --hero-path: url("../assets/images/grey_triangles.jpg") !important; /* Bildpfad vom Hero-Banner (im Assets-Ordner) */
         }
@@ -112,32 +112,32 @@
                     </thead>
                     <tbody>  
                         <tr>
-                            <td>'12</td>
+                            <td>2012</td>
                             <td>0,8</td>
                             <td>1,7</td>
                         </tr>
                         <tr>
-                            <td>'14</td>
+                            <td>2014</td>
                             <td>1,1</td>
                             <td>4,2</td>
                         </tr>
                         <tr>
-                            <td>'16</td>
+                            <td>2016</td>
                             <td>1,4</td>
                             <td>6,7</td>
                         </tr>
                         <tr>
-                            <td>'18</td>
+                            <td>2018</td>
                             <td>1,8</td>
                             <td>11,1</td>
                         </tr>
                         <tr>
-                            <td>'19</td>
+                            <td>2019</td>
                             <td>2</td>
                             <td>15,1</td>
                         </tr>
                         <tr>
-                            <td>'20</td>
+                            <td>2020</td>
                             <td>2,3</td>
                             <td>19,7</td>
                         </tr>
@@ -159,18 +159,24 @@
             </div>
         </div>
 
-        <div class="tile">
-            <div class="tile-together">
-                <h2>Bekannte Nutzer</h2>
-            </div>
+        
+        <div class="tile-together">
+            <h2>Bekannte Nutzer</h2>
         </div>
+        
         <div></div>
         <div class="tile">
-
-                <div class="Nutzer">
+            <div class="tile-content" id="Nutzer">
                     <div> 
                       <h3>Worldwide</h3>
                       <table id="Worldwide">
+                        <thead>
+                            <tr>
+                                <th>Kanal</th>
+                                <th>Land</th>
+                                <th>Abonnenten</th>
+                            </tr>
+                        </thead>
                         <tbody>  
                           <tr>
                             <td><a href="https://www.youtube.com/aashiqui2">T-Series</a></td>
@@ -208,7 +214,14 @@
                 
                     <div>     
                       <h3>Deutschsprachig</h3>
-                      <table id="Deutsch">
+                      <table>
+                        <thead>
+                            <tr>
+                                <th>Kanal</th>
+                                <th>Land</th>
+                                <th>Abonnenten</th>
+                            </tr>
+                        </thead>
                         <tbody>  
                           <tr>
                             <td><a href="">freekickerz</a></td>
@@ -222,7 +235,7 @@
                           </tr>
                           <tr>
                                 <td><a href="">Rammstein</a></td>
-                                <td>6 Mio. Abonnente</td>
+                                <td>6 Mio. Abonnenten</td>
                                 <td>Heavy Metal Band</td>
                           </tr>
                           <tr>
@@ -244,9 +257,10 @@
                       </table>
                       
                     </div><!--Deutsch-->
-                <small>(Zuletzt aktualisiert: 22.2.22)</small>
-                </div> <!--Nutzer-->
-            
+                
+                
+            </div><!--tile-content-->
+            <small>(Zuletzt aktualisiert: 22.2.22)</small>
         </div><!--tile-->
 
         <div class="tile">

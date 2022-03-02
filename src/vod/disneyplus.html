@@ -15,11 +15,11 @@
     <!-- (alles anpassbar)-->
     <style>
         :root {
-            --primary: darkblue; /* Hauptfarbe (Netflix = rot) */
+            --primary: darkblue !important; /* Hauptfarbe (Netflix = rot) */
             --on-primary: #FFFFFF; /* Objekte AUF der Hauptfarbe */
             --secondary: #FFFFFF; /* Zweite Farbe (Abwechslung zur ersten Farbe) */
-            --on-secondary: rgb(0, 0, 66); /* Objekte AUF der Zweiten Farbe (z.B. dunkelrot auf weißem Hintergrund) */
-            --highlight: #914bec; /* Hervorgehobene Objekte */
+            --on-secondary: rgb(0, 0, 66) !important; /* Objekte AUF der Zweiten Farbe (z.B. dunkelrot auf weißem Hintergrund) */
+            --highlight: coral; /* Hervorgehobene Objekte */
             --hero-path: url("../assets/images/disney_schloss.jpg") !important; /* Bildpfad vom Hero-Banner (im Assets-Ordner) */
         }
 
@@ -191,7 +191,7 @@
                 </tr>
             </thead>
             <tbody>          
-                <tr>
+                <tr id="PlusMinus">
                     <td>+</td>
                     <td>-</td>
                 </tr>
@@ -205,15 +205,13 @@
                     <td>Übersichtliches Design</td> <td>Watchlist in App eher versteckt</td>
                 </tr>
                 <tr><td>Kinderprofile</td></tr>
-                <tr><td>Groupwatch</td></tr>
+                <tr><td>Groupwatch</td><td></td></tr>
             </tbody>
             </table>
         </div>
-    </div>
-    
+    </div>  
     <br>
-
     </main>
-
+    <footer><a href="#intro">Quellen</a></footer>
 </body>
 </html>
