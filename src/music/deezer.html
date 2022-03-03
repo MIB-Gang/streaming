@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+
+    <!--? Grundsätzliche Parameter -->
+    <!-- (einfach lassen, wie's ist)-->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../utils/stylesheet.css">
+    <script src="../../utils/script.js"></script>
+
+    <!--? Seiten-Einstellungen -->
+    <!-- (alles anpassbar)-->
+    <style>
+        :root {
+            --primary: #ff8000 !important; /* Hauptfarbe (Netflix = rot) */
+            --on-primary: #FFFFFF; /* Objekte AUF der Hauptfarbe */
+            --secondary: #FFFFFF; /* Zweite Farbe (Abwechslung zur ersten Farbe) */
+            --on-secondary: #241284 !important; /* Objekte AUF der Zweiten Farbe (z.B. dunkelrot auf weißem Hintergrund) */
+            --highlight: #ffd100; /* Hervorgehobene Objekte */
+            --hero-path: url("../assets/images/soundwave.png")!important; /* Bildpfad vom Hero-Banner (im Assets-Ordner) */
+        }
+        /*#deezer{
+            background: 
+            linear-gradient(
+            to bottom right, 
+                #ffd100,
+                var(--primary),
+                #cc1953,
+                var(--on-secondary),
+                #3559a6,
+                #53a81a
+            ),
+            var(--hero-path);
+        }*/
+    </style>
+
+    <!--? Der Titel des Browser-Tabs -->
+    <!-- (anpassbar)-->
+    <title>deezer</title>
+
+</head>
+<body>
+
+    <!--? Navigations-Leiste, die auf jeder Seite vorhanden sein sollte. -->
+    <!-- (einfach so lassen, wie's ist)-->
+    <div>
+        <!-- Die Oberkategorien -->
+        <div class="navbar"> 
+            <div>Home</div>
+            <div>Live-Streaming</div>
+            <div>Video on Demand</div>
+            <div>Music on Demand</div>
+            <div>Impressum</div>
+        </div>
+        <!-- Die Unterkategorien, die erst beim aufklappen sichtbar sind. -->
+        <div id="navbar-expanded"> 
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../live/youtube.html">YouTube</a></li>
+                <li><a href="../vod/netflix.html">Netflix</a></li>
+                <li><a href="">...</a></li>
+                <li><a href="../impressum/impressum.html">Impressum</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!--? Hero-Banner: Das große Bild mit Seitentitel, ganz oben auf der Seite -->
+    <!-- (der Titel <h1>...</h1> kann verändert werden)-->
+    <div class="hero" id="deezer">
+        <div class="hero-content">
+            <h1>deezer</h1>
+        </div>
+    </div>
+
+    <!--? Main: Hier kommt der eigentliche Seiteninhalt hin. -->
+    <!-- (einfach Box <div class="tile">...</div> kopieren und Inhalt anpassen) -->
+    <main>
+        <!-- Box mit Inhalt -->
+        <div class="tile">
+            <div class="tile-content">
+                <h2>Anfänge</h2>
+                <p>
+                    Daniel Marhely gründete BlogMusic im Jahr 2007. Nur ein Jahr später benannte er das Projekt in Deezer um. Überzeugt von seiner Idee das Hören und Teilen von Musik leichter zu machen, fing er an Investoren zu suchen. 2008 kamen dabei bereits 5 Millionen Euro zusammen. Deezer Premium startete 2009, als die Streaming-Plattform 7 Millionen Nutzer zählte. 
+                    Vertriebsparterschaften boten sich an und die Marke wuchs stark an. 2012 wurden insgesamt 70 Millionen Euro eingesammelt. 2013 wurde deezer weltweit verfügbar. <br>
+                    flow 2014...
+                </p>
+            </div>
+        </div>
+        <!--! HIER ANFÜGEN -->
+
+
+        <div class="tile">
+            <div class="tile-content">
+                <h2>Angebot</h2>
+                <p>
+                    Über 90 Millionen Songs, Playlists, PodCasts, Hörbücher und Radiosender sind durch deezer erreichbar, was es zu einem der größten Audiokataloge der Welt macht.
+                    Um den Übergang von einer anderen Musik-Streaming-Bibliothek zu deezer zu erleichtern, gibt es eine extra Funktion zum Musik übertragen. Songs und Playlists von anderen Anbietern wie Spotify, TIDAL, Apple Music, YouTube Music, Amazon Music, etc. kommen somit direkt auf Deezer.
+                </p>
+            </div>
+        </div>
+    </main>
+
+</body>
+</html>
