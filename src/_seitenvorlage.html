@@ -14,10 +14,10 @@
     <!-- (alles anpassbar)-->
     <style>
         :root {
-            --primary: #B32424; /* Hauptfarbe (Netflix = rot) */
+            --primary: #AF1212; /* Hauptfarbe (Netflix = rot) */
             --on-primary: #FFFFFF; /* Objekte AUF der Hauptfarbe */
             --secondary: #FFFFFF; /* Zweite Farbe (Abwechslung zur ersten Farbe) */
-            --on-secondary: #700404; /* Objekte AUF der Zweiten Farbe (z.B. dunkelrot auf weißem Hintergrund) */
+            --on-secondary: #A31D45; /* Objekte AUF der Zweiten Farbe (z.B. dunkelrot auf weißem Hintergrund) */
             --highlight: #FF2C6B; /* Hervorgehobene Objekte */
             --hero-path: url("../assets/images/hero_home.jpg"); /* Bildpfad vom Hero-Banner (im Assets-Ordner) */
         }
@@ -31,27 +31,35 @@
 <body>
 
     <!--? Navigations-Leiste, die auf jeder Seite vorhanden sein sollte. -->
-    <!-- (einfach so lassen, wie's ist)-->
-    <div>
-        <!-- Die Oberkategorien -->
-        <div class="navbar"> 
-            <div>Home</div>
-            <div>Live-Streaming</div>
-            <div>Video on Demand</div>
-            <div>Music on Demand</div>
-            <div>Impressum</div>
-        </div>
-        <!-- Die Unterkategorien, die erst beim aufklappen sichtbar sind. -->
-        <div id="navbar-expanded"> 
-            <ul>
-                <li><a href="../index.html">Home</a></li>
-                <li><a href="../live/youtube.html">YouTube</a></li>
-                <li><a href="../vod/netflix.html">Netflix</a></li>
-                <li><a href="">...</a></li>
-                <li><a href="../impressum/impressum.html">Impressum</a></li>
-            </ul>
-        </div>
-    </div>
+    <!-- (nur class="nav-active" bei Video on Demand entfernen und bei aktiver Oberkategorie hinzufügen)-->
+    <nav>
+        <ul>
+            <li><a href="#" class="nav-single">Home</a></li>
+            <li><a href="#">Live-Streaming</a>
+                <ul>
+                    <li><a href="#">Twitch</a></li>
+                    <li><a href="#">YouTube</a></li>
+                    <li><a href="#">Social Media</a></li>
+                </ul>
+            </li>
+            <li><a href="#" class="nav-active">Video on Demand</a>
+                <ul>
+                    <li><a href="#">Amazon Prime</a></li>
+                    <li><a href="#">Apple TV+</a></li>
+                    <li><a href="#">Disney Plus</a></li>
+                    <li><a href="#">Netflix</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Music on Demand</a>
+                <ul>
+                    <li><a href="#">Apple Music</a></li>
+                    <li><a href="#">Deezer</a></li>
+                    <li><a href="#">Spotify</a></li>
+                </ul>
+            </li>
+            <li><a href="#" class="nav-single">Quellen</a></li>
+        </ul>
+    </nav>
 
     <!--? Hero-Banner: Das große Bild mit Seitentitel, ganz oben auf der Seite -->
     <!-- (der Titel <h1>...</h1> kann verändert werden)-->

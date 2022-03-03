@@ -15,7 +15,7 @@
             --on-primary: #FFFFFF; 
             --secondary: #FFFFFF;
             --on-secondary: #700404;
-            --highlight: #FF2C6B; 
+            --highlight: #FF5B5B; 
             --hero-path: url("https://cdn.pixabay.com/photo/2021/01/24/13/41/netflix-5945225_960_720.jpg");
         }
     </style>
@@ -23,33 +23,50 @@
     <title>Netflix</title>
 </head>
 <body>
-    <div class="navbar">
-        <div>Home</div>
-        <div>Live-Streaming</div>
-        <div>Video on Demand</div>
-        <div>Music on Demand</div>
-        <div>Impressum</div>
-    </div>
-    <div id="navbar-expanded">
-        <p>>> Soll eigentlich tabellen-ähnlich unter den Hauptkategorien stehen. <br>>> Also z.B. YouTube steht unter "Live-Streaming" und Netflix unter "Video on Demand".</p>
+    <nav>
         <ul>
-            <li><a href="../index.html">Home</a></li>
-            <li><a href="../live/youtube.html">YouTube</a></li>
-            <li><a href="../vod/netflix.html">Netflix</a></li>
-            <li><a href="">...</a></li>
-            <li><a href="../impressum/impressum.html">Impressum</a></li>
+            <li><a href="../index.html" class="nav-single">Home</a></li>
+            <li><a href="#">Live-Streaming</a>
+                <ul>
+                    <li><a href="#">Twitch</a></li>
+                    <li><a href="#">YouTube</a></li>
+                    <li><a href="#">Social Media</a></li>
+                </ul>
+            </li>
+            <li><a href="#" class="nav-active">Video on Demand</a>
+                <ul>
+                    <li><a href="#">Amazon Prime</a></li>
+                    <li><a href="#">Apple TV+</a></li>
+                    <li><a href="#">Disney Plus</a></li>
+                    <li><a href="#">Netflix</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Music on Demand</a>
+                <ul>
+                    <li><a href="#">Apple Music</a></li>
+                    <li><a href="#">Deezer</a></li>
+                    <li><a href="#">Spotify</a></li>
+                </ul>
+            </li>
+            <li><a href="#" class="nav-single">Quellen</a></li>
         </ul>
-    </div>
+    </nav>
+
     <div class="hero">
         <div class="hero-content">
             <h1>Netflix</h1>
         </div>
     </div>
+    
     <main>
         <div class="tile">
             <div class="tile-content">
                 <h2>Geschichte</h2>
-                <p>Blablablablablablablablasadl jsalkejsalk djalskE sklajdlkasjelk sajfdkjashe kjsahdjkash ibfdjog wjkfhdkg nfdjhtowrmdklfjdlks tjkledfgjkdfs5rkjdhgkjhreoih dkjfhwuiahrkjfd hgku wherhfdk jshgfiersghfkjdgh eroutghjdfjglkds jtojdfglkjdso dfjglk jetjfd gjdsgjfd gjedr</p>
+                <p>
+                    Nachdem Netflix, damals noch als Start-Up, 1997 von Reed Hastings und Marc Randolph gegründet wurde, wich die Geschäftidee etwas von der heutigen ab. Die Idee war eine Online-Videothek, bei der DVDs  und Blu-Rays online ausgeliehen werden können und per Post ankommen. Ab 1999 startete der Service - auch damals schon mit Abo-Modell. Aufgrund der Einführung der individuellen Filmempfehlungen im Jahr 2000 und des Börsengangs 2002, folgte ein exponentieller Anstieg von 600.000 auf 4,2 Millionen Nutzer:innen.
+                    <br><br>Da das sterblich Medium der DVD immer unrelevanter wurde, stieg Netflix 2007 in das Video-on-Demand-Business ein und ließ das ursprüngliche Geschäftsmodell immer weiter zurück. 2013 wagte Netflix einen weiteren großen Schritt. Das Unternehmen veröffentlichte erstmals eigene Filme und Serien und feierte damit auch Erfolg. So gewann z.B. die Serie “House of Cards”  im gleichen Jahr 3 Emmys.
+                    <br><br>In Deutschland war der Dienst erstmals 2014 nutzbar. Netflix expandierte in dieser Zeit und verkündete 2016 dann, es sei weltweit verfügbar. Die Nutzerzahl stieg immer weiter an. 2017 waren es 100 MIllionen Nutzer:innen, 2021 dann bereits 200 Millionen.
+                </p>
             </div>
         </div>
         <div class="tile">
