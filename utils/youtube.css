@@ -1,0 +1,100 @@
+
+        #intro-tile{
+            background-color: lightgray;
+        }
+        #intro{
+            padding: 20px 96px;  display: flex; flex-flow: row nowrap; max-width: 60%; margin: 0 auto;
+        }
+        #intro a{
+            float: right;
+        }
+
+        .Tabelle{
+            text-align: center; margin: 20px auto; width: 90%; min-width: 300px; border-collapse: collapse; border-radius: 20px 20px 20px 20px; overflow: hidden; box-shadow: 0 0 10px rgba(56, 0, 0, 0.356);
+        }
+        .Tabelle thead tr{
+            background-color: red;
+            color: white;
+            font-weight: bold;
+        }
+        td,th{
+            padding: 10px 10px;
+        }
+        .Tabelle tbody tr{
+            border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+        }
+        .Tabelle tbody tr:nth-of-type(even){
+            background-color: rgb(231, 231, 231);
+        }
+        .Tabelle tbody tr:last-of-type{
+            border-bottom: none;
+        }
+
+        .tile-together{
+            display: flex;
+            flex-flow: row nowrap;
+            max-width: 60%;
+            margin: 0 auto;
+            padding-top:96px;
+            color: var(--on-secondary);
+        }
+
+        #Nutzer{
+            display:flex; flex-direction:row; flex-wrap:wrap; padding-top: 0;
+        }
+        #Nutzer div{
+            flex: 1 1 40%;align-items: center;
+        }
+        #Worldwide{
+            margin-right: 10px;
+        }
+        #Nutzer table{
+             border-collapse: collapse; text-align: center; border-radius:  20px 20px 20px 20px; overflow: hidden; box-shadow: 0 0 10px rgba(56, 0, 0, 0.356);
+        }
+        #Nutzer table thead tr{
+            background-color: red;
+            color: white;
+            font-weight: bold;
+        }
+        #Nutzer table td{
+            padding: 5px 5px; width:150px; height: 60px;
+        }
+        #Nutzer table tbody tr{
+            border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+        }
+        #Nutzer table tbody tr:nth-of-type(even){
+            background-color: rgb(231, 231, 231);
+        }
+        #Nutzer table tbody tr:last-of-type{
+            border-bottom: none;
+        }
+        small{
+            margin-left: 20px; color: grey;
+        }
+
+        footer{
+            text-align: center; margin:20px auto;
+        }
+
+    @media screen and (max-width: 1110px) {
+        #Nutzer{
+            max-width: 90%; justify-content: center; 
+        }
+    }
+
+    @media screen and (max-width: 860px) 
+    {
+        #intro, .tile-together{
+        max-width: 90%; padding-left: 0; padding-right: 0;
+        }
+
+    }
+    @media screen and (max-width: 450px) 
+    {
+        #Nutzer{
+        max-width: 90%; justify-content: center; 
+        }
+        #Nutzer, .Tabelle, ul,  p{
+            font-size: small;
+        }
+    }

@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+
+    <!--? Grundsätzliche Parameter -->
+    <!-- (einfach lassen, wie's ist)-->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../utils/stylesheet.css">
+    <script src="../../utils/script.js"></script>
+
+    <!--? Seiten-Einstellungen -->
+    <!-- (alles anpassbar)-->
+    <style>
+        :root {
+            --primary: #674B9B; /* Hauptfarbe (Netflix = rot) */
+            --on-primary: #FFFFFF; /* Objekte AUF der Hauptfarbe */
+            --secondary: #FFFFFF; /* Zweite Farbe (Abwechslung zur ersten Farbe) */
+            --on-secondary: #674B9B; /* Objekte AUF der Zweiten Farbe (z.B. dunkelrot auf weißem Hintergrund) */
+            --highlight: #772CE8; /* Hervorgehobene Objekte */
+            --hero-path: url("../assets/images/streaming_twitch.jpg"); /* Bildpfad vom Hero-Banner (im Assets-Ordner) */
+        }
+    </style>
+
+    <!--? Der Titel des Browser-Tabs -->
+    <!-- (anpassbar)-->
+    <title>Twitch</title>
+    
+</head>
+<body>
+
+    <!--? Navigations-Leiste, die auf jeder Seite vorhanden sein sollte. -->
+    <!-- (einfach so lassen, wie's ist)-->
+    <div>
+        <!-- Die Oberkategorien -->
+        <div class="navbar"> 
+            <div>Home</div>
+            <div>Live-Streaming</div>
+            <div>Video on Demand</div>
+            <div>Music on Demand</div>
+            <div>Impressum</div>
+        </div>
+        <!-- Die Unterkategorien, die erst beim aufklappen sichtbar sind. -->
+        <div id="navbar-expanded"> 
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../live/youtube.html">YouTube</a></li>
+                <li><a href="../vod/netflix.html">Netflix</a></li>
+                <li><a href="">...</a></li>
+                <li><a href="../impressum/impressum.html">Impressum</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!--? Hero-Banner: Das große Bild mit Seitentitel, ganz oben auf der Seite -->
+    <!-- (der Titel <h1>...</h1> kann verändert werden)-->
+    <div class="hero">
+        <div class="hero-content">
+            <h1>Twitch</h1>
+        </div>
+    </div>
+
+    <!--? Main: Hier kommt der eigentliche Seiteninhalt hin. -->
+    <!-- (einfach Box <div class="tile">...</div> kopieren und Inhalt anpassen) -->
+    <main>
+        <!-- Box mit Inhalt -->
+        <div class="tile">
+            <div class="tile-content">
+                <h2>First Things First</h2>
+                <p>
+                    Die Geschichte von Twitch beginnt 2007 in San Francisco mit der Gründung der Website Justin.tv,
+                    über die Nutzer ihre Videos per Livestream ins Internet stellen. 2011 wird die bis dahin erfolgreichste
+                    Sparte, der Livestream von Computerspielen, als Twitch ausgegliedert. Justin.tv selbst wird später eingestellt.
+                    Bereits 2013 verzeichnete Twitch monatlich mehr als 45 Millionen Zuschauer auf 6 Millionen
+                    Streamingkanälen. Und bereits ein Jahr später übernahm Amazon das Unternehmen für 970 Millionen US-Dollar. Ein 
+                    weiterer interessanter und erstaunlicher Fakt ist, dass laut "DeepField", einem US-amerikanisches Unternehmen,
+                    Twitch während der Tagesspitzenzeit im Februar ca. 1,8% des gesamten Internet-Datenverkehrs der USA erzeugte.
+                    Der Dienst liegt somit auf Platz vier hinter den Größen wie Netflix, Google und Apple.
+                </p>
+            </div>
+        </div>
+        <div class="tile">
+            <div class="tile-content">
+                <h2>Kategorien</h2>
+                <div>
+                <p>
+                    Die Hauptkategorien und einige der Unterkategorien sind:
+                </p>
+                <ul>
+                    <li>Spiele - Elden Ring, Lost Ark, League of Legends, ...</li>
+                    <li>IRL (In Real Life) - Just Chatting, Special Events, Politik, ...</li>
+                    <li>Musik - jeweilige Genres (Electronic, Dance, Hip-Hop, ...)</li>
+                    <li>Esports - jeweilige Spiele (League of Legends, Valorant, World of Warcraft, ...)</li>
+                    <li>Creative - Food & Drink, Art, Software & Game Development, ...</li>
+                </ul>
+                <p>
+                    Die beliebteste Unterkategorie ist “Just Chatting” mit ca. 300.000 Zuschauern täglich. Dort spricht der Streamer 
+                    beispielsweise über Themen, die ihn oder sie interessiert, oder reagiert auf Videos von anderen Content-Creatorn. 
+                    Auf Twitch findet jeder etwas nach seinem Geschmack. 
+                </p>
+                </div>
+                
+            </div>
+        </div>
+        <div class="tile">
+            <div class="tile-content">
+                <h2>Verdienste der Streamer</h2>
+                <p>
+                    Der Großteil der Streamer streamt hauptberuflich. Wie also finanzieren sie sich ihr Leben? Zum einen wird vor und auch während eines
+                    Streams Werbung geschaltet. Hierbei kann der Streamer selbst entscheiden, wie viele und wie oft Werbeeinblendungen erscheinen sollen.
+                    Weiterhin gibt es Firmen, die die Streamer sponsern. Sie bekommen z.B. Soft- und Hardware, Merchandise, Lebensmittel, ... gestellt.
+                    Dann kann der Zuschauer, durch ein monatlichen Abo, Bits und/oder Donations den Lieblingsstreamer unterstützen. Die Vorteile eines
+                    monatlichen Abos sind z.B. das werbefreie Anschauen des Streams und Emotes, welche der Streamer selbst auswählt. Ein Abonnement kostet 
+                    3,99€. Für AmazonPrime-Kunden ist ein Abo pro Monat kostenlos enthalten. Bei einer Donation kann der Zuschauer einen kurzen Text an
+                    den Streamer verfassen und durch Bits kann man seiner Nachricht im Live Chat animierte Emotes hinzufügen.
+                    <br/><i>Funfact: Durch ein Datenleck wurden letztes Jahr Einnahmen von Streamern geleakt. MontanaBlack88, einer der erfolgreichsten
+                    deutschen Streamer, nahm von August 2019 bis Oktober 2021 ca. 2 Millionen Euro ein.</i>
+                </p>
+            </div>
+        </div>
+        <div class="tile">
+            <div class="tile-content">
+                <h2>Zahlen im Überblick</h2>
+                <p>
+                    <img src="../../assets/images/twitch_years.png" alt="Twitch-Stats over the years">
+                    <br/> Zuschauerzahlen über die Jahre
+                    <br/><img src="../../assets/images/games.png" alt="Spiele der letzten 7 Tage">
+                    <br/> Spiele der letzten 7 Tage (Stand 02.03.2022)
+                    <br/>Die Spiele variieren stark von Zeit zu Zeit. Grund hierfür sind Releases von Spielen. Hier dient "Elden Ring", welches am 25.02.2022
+                    herausgekommen ist, als gutes Beispiel. Es nimmt seit Release täglich ca. 14% vom Gesamtanteil ein. Eine Woche zuvor war "Lost Ark", Release am 11.02.2022,
+                    mit 9% dabei und ist nun auf 4,4% gesunken (Stand: 02.03.2022). Neu herausgekommene Spiele ziehen zu Beginn immer viele Zuschauer an. Das flacht jedoch nach einigen Wochen ab.
+                </p>
+            </div>
+        </div>
+
+    </main>
+
+</body>
+</html>

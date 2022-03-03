@@ -14,18 +14,31 @@
     <!-- (alles anpassbar)-->
     <style>
         :root {
-            --primary: #068BBC; /* Hauptfarbe (Netflix = rot) */
+            --primary: #ff8000 !important; /* Hauptfarbe (Netflix = rot) */
             --on-primary: #FFFFFF; /* Objekte AUF der Hauptfarbe */
-            --secondary: #ffffff; /* Zweite Farbe (Abwechslung zur ersten Farbe) */
-            --on-secondary: #000000; /* Objekte AUF der Zweiten Farbe (z.B. dunkelrot auf weißem Hintergrund) */
-            --highlight: #FF2C6B; /* Hervorgehobene Objekte */
-            --hero-path: url("https://img.generation-nt.com/amazon-store-prime-video_0654043801667153.png"); /* Bildpfad vom Hero-Banner (im Assets-Ordner) */
+            --secondary: #FFFFFF; /* Zweite Farbe (Abwechslung zur ersten Farbe) */
+            --on-secondary: #241284 !important; /* Objekte AUF der Zweiten Farbe (z.B. dunkelrot auf weißem Hintergrund) */
+            --highlight: #ffd100; /* Hervorgehobene Objekte */
+            --hero-path: url("../assets/images/soundwave.png")!important; /* Bildpfad vom Hero-Banner (im Assets-Ordner) */
         }
+        /*#deezer{
+            background: 
+            linear-gradient(
+            to bottom right, 
+                #ffd100,
+                var(--primary),
+                #cc1953,
+                var(--on-secondary),
+                #3559a6,
+                #53a81a
+            ),
+            var(--hero-path);
+        }*/
     </style>
 
     <!--? Der Titel des Browser-Tabs -->
     <!-- (anpassbar)-->
-    <title>Prime Video</title>
+    <title>deezer</title>
 
 </head>
 <body>
@@ -55,9 +68,9 @@
 
     <!--? Hero-Banner: Das große Bild mit Seitentitel, ganz oben auf der Seite -->
     <!-- (der Titel <h1>...</h1> kann verändert werden)-->
-    <div class="hero">
+    <div class="hero" id="deezer">
         <div class="hero-content">
-            <h1>prime video</h1>
+            <h1>deezer</h1>
         </div>
     </div>
 
@@ -67,38 +80,26 @@
         <!-- Box mit Inhalt -->
         <div class="tile">
             <div class="tile-content">
-                <h2>Überschrift</h2>
+                <h2>Anfänge</h2>
                 <p>
-                    Textinhalt. Statt &lt;p&gt; kann man auch ein Bild mit &lt;img src="..."&gt; oder eine Tabelle nutzen.
-                    Um eine "Inhalt-Box" ("tile") der Seite hinzuzufügen, muss einfach dieser Abschnitt mit der Klasse "tile" kopiert 
-                    und innerhalb von &lt;main&gt;...&lt;/main&gt; angefügt werden. Die Text- und Hintergrund-Farben wechseln sich 
-                    automatisch ab.
-                </p>
-            </div>
-        </div>
-        <div class="tile">
-            <div class="tile-content">
-                <h2>Überschrift</h2>
-                <p>
-                    Textinhalt. Statt &lt;p&gt; kann man auch ein Bild mit &lt;img src="..."&gt; oder eine Tabelle nutzen.
-                    Um eine "Inhalt-Box" ("tile") der Seite hinzuzufügen, muss einfach dieser Abschnitt mit der Klasse "tile" kopiert 
-                    und innerhalb von &lt;main&gt;...&lt;/main&gt; angefügt werden. Die Text- und Hintergrund-Farben wechseln sich 
-                    automatisch ab.
-                </p>
-            </div>
-        </div>
-        <div class="tile">
-            <div class="tile-content">
-                <h2>Überschrift</h2>
-                <p>
-                    Textinhalt. Statt &lt;p&gt; kann man auch ein Bild mit &lt;img src="..."&gt; oder eine Tabelle nutzen.
-                    Um eine "Inhalt-Box" ("tile") der Seite hinzuzufügen, muss einfach dieser Abschnitt mit der Klasse "tile" kopiert 
-                    und innerhalb von &lt;main&gt;...&lt;/main&gt; angefügt werden. Die Text- und Hintergrund-Farben wechseln sich 
-                    automatisch ab.
+                    Daniel Marhely gründete BlogMusic im Jahr 2007. Nur ein Jahr später benannte er das Projekt in Deezer um. Überzeugt von seiner Idee das Hören und Teilen von Musik leichter zu machen, fing er an Investoren zu suchen. 2008 kamen dabei bereits 5 Millionen Euro zusammen. Deezer Premium startete 2009, als die Streaming-Plattform 7 Millionen Nutzer zählte. 
+                    Vertriebsparterschaften boten sich an und die Marke wuchs stark an. 2012 wurden insgesamt 70 Millionen Euro eingesammelt. 2013 wurde deezer weltweit verfügbar. <br>
+                    flow 2014...
                 </p>
             </div>
         </div>
         <!--! HIER ANFÜGEN -->
+
+
+        <div class="tile">
+            <div class="tile-content">
+                <h2>Angebot</h2>
+                <p>
+                    Über 90 Millionen Songs, Playlists, PodCasts, Hörbücher und Radiosender sind durch deezer erreichbar, was es zu einem der größten Audiokataloge der Welt macht.
+                    Um den Übergang von einer anderen Musik-Streaming-Bibliothek zu deezer zu erleichtern, gibt es eine extra Funktion zum Musik übertragen. Songs und Playlists von anderen Anbietern wie Spotify, TIDAL, Apple Music, YouTube Music, Amazon Music, etc. kommen somit direkt auf Deezer.
+                </p>
+            </div>
+        </div>
     </main>
 
 </body>

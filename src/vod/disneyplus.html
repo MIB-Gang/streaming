@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+
+    <!--? Grundsätzliche Parameter -->
+    <!-- (einfach lassen, wie's ist)-->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../utils/stylesheet.css">
+    <link rel="stylesheet" href="../../utils/disney.css">
+    <script src="../../utils/script.js"></script>
+
+    <!--? Seiten-Einstellungen -->
+    <!-- (alles anpassbar)-->
+    <style>
+        :root {
+            --primary: rgb(0,0,66) !important; /* Hauptfarbe (Netflix = rot) */
+            --on-primary: #FFFFFF; /* Objekte AUF der Hauptfarbe */
+            --secondary: #FFFFFF; /* Zweite Farbe (Abwechslung zur ersten Farbe) */
+            --on-secondary: darkblue !important; /* Objekte AUF der Zweiten Farbe (z.B. dunkelrot auf weißem Hintergrund) */
+            --highlight: coral !important; /* Hervorgehobene Objekte */
+            --hero-path: url("../assets/images/disney_schloss.jpg") !important; /* Bildpfad vom Hero-Banner (im Assets-Ordner) */
+        }
+    </style>
+
+    <!--? Der Titel des Browser-Tabs -->
+    <!-- (anpassbar)-->
+    <title>Disney+</title>
+
+</head>
+<body>
+
+    <!--? Navigations-Leiste, die auf jeder Seite vorhanden sein sollte. -->
+    <!-- (einfach so lassen, wie's ist)-->
+    <div>
+        <!-- Die Oberkategorien -->
+        <div class="navbar"> 
+            <div>Home</div>
+            <div>Live-Streaming</div>
+            <div>Video on Demand</div>
+            <div>Music on Demand</div>
+            <div>Impressum</div>
+        </div>
+        <!-- Die Unterkategorien, die erst beim aufklappen sichtbar sind. -->
+        <div id="navbar-expanded"> 
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../live/youtube.html">YouTube</a></li>
+                <li><a href="../vod/netflix.html">Netflix</a></li>
+                <li><a href="">...</a></li>
+                <li><a href="../impressum/impressum.html">Impressum</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!--? Hero-Banner: Das große Bild mit Seitentitel, ganz oben auf der Seite -->
+    <!-- (der Titel <h1>...</h1> kann verändert werden)-->
+    <div class="hero">
+        <div class="hero-content">
+            <h1>Disney+</h1>
+        </div>
+    </div>
+
+    <!--? Main: Hier kommt der eigentliche Seiteninhalt hin. -->
+    <!-- (einfach Box <div class="tile">...</div> kopieren und Inhalt anpassen) -->
+    <main>
+        <!-- Box mit Inhalt -->
+        <div class="tile">
+            <div class="tile-content">
+                <h2>Anfänge</h2>
+                <p>
+                    Disney+ ist der Video-On-Demand-Streaming-Service des amerikanischen Entertainment-Konzerns Disney und wurde am 12 November 2019 ins Leben gerufen. In Deutschland startete der Dienst am 24. März 2020. <br>
+                    Das Angebot umfasst alte und neue Filme und Serien verschiedener Produnktionsstudios:
+                </p>
+            </div>
+        </div>
+        <!--! HIER ANFÜGEN -->
+
+        <div class="angebot">
+            <div class="angebot-box"><h3>Disney</h3>
+                <span>Disney-Filme: Animiert und Live-Action</span>
+            </div>
+            <div class="angebot-box"><h3>PIXAR</h3>
+                <span>PIXAR-Filme: Herzhafte Animationen</span>
+            </div>
+            <div class="angebot-box"><h3>MARVEL</h3>
+                <span>Das MARVEL-Cinematic-Universe</span>
+            </div>
+            <div class="angebot-box"><h3>STAR WARS</h3><span>Geschichten aus einer weit entfernten Galaxis</span>
+            </div>
+            <div class="angebot-box"><h3>National Geographic</h3>
+                <span>Naturdokumentationen, ferne Länder und Kulturen.</span>
+            </div>
+            <div class="angebot-box"><h3>STAR</h3>
+                <span>"adult-content" Bsp.: The Walking Dead, Grey's Anatomy</span>
+            </div> 
+        </div>    
+<div></div>
+
+    <div class="tile">
+        <div class="tile-content">
+            <h2>Disney Plus</h2>
+            <p>
+                DisneyPlus startete erfolgreich und schaffte es in weniger als 1 und halb Jahren 100 Mio. Abonnenten zu fassen, eas Netflix ab 2007 10 Jahre gebrauch hatte. <br><br>
+                
+                <i>“The enormous success of Disney+ —which has now surpassed 100 million subscribers—has inspired us to be even more ambitious, and to significantly increase our investment in the development of high-quality content. In fact, we set a target of 100+ new titles per year, and this includes Disney Animation, Disney Live Action, Marvel, Star Wars, and National Geographic. Our direct-to-consumer business is the Company's top priority, and our robust pipeline of content will continue to fuel its growth.”</i> - Bob Chapek, Geschäftsführer (CEO) The Walt Disney Company <br><br>
+                
+                Aktueller Preis pro Monat: 8,99 Euro / Jahresabo: 89,99 Euro
+            </p>
+        </div>
+    </div>
+
+        <div class="tile">
+            <div class="tile-content"> 
+                <h2>Abonnentenzahlen</h2>
+            <table class="Tabelle">
+                
+                <thead>
+                  <tr>
+                    <th>Jahr</th>
+                    <th>Abonnenten</th>
+                  </tr>
+                </thead>
+              
+                <tbody>
+                  <tr>
+                    <td>Quartal 1 2020</td>
+                    <td>26,5 Millionen</td>
+                  </tr>
+                  <tr>
+                    <td>Quartal 4 2020</td>
+                    <td>73,7 Millionen</td>
+                  </tr>
+                  <tr>
+                    <td>Quartal 1 2021</td>
+                    <td>94,9 Millionen</td>
+                  </tr>
+                  <tr>
+                    <td>Quartal 4 2021</td>
+                    <td>118,1 Millionen</td>
+                  </tr>
+                  <tr>
+                    <td>Quartal 1 2022</td>
+                    <td>129,8 Millionen</td>
+                  </tr>
+                </tbody>
+              </table>
+        
+        <h4>Disney Plus hat in 16 Monaten 100 Millionen Abonnenten erreicht — Netflix brauchte dafür 10 Jahre.</h4>
+        </div>
+        
+    </div>
+
+    
+    <div class="tile">
+        <div class="tile-content">
+            <h2>Zugänglichkeit</h2>
+            <p>
+                Disney+ wurde 2019 in den USA, Kanada und den Niederlanden auf den Markt gebracht und wurde danach in Europa verbreitet. Der Service ist mitlerweile in 59 Ländern zugänglich. 
+                Bislang ist Disney Plus vor allem in Europa, Nord- und Südamerika verbreitet. In Europa ist der Streamingdienst bislang in 18 Ländern verfügbar: Belgien, Dänemark, Deutschland, Finnland, Frankreich, Irland, Island, Italien, Luxemburg, Monaco, Norwegen, den Niederlanden, Österreich, Portugal, Schweden, der Schweiz, Spanien und dem Vereinigten Königreich.<br>
+        
+                Außerhalb Europas wurde der Dienst in Australien, Neu Seeland, Japan, Südkorea, Taiwan, Hong Kong und in Lateinamerika verbreitet. In Indien heißt der Dienst Disney Plus Hotstar und ist der Marktführer. Die Hotstar Marke wird auch in Indonesien, Malaysien und Thailand genutzt, wo es auf einen anderen Geschäftsmodell als in den anderen Ländern basiert.<br>
+                Im Sommer 2022 wird der Dienst in 42 zusätzlichen Ländern verfügbar sein. Darunter sind Polen, Tschechien und Kroatien, aber auch mehrere Länder im Nahen Osten und in Afrika, etwa Israel, Ägypten, Südafrika und die Vereinigten Arabischen Emirate.
+            </p>
+        </div>
+    </div>
+    <div class="tile">
+        <div class="tile-content" id="streaming">
+            <h2>Streaming</h2>
+            <p>
+                Besonders wichtig für den Streaming-Anbieter ist der Besitz von MARVEL mit erfolgreichen Serien wie Wandavision und Filmen des MCU (Marvel Cinematic Universe), sowie STAR WARS mit The Mandalorian. <br>
+
+                Der neueste Animationsfilm Encanto zeigt dabei die Stärke und des Einfluss des Streamingformats. Der Film gelang Ende November 2021 in die Kinos und hatte ein starkes Opening-Weekend, jedoch fiel das Engagement schnell und stark. Als der Film an Weihnachten auf Disney+ bereitgestellt wurde stieg das Interesse am Film rasant und stellte andere Filme wie "Luca" und "Raya und der letzte Drache" in den Schatten.<br> <br>
+        
+                Raya Boxoffice: 130$ Mio. Worldwide | 54$ Mio. USA <br>(Um Raya zu gucken, musste für den ersten Monat zuerst der Disney+ Premier Access gekauft werden für 30$/23,99€) <br> <br>
+                Encanto Box Office: 228$ Mio. Worldwide | 93$ Mio. USA
+            </p>
+        </div>
+        <div class="statistik">
+            <img id="ENCANTO-stat" src="https://i.insider.com/61f2f0d4792e7300116bed12?width=800&format=jpeg&auto=webp" alt="Statistik: ENCANTO's Zuschauerzahlen">
+            <p>ENCANTO's Zuschauerzahlen steigen rasant nach Veröffentlichung auf dem Streaming Service</p>
+        </div>
+        <br>
+    </div>
+
+    <div class="tile">
+        <div class="tile-content">
+            <h2>Bekannte Inhalte</h2>
+            <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quia libero labore, consequatur facilis hic ipsum numquam aut neque cum quasi debitis provident alias eveniet quisquam, et nihil velit accusantium ducimus!
+            </p>
+        </div>
+    </div>
+
+    <div class="tile">
+        <div class="tile-content">
+            <table class="Tabelle">
+            <thead>
+                <tr>
+                    <th colspan="2">Vor- und Nachteile</th>
+                </tr>
+            </thead>
+            <tbody>          
+                <tr id="PlusMinus">
+                    <td>+</td>
+                    <td>-</td>
+                </tr>
+                <tr>
+                    <td>große Auswahl</td> <td>Streaming-Qualität in Webversion nicht einstellbar</td>
+                </tr>
+                <tr>
+                    <td>Downloads möglich</td> <td>keine Liste für "bereits angesehene Inhalte"</td>
+                </tr>
+                <tr>
+                    <td>Übersichtliches Design</td> <td>Watchlist in App eher versteckt</td>
+                </tr>
+                <tr><td>Kinderprofile</td></tr>
+                <tr><td>Groupwatch</td><td></td></tr>
+            </tbody>
+            </table>
+        </div>
+    </div>  
+    <br>
+    </main>
+    <footer><a href="#intro">Quellen</a></footer>
+</body>
+</html>

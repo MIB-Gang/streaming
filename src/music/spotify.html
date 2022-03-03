@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+
+    <!--? Grundsätzliche Parameter -->
+    <!-- (einfach lassen, wie's ist)-->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../utils/stylesheet.css">
+    <script src="../../utils/script.js"></script>
+
+    <!--? Seiten-Einstellungen -->
+    <!-- (alles anpassbar)-->
+    <style>
+        :root {
+            --primary: #1DB954; /* Hauptfarbe (Netflix = rot) */
+            --on-primary: #FFFFFF; /* Objekte AUF der Hauptfarbe */
+            --secondary: #FFFFFF; /* Zweite Farbe (Abwechslung zur ersten Farbe) */
+            --on-secondary: #19a34a; /* Objekte AUF der Zweiten Farbe (z.B. dunkelrot auf weißem Hintergrund) */
+            --highlight: #1DB954; /* Hervorgehobene Objekte */
+            --hero-path: url("../assets/images/spotify.jpg"); /* Bildpfad vom Hero-Banner (im Assets-Ordner) */
+        }
+    </style>
+
+    <!--? Der Titel des Browser-Tabs -->
+    <!-- (anpassbar)-->
+    <title>Spotify</title>
+
+</head>
+<body>
+
+    <!--? Navigations-Leiste, die auf jeder Seite vorhanden sein sollte. -->
+    <!-- (einfach so lassen, wie's ist)-->
+    <div>
+        <!-- Die Oberkategorien -->
+        <div class="navbar"> 
+            <div>Home</div>
+            <div>Live-Streaming</div>
+            <div>Video on Demand</div>
+            <div>Music on Demand</div>
+            <div>Impressum</div>
+        </div>
+        <!-- Die Unterkategorien, die erst beim aufklappen sichtbar sind. -->
+        <div id="navbar-expanded"> 
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../live/youtube.html">YouTube</a></li>
+                <li><a href="../vod/netflix.html">Netflix</a></li>
+                <li><a href="">...</a></li>
+                <li><a href="../impressum/impressum.html">Impressum</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!--? Hero-Banner: Das große Bild mit Seitentitel, ganz oben auf der Seite -->
+    <!-- (der Titel <h1>...</h1> kann verändert werden)-->
+    <div class="hero">
+        <div class="hero-content">
+            <h1>Spotify</h1>
+        </div>
+    </div>
+
+    <!--? Main: Hier kommt der eigentliche Seiteninhalt hin. -->
+    <!-- (einfach Box <div class="tile">...</div> kopieren und Inhalt anpassen) -->
+    <main>
+        <!-- Box mit Inhalt -->
+        <div class="tile">
+            <div class="tile-content">
+                <h2>First things first</h2>
+                <p>
+                    Spotify (englisch - to spot = "entdecken", to identify = "identifizieren") wurde 2006 in Schweden von Daniel Ek gegründet. Es ist ein
+                    börsennotierter Audio-Streaming-Dienst. Neben Musik können auch Hörbücher und Podcasts gestreamt werden. Der
+                    Onlinedienst ist in 237 Ländern verfügbar. 
+                    <br/>Spotify bietet über 70 Millionen Musiktitel von einer Reihe großer und kleiner Musiklabels und mehr als 3,6 Millionen Podcasts an.
+                    Der Dienst ist auf einer Vielzahl von Geräten verfügbar, darunter PCs, Smartphones und Tablets. Nutzer können mithilfe der App den
+                    verfügbaren Musikkatalog durchsuchen und Wiedergabelisten erstellen und diese mit anderen Nutzern teilen. 
+                </p>
+            </div>
+        </div>
+        <div class="tile">
+            <div class="tile-content">
+                <h2>Kategorien & das Abomodell</h2>
+                <div>
+                    <ul>
+                        <li>Genres</li>
+                        <li>Podcasts</li>
+                        <li>Für dich erstellt</li>
+                        <li>Charts</li>
+                        <li>Neuerscheinungen</li>
+                        <li>Radio</li>
+                        <li>...</li>
+                    </ul>
+                <p>
+                    Spotify unterteilt Musik auf verschiedenste Weise, z.B. nach der Stimmung, dem Genre, der Sprache, den Songwritern usw. 
+                    Ebenso erstellt Spotify Playlists, die auf deinen Musikgeschmack zugeschnitten sind. Die Startseite sieht bei jedem Nutzer
+                    unterschiedlich aus, da viele z.B. den Dienst nur zum Musik oder nur zum Podcasts hören nutzen.
+                    <br/>Der Nutzer kann zwischen verschiedenen Abo-Modellen auswählen:
+                    <ul>
+                        <li>Spotify Free - kostenlos, aber mit Werbeunterbrechungen</li>
+                        <li>Spotify Individual - 9,99€/Monat, ohne Werbeunterbrechungen</li>
+                        <li>Spotify Duo - 12,99€/Monat, für zwei Konten</li>
+                        <li>Spotify Family - 14,99€/Monat, für bis zu sechs Konten, spezielle App für Kinder inkludiert</li>
+                        <li>Spotify Student - 4,99€/Monat, exklusiv für eingeschriebene Studenten</li>
+                    </ul>
+                </p>
+                </div>            
+            </div>
+        </div>
+        <div class="tile">
+            <div class="tile-content">
+                <h2>Zahlen im Überblick</h2>
+                <p>
+                    Spotify ist mit rund 406 Millionen aktiven Nutzern, wovon ca 180 Millionen Premium Nutzer sind, (Stand: 2. Quartal 2021) eines der beliebtesten Audio-Streamingdienste
+                    weltweit. Dahinter reihen sich Apple Music und Amazon Music ein (Stand: 2019). 2015 erzielte Spotify einen Umsatz von 1,94 Milliarden Euro,
+                    fünf Jahre später stieg dieser auf 7,88 Milliarden Euro an.
+
+                </p>
+            </div>
+        </div>
+    </main>
+
+</body>
+</html>
