@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+
+    <!--? Grundsätzliche Parameter -->
+    <!-- (einfach lassen, wie's ist)-->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../utils/stylesheet.css">
+    <script src="../../utils/script.js"></script>
+
+    <!--? Seiten-Einstellungen -->
+    <!-- (alles anpassbar)-->
+    <style>
+        :root {
+            --primary: #535353; /* Hauptfarbe (Netflix = rot) */
+            --on-primary: #FFFFFF; /* Objekte AUF der Hauptfarbe */
+            --secondary: #FFFFFF; /* Zweite Farbe (Abwechslung zur ersten Farbe) */
+            --on-secondary: #3f3f3f; /* Objekte AUF der Zweiten Farbe (z.B. dunkelrot auf weißem Hintergrund) */
+            --highlight: #000000; /* Hervorgehobene Objekte */
+            --hero-path: url("../assets/images/appletv.jpg"); /* Bildpfad vom Hero-Banner (im Assets-Ordner) */
+        }
+    </style>
+
+    <!--? Der Titel des Browser-Tabs -->
+    <!-- (anpassbar)-->
+    <title>Apple TV+</title>
+
+</head>
+<body>
+
+    <!--? Navigations-Leiste, die auf jeder Seite vorhanden sein sollte. -->
+    <!-- (einfach so lassen, wie's ist)-->
+    <div>
+        <!-- Die Oberkategorien -->
+        <div class="navbar"> 
+            <div>Home</div>
+            <div>Live-Streaming</div>
+            <div>Video on Demand</div>
+            <div>Music on Demand</div>
+            <div>Impressum</div>
+        </div>
+        <!-- Die Unterkategorien, die erst beim aufklappen sichtbar sind. -->
+        <div id="navbar-expanded"> 
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../live/youtube.html">YouTube</a></li>
+                <li><a href="../vod/netflix.html">Netflix</a></li>
+                <li><a href="">...</a></li>
+                <li><a href="../impressum/impressum.html">Impressum</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!--? Hero-Banner: Das große Bild mit Seitentitel, ganz oben auf der Seite -->
+    <!-- (der Titel <h1>...</h1> kann verändert werden)-->
+    <div class="hero">
+        <div class="hero-content">
+            <h1>AppleTV+</h1>
+        </div>
+    </div>
+
+    <!--? Main: Hier kommt der eigentliche Seiteninhalt hin. -->
+    <!-- (einfach Box <div class="tile">...</div> kopieren und Inhalt anpassen) -->
+    <main>
+        <!-- Box mit Inhalt -->
+        <div class="tile">
+            <div class="tile-content">
+                <h2>First Things First</h2>
+                <p>
+                    Apple TV+ ist ein Video-on-Demand-Dienst, welcher seit dem 1. November 2019 verfügbar ist.
+                    Der Dienst bietet vorrangig eigenproduzierte Serien und Filme an. Im ersten Jahr soll Apple für
+                    die Produktion von eigenen Inhalten bereits bis zu zwei Milliarden US-Dollar investiert haben.
+                    Unter anderem waren Größen wie Oprah Winfrey, Steven Spielberg, Jennifer Aniston, usw. an Projekten beteiligt.
+                    <br/>
+                    Laut Apple erscheinen jeden Monat neue sogenannten “Apple Originals”, also Filme und Serien aus
+                    Eigenproduktion. Diese kann man über Streaming Boxen, Sticks, Smart TVs und auf allen Apple-Geräten streamen.
+                </p>
+            </div>
+        </div>
+        <div class="tile">
+            <div class="tile-content">
+                <h2>Kategorien</h2>
+                <div>
+                    <ul>
+                        <li>Filme</li>
+                        <li>Dramaserien</li>
+                        <li>Comedyserien</li>
+                        <li>Dokuserien</li>
+                        <li>Kinder und Familie</li>
+                        <li>Mehr von den Stars von Apple TV+</li>
+                    </ul>
+                <p>
+                    Apple strahlt derzeit 25 Filme und 50 Serien aus Eigenproduktion aus. 
+                </p>
+                </div>
+                
+            </div>
+        </div>
+        <div class="tile">
+            <div class="tile-content">
+                <h2>Das Geld</h2>
+                <p>
+                    Wie finanzieren die Streamer ihre Streams, Hardware und Software? Durch die Zuschauer, die mittels
+                    monatlichen Abos, Bits und Donations ihren Lieblingsstreamer unterstützen können. Die Vorteile eines
+                    monatlichen Abos sind z.B. das werbefreie Anschauen des Streams und Emotes, welche von Streamer zu Streamer
+                    unterschiedlich sind. Bei einer Donation kann der Zuschauer einen kurzen Text an den Streamer verfassen und
+                    durch Bits kann man seiner Nachricht im Live Chat animierte Emotes hinzufügen.
+                </p>
+            </div>
+        </div>
+        <div class="tile">
+            <div class="tile-content">
+                <h2>Zahlen im Überblick</h2>
+                <p>
+                    Wie finanzieren die Streamer ihre Streams, Hardware und Software? Durch die Zuschauer, die mittels
+                    monatlichen Abos, Bits und Donations ihren Lieblingsstreamer unterstützen können. Die Vorteile eines
+                    monatlichen Abos sind z.B. das werbefreie Anschauen des Streams und Emotes, welche von Streamer zu Streamer
+                    unterschiedlich sind. Bei einer Donation kann der Zuschauer einen kurzen Text an den Streamer verfassen und
+                    durch Bits kann man seiner Nachricht im Live Chat animierte Emotes hinzufügen.
+                </p>
+            </div>
+        </div>
+
+    </main>
+
+</body>
+</html>

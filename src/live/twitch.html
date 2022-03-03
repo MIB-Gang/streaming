@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+
+    <!--? Grundsätzliche Parameter -->
+    <!-- (einfach lassen, wie's ist)-->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../utils/stylesheet.css">
+    <script src="../../utils/script.js"></script>
+
+    <!--? Seiten-Einstellungen -->
+    <!-- (alles anpassbar)-->
+    <style>
+        :root {
+            --primary: #674B9B; /* Hauptfarbe (Netflix = rot) */
+            --on-primary: #FFFFFF; /* Objekte AUF der Hauptfarbe */
+            --secondary: #FFFFFF; /* Zweite Farbe (Abwechslung zur ersten Farbe) */
+            --on-secondary: #6441A5; /* Objekte AUF der Zweiten Farbe (z.B. dunkelrot auf weißem Hintergrund) */
+            --highlight: #772CE8; /* Hervorgehobene Objekte */
+            --hero-path: url("../assets/images/streaming_twitch.jpg"); /* Bildpfad vom Hero-Banner (im Assets-Ordner) */
+        }
+    </style>
+
+    <!--? Der Titel des Browser-Tabs -->
+    <!-- (anpassbar)-->
+    <title>Twitch</title>
+    
+</head>
+<body>
+
+    <!--? Navigations-Leiste, die auf jeder Seite vorhanden sein sollte. -->
+    <!-- (einfach so lassen, wie's ist)-->
+    <div>
+        <!-- Die Oberkategorien -->
+        <div class="navbar"> 
+            <div>Home</div>
+            <div>Live-Streaming</div>
+            <div>Video on Demand</div>
+            <div>Music on Demand</div>
+            <div>Impressum</div>
+        </div>
+        <!-- Die Unterkategorien, die erst beim aufklappen sichtbar sind. -->
+        <div id="navbar-expanded"> 
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../live/youtube.html">YouTube</a></li>
+                <li><a href="../vod/netflix.html">Netflix</a></li>
+                <li><a href="">...</a></li>
+                <li><a href="../impressum/impressum.html">Impressum</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!--? Hero-Banner: Das große Bild mit Seitentitel, ganz oben auf der Seite -->
+    <!-- (der Titel <h1>...</h1> kann verändert werden)-->
+    <div class="hero">
+        <div class="hero-content">
+            <h1>Twitch</h1>
+        </div>
+    </div>
+
+    <!--? Main: Hier kommt der eigentliche Seiteninhalt hin. -->
+    <!-- (einfach Box <div class="tile">...</div> kopieren und Inhalt anpassen) -->
+    <main>
+        <!-- Box mit Inhalt -->
+        <div class="tile">
+            <div class="tile-content">
+                <h2>First Things First</h2>
+                <p>
+                    Die Geschichte von Twitch beginnt 2007 in San Francisco mit der Gründung der Website Justin.tv,
+                    über die Nutzer ihre Videos per Livestream ins Internet stellen. 2011 wird die bis dahin erfolgreichste
+                    Sparte, der Livestream von Computerspielen, als Twitch ausgegliedert, Justin.tv selbst später eingestellt.
+                    2013 verzeichnete Twitch monatlich mehr als 45 Millionen Zuschauer auf 6 Millionen
+                    Streamingkanälen und ein Jahr später übernahm Amazon das Unternehmen für 970 Millionen US-Dollar.
+                </p>
+            </div>
+        </div>
+        <div class="tile">
+            <div class="tile-content">
+                <h2>Kategorien</h2>
+                <div>
+                <p>
+                    Die Hauptkategorien sind:
+                </p>
+                <ul>
+                    <li>Spiele</li>
+                    <li>IRL (In Real Life)</li>
+                    <li>Musik</li>
+                    <li>Esports</li>
+                    <li>Creative</li>
+                </ul>
+                <p>
+                    Dies ist nur eine grobe Aufzählung, denn es gibt allerhand Unterkategorien. Die beliebteste Unterkategorie ist
+                    “Just Chatting” mit ca. 300.000 Zuschauern täglich. Dort spricht der Streamer über verschiedene Themen oder reagiert auf
+                    Videos von Content-Creatorn. Von Tierstreams bis hin zu Software- und Spieleentwicklungsstreams gibt es für jeden etwas.
+                </p>
+                </div>
+                
+            </div>
+        </div>
+        <div class="tile">
+            <div class="tile-content">
+                <h2>Das Geld</h2>
+                <p>
+                    Wie finanzieren die Streamer ihre Streams, Hardware und Software? Durch die Zuschauer, die mittels
+                    monatlichen Abos, Bits und Donations ihren Lieblingsstreamer unterstützen können. Die Vorteile eines
+                    monatlichen Abos sind z.B. das werbefreie Anschauen des Streams und Emotes, welche von Streamer zu Streamer
+                    unterschiedlich sind. Bei einer Donation kann der Zuschauer einen kurzen Text an den Streamer verfassen und
+                    durch Bits kann man seiner Nachricht im Live Chat animierte Emotes hinzufügen. 
+                </p>
+            </div>
+        </div>
+        <div class="tile">
+            <div class="tile-content">
+                <h2>Zahlen im Überblick</h2>
+                <p>
+                    <img src="../../assets/images/twitch_years.png" alt="Twitch-Stats over the years">
+                    <br/> Zuschauerzahlen über die Jahre
+                    <img src="../../assets/images/games.png" alt="Twitch-Stats over the years">
+                    <br/> Spiele der letzten 7 Tage (Stand 02.03.2022)
+                    <br/>Die Spiele variieren von Zeit zu Zeit stark. Grund hierfür sind Releases von Spielen. Hier als gutes Beispiel ist "Elden Ring",
+                    welches am 25.02.2022 herausgekommen ist. Eine Woche zuvor war "Lost Ark" noch mit 9% dabei. Nun ist es auf 4,4% gesunken.
+                    
+                </p>
+            </div>
+        </div>
+
+    </main>
+
+</body>
+</html>
