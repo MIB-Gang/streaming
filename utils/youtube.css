@@ -46,7 +46,7 @@
             flex: 1 1 40%;align-items: center;
         }
         #Worldwide{
-            margin-right: 10px;
+            margin-right: 20px;
         }
         #Nutzer table{
              border-collapse: collapse; text-align: center; border-radius:  20px 20px 20px 20px; overflow: hidden; box-shadow: 0 0 10px rgba(56, 0, 0, 0.356);
@@ -76,7 +76,7 @@
             text-align: center; margin:20px auto;
         }
 
-    @media screen and (max-width: 1110px) {
+    @media screen and (max-width: 1180px) {
         #Nutzer{
             max-width: 90%; justify-content: center; 
         }

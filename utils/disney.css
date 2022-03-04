@@ -3,14 +3,16 @@
     background-blend-mode:hard-light;
 }
 
+#anfang{padding-bottom: 5px;}
+
 .angebot{
     display: flex; flex-wrap: wrap; width: 90%;  margin: 0 auto 40px;
 } 
 .angebot .angebot-box{
-    cursor:url(http://www.rw-designer.com/cursor-view/58768.png),auto; display: flex; align-items: center; text-align: center; background-color: var(--on-secondary); color: white; padding: 20px 30px; margin: 1% 1%; border: black 2px solid; border-radius: 20px ; flex: 1 1 5%;
+    cursor:url(http://www.rw-designer.com/cursor-view/58768.png),auto; display: flex; align-items: center; text-align: center; background-image: linear-gradient(var(--on-secondary), var(--primary)); color: white; padding: 20px 30px; margin: 1% 1%; border: #777bd1 3px solid; border-radius: 20px ; flex: 1 1 5%;
 }
 .angebot .angebot-box:hover {
-    background-color: var(--highlight);
+    background-image: linear-gradient(#EFBEB7, var(--highlight));border: #EFBEB7 3px solid; 
 }
 /*Infobox*/
 .angebot-box:hover span{
@@ -55,11 +57,22 @@ td,th{
 }*/
 
 #ENCANTO-stat{
-    width: 40%; min-width: 330px; margin-left: 20px; border: 4px solid var(--primary);
+    width: 40%; min-width: 300px; margin-left: 20px; border: 4px solid var(--primary);
 }
 .statistik{
     text-align: center; color: white;
 }
 footer{
     text-align: center; margin: 20px auto;
+}
+
+
+@media screen and (max-width: 450px) 
+{
+    .Tabelle, .angebot-box, ul,  p, h4 {
+        font-size: small;
+    }
+    #ENCANTO-stat{
+        margin-left: 5px;
+    }
 }
