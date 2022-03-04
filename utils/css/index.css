@@ -1,0 +1,48 @@
+h1{
+    text-align: center;
+    color: transparent;
+    margin: 0rem;
+    font-size: 12vmax;
+    font-weight: 800;
+    -webkit-text-stroke: 2px var(--on-primary);
+}
+
+.hero {
+    height: 98vh;
+    background-blend-mode: hard-light;
+}
+
+.hero-content p {
+    max-width: 35ch;
+    color: var(--on-primary);
+}
+
+/* Für kleinere Bildschirme */
+@media screen and (max-width: 1400px){
+
+    h1 {
+        font-size: 12vmax;
+    }
+}
+
+/* Für noch kleinere Bildschirme */
+@media screen and (max-width: 860px) {
+
+    .hero {
+        height: 69vh;
+    }
+}
+
+/* Für noch kleinere Bildschirme */
+@media screen and (max-width: 600px) {
+    
+    h1 {
+        font-size: 8vmax;
+        -webkit-text-stroke: 1px var(--on-primary);
+    }
+
+    .hero-content p {
+        margin-top: 10px;
+        font-size: 0.9rem;
+    }
+}
