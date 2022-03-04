@@ -9,6 +9,12 @@ script.type = 'text/javascript';
 script.src = "https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js";
 script.onload = () => {
 
+    $(".nav-fab").ready(() => {
+        $(".nav-fab").click(() => {
+            
+        });
+    });
+
     /* Wenn Scroll nicht oben, kriegt Navbar Klasse */
     $(window).scroll(() => {
         if($(this).scrollTop() > 50) {
