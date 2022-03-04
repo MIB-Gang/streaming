@@ -7,20 +7,20 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../../utils/stylesheet.css">
-    <link rel="stylesheet" href="../../utils/disney.css">
-    <script src="../../utils/script.js"></script>
+    <link rel="stylesheet" href="../../utils/css/stylesheet.css">
+    <link rel="stylesheet" href="../../utils/css/disney.css">
+    <script src="../../utils/js/script.js"></script>
 
     <!--? Seiten-Einstellungen -->
     <!-- (alles anpassbar)-->
     <style>
         :root {
-            --primary: rgb(0,0,66) !important; /* Hauptfarbe (Netflix = rot) */
+            --primary: #12194A !important; /* Hauptfarbe (Netflix = rot) */
             --on-primary: #FFFFFF; /* Objekte AUF der Hauptfarbe */
             --secondary: #FFFFFF; /* Zweite Farbe (Abwechslung zur ersten Farbe) */
-            --on-secondary: darkblue !important; /* Objekte AUF der Zweiten Farbe (z.B. dunkelrot auf weißem Hintergrund) */
+            --on-secondary: #393E8F !important; /* Objekte AUF der Zweiten Farbe (z.B. dunkelrot auf weißem Hintergrund) */
             --highlight: coral !important; /* Hervorgehobene Objekte */
-            --hero-path: url("../assets/images/disney_schloss.jpg") !important; /* Bildpfad vom Hero-Banner (im Assets-Ordner) */
+            --hero-path: url("../../assets/images/disney_schloss.jpg") !important; /* Bildpfad vom Hero-Banner (im Assets-Ordner) */
         }
     </style>
 
@@ -33,26 +33,34 @@
 
     <!--? Navigations-Leiste, die auf jeder Seite vorhanden sein sollte. -->
     <!-- (einfach so lassen, wie's ist)-->
-    <div>
-        <!-- Die Oberkategorien -->
-        <div class="navbar"> 
-            <div>Home</div>
-            <div>Live-Streaming</div>
-            <div>Video on Demand</div>
-            <div>Music on Demand</div>
-            <div>Impressum</div>
-        </div>
-        <!-- Die Unterkategorien, die erst beim aufklappen sichtbar sind. -->
-        <div id="navbar-expanded"> 
-            <ul>
-                <li><a href="../index.html">Home</a></li>
-                <li><a href="../live/youtube.html">YouTube</a></li>
-                <li><a href="../vod/netflix.html">Netflix</a></li>
-                <li><a href="">...</a></li>
-                <li><a href="../impressum/impressum.html">Impressum</a></li>
-            </ul>
-        </div>
-    </div>
+    <nav>
+        <ul>
+            <li><a href="../index.html" class="nav-single">Home</a></li>
+            <li><a href="#">Live-Streaming</a>
+                <ul>
+                    <li><a href="???">???</a></li>
+                    <li><a href="../live/twitch.html">Twitch</a></li>
+                    <li><a href="../live/socialmedia.html">Social Media</a></li>
+                </ul>
+            </li>
+            <li><a href="#" class="nav-active">Video on Demand</a>
+                <ul>
+                    <li><a href="../vod/disneyplus.html">Disney Plus</a></li>
+                    <li><a href="../vod/netflix.html">Netflix</a></li>
+                    <li><a href="../vod/primevideo.html">Prime Video</a></li>
+                    <li><a href="../vod/youtube.html">YouTube</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Music on Demand</a>
+                <ul>
+                    <li><a href="../music/deezer.html">Deezer</a></li>
+                    <li><a href="../music/soundcloud.html">SoundCloud</a></li>
+                    <li><a href="../music/spotify.html">Spotify</a></li>
+                </ul>
+            </li>
+            <li><a href="../quellen/quellen.html" class="nav-single">Quellen</a></li>
+        </ul>
+    </nav>
 
     <!--? Hero-Banner: Das große Bild mit Seitentitel, ganz oben auf der Seite -->
     <!-- (der Titel <h1>...</h1> kann verändert werden)-->
@@ -67,46 +75,48 @@
     <main>
         <!-- Box mit Inhalt -->
         <div class="tile">
-            <div class="tile-content">
+            <div class="tile-content" id="anfang">
                 <h2>Anfänge</h2>
                 <p>
                     Disney+ ist der Video-On-Demand-Streaming-Service des amerikanischen Entertainment-Konzerns Disney und wurde am 12 November 2019 ins Leben gerufen. In Deutschland startete der Dienst am 24. März 2020. <br>
                     Das Angebot umfasst alte und neue Filme und Serien verschiedener Produnktionsstudios:
                 </p>
             </div>
+            <div class="angebot">
+                <div class="angebot-box"><h3>Disney</h3>
+                    <span>Disney-Filme: Animiert und Live-Action</span>
+                </div>
+                <div class="angebot-box"><h3>PIXAR</h3>
+                    <span>PIXAR-Filme: Herzhafte Animationen</span>
+                </div>
+                <div class="angebot-box"><h3>MARVEL</h3>
+                    <span>Das MARVEL-Cinematic-Universe</span>
+                </div>
+                <div class="angebot-box"><h3>STAR WARS</h3><span>Geschichten aus einer weit entfernten Galaxis</span>
+                </div>
+                <div class="angebot-box"><h3>National Geographic</h3>
+                    <span>Naturdokumentationen, ferne Länder und Kulturen.</span>
+                </div>
+                <div class="angebot-box"><h3>STAR</h3>
+                    <span>"adult-content" Bsp.: The Walking Dead, Grey's Anatomy</span>
+                </div> 
+        </div>  
+
         </div>
         <!--! HIER ANFÜGEN -->
 
-        <div class="angebot">
-            <div class="angebot-box"><h3>Disney</h3>
-                <span>Disney-Filme: Animiert und Live-Action</span>
-            </div>
-            <div class="angebot-box"><h3>PIXAR</h3>
-                <span>PIXAR-Filme: Herzhafte Animationen</span>
-            </div>
-            <div class="angebot-box"><h3>MARVEL</h3>
-                <span>Das MARVEL-Cinematic-Universe</span>
-            </div>
-            <div class="angebot-box"><h3>STAR WARS</h3><span>Geschichten aus einer weit entfernten Galaxis</span>
-            </div>
-            <div class="angebot-box"><h3>National Geographic</h3>
-                <span>Naturdokumentationen, ferne Länder und Kulturen.</span>
-            </div>
-            <div class="angebot-box"><h3>STAR</h3>
-                <span>"adult-content" Bsp.: The Walking Dead, Grey's Anatomy</span>
-            </div> 
-        </div>    
-<div></div>
-
     <div class="tile">
         <div class="tile-content">
-            <h2>Disney Plus</h2>
+            <h2>Disney+</h2>
             <p>
-                DisneyPlus startete erfolgreich und schaffte es in weniger als 1 und halb Jahren 100 Mio. Abonnenten zu fassen, eas Netflix ab 2007 10 Jahre gebrauch hatte. <br><br>
+                Disney+ startete erfolgreich und schaffte es in weniger als 1 und halb Jahren 100 Mio. Abonnenten zu fassen, eas Netflix ab 2007 10 Jahre gebrauch hatte. <br><br>
                 
                 <i>“The enormous success of Disney+ —which has now surpassed 100 million subscribers—has inspired us to be even more ambitious, and to significantly increase our investment in the development of high-quality content. In fact, we set a target of 100+ new titles per year, and this includes Disney Animation, Disney Live Action, Marvel, Star Wars, and National Geographic. Our direct-to-consumer business is the Company's top priority, and our robust pipeline of content will continue to fuel its growth.”</i> - Bob Chapek, Geschäftsführer (CEO) The Walt Disney Company <br><br>
                 
-                Aktueller Preis pro Monat: 8,99 Euro / Jahresabo: 89,99 Euro
+                Aktueller Preis pro Monat: 8,99 Euro / Jahresabo: 89,99 Euro <br> Anders als die meisten Geräte: 
+                PC/Notebook, Smart TV/Apple TV, Google Chromecast, Amazon Fire TV, PlayStation 4, Xbox One, iOS-Smartphones, Android-Smartphones
+                Blu-ray-Player und Nintendo Switch unterstützen Disney+ nicht
+                Streaminganbieter bietet Disney+ keine kostenlose Testversion an. 
             </p>
         </div>
     </div>
@@ -186,9 +196,11 @@
 
     <div class="tile">
         <div class="tile-content">
-            <h2>Bekannte Inhalte</h2>
+            <h2>Geräte</h2>
             <p>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quia libero labore, consequatur facilis hic ipsum numquam aut neque cum quasi debitis provident alias eveniet quisquam, et nihil velit accusantium ducimus!
+                Disney+ kann man auf vielen Geräten benutzen.
+                PCs, Laptops, Smart TV/Apple TV, Google Chromecast, Amazon Fire TV, PlayStation 4, Xbox One, iOS-Smartphones und Android-Smartphones unterstützen Disney+. <br>
+                Blu-ray-Player und Nintendo Switch tun dies leider nicht.
             </p>
         </div>
     </div>
@@ -215,7 +227,7 @@
                 <tr>
                     <td>Übersichtliches Design</td> <td>Watchlist in App eher versteckt</td>
                 </tr>
-                <tr><td>Kinderprofile</td></tr>
+                <tr><td>Kinderprofile</td> <td>unterstützt nicht Blu-ray-Player/Nintendo Switch</td></tr>
                 <tr><td>Groupwatch</td><td></td></tr>
             </tbody>
             </table>

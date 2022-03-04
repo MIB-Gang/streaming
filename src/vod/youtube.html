@@ -7,9 +7,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../../utils/stylesheet.css">
-    <link rel="stylesheet" href="../../utils/youtube.css">
-    <script src="../../utils/script.js"></script>
+    <link rel="stylesheet" href="../../utils/css/stylesheet.css">
+    <link rel="stylesheet" href="../../utils/css/youtube.css">
+    <script src="../../utils/js/script.js"></script>
 
     <!--? Seiten-Einstellungen -->
     <!-- (alles anpassbar)-->
@@ -20,7 +20,7 @@
             --secondary: #FFFFFF; /* Zweite Farbe (Abwechslung zur ersten Farbe) */
             --on-secondary: rgb(56, 0, 0) !important; /* Objekte AUF der Zweiten Farbe (z.B. dunkelrot auf weißem Hintergrund) */
             --highlight: #98ff68; /* Hervorgehobene Objekte */
-            --hero-path: url("../assets/images/grey_triangles.jpg") !important; /* Bildpfad vom Hero-Banner (im Assets-Ordner) */
+            --hero-path: url("../../assets/images/grey_triangles.jpg") !important; /* Bildpfad vom Hero-Banner (im Assets-Ordner) */
         }
     </style>
 
@@ -33,26 +33,34 @@
 
     <!--? Navigations-Leiste, die auf jeder Seite vorhanden sein sollte. -->
     <!-- (einfach so lassen, wie's ist)-->
-    <div>
-        <!-- Die Oberkategorien -->
-        <div class="navbar"> 
-            <div>Home</div>
-            <div>Live-Streaming</div>
-            <div>Video on Demand</div>
-            <div>Music on Demand</div>
-            <div>Impressum</div>
-        </div>
-        <!-- Die Unterkategorien, die erst beim aufklappen sichtbar sind. -->
-        <div id="navbar-expanded"> 
-            <ul>
-                <li><a href="../index.html">Home</a></li>
-                <li><a href="../live/youtube.html">YouTube</a></li>
-                <li><a href="../vod/netflix.html">Netflix</a></li>
-                <li><a href="">...</a></li>
-                <li><a href="../impressum/impressum.html">Impressum</a></li>
-            </ul>
-        </div>
-    </div>
+    <nav>
+        <ul>
+            <li><a href="../index.html" class="nav-single">Home</a></li>
+            <li><a href="#">Live-Streaming</a>
+                <ul>
+                    <li><a href="???">???</a></li>
+                    <li><a href="../live/twitch.html">Twitch</a></li>
+                    <li><a href="../live/socialmedia.html">Social Media</a></li>
+                </ul>
+            </li>
+            <li><a href="#" class="nav-active">Video on Demand</a>
+                <ul>
+                    <li><a href="../vod/disneyplus.html">Disney Plus</a></li>
+                    <li><a href="../vod/netflix.html">Netflix</a></li>
+                    <li><a href="../vod/primevideo.html">Prime Video</a></li>
+                    <li><a href="../vod/youtube.html">YouTube</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Music on Demand</a>
+                <ul>
+                    <li><a href="../music/deezer.html">Deezer</a></li>
+                    <li><a href="../music/soundcloud.html">SoundCloud</a></li>
+                    <li><a href="../music/spotify.html">Spotify</a></li>
+                </ul>
+            </li>
+            <li><a href="../quellen/quellen.html" class="nav-single">Quellen</a></li>
+        </ul>
+    </nav>
 
     <!--? Hero-Banner: Das große Bild mit Seitentitel, ganz oben auf der Seite -->
     <!-- (der Titel <h1>...</h1> kann verändert werden)-->
@@ -218,8 +226,8 @@
                         <thead>
                             <tr>
                                 <th>Kanal</th>
-                                <th>Land</th>
                                 <th>Abonnenten</th>
+                                <th>Thema</th>
                             </tr>
                         </thead>
                         <tbody>  
@@ -236,7 +244,7 @@
                           <tr>
                                 <td><a href="">Rammstein</a></td>
                                 <td>6 Mio. Abonnenten</td>
-                                <td>Heavy Metal Band</td>
+                                <td>Metal Band</td>
                           </tr>
                           <tr>
                             <td><a href="">BibisBeautyPalace</a></td>
@@ -246,7 +254,7 @@
                           <tr>
                             <td><a href="">Julien Bam</a></td>
                             <td>5,75 Mio. Abonnenten</td>
-                            <td>Entertainment</td>
+                            <td>Unterhaltung</td>
                           </tr>
                           <tr>
                             <td><a href="">Gronkh</a></td>
@@ -254,11 +262,9 @@
                             <td>Gaming</td>
                           </tr>
                         </tbody>
-                      </table>
-                      
+                      </table> 
                     </div><!--Deutsch-->
-                
-                
+                    
             </div><!--tile-content-->
             <small>(Zuletzt aktualisiert: 22.2.22)</small>
         </div><!--tile-->
@@ -267,9 +273,9 @@
             <div class="tile-content">
                 <h2>Live-Streaming</h2>
                 <p>
-                    Mit YouTube Live können Creator ihre Community ganz leicht in Echtzeit ansprechen. Egal, ob du eine Veranstaltung streamst, einen Kurs gibst oder einen Workshop anbietest: Mit unseren Tools kannst du Livestreams bequem verwalten und in Echtzeit mit deinen Zuschauern interagieren. <br> 
+                    Mit YouTube Live können Creator ihre Community ganz leicht in Echtzeit ansprechen. Veranstaltungen und Workshops werden damit auch einfach Online möglich gemacht. <br> 
 
-                    YouTube-Livestreams sind per Webcam, Mobilgerät und Encoder möglich. Webcam und Mobilgeräte sind ideal für Einsteiger, die ohne große Vorbereitung sofort loslegen möchten. Encoder eignen sich besonders für komplexere Livestreams, in denen Creator beispielsweise ihren Bildschirm teilen oder ihr Gameplay übertragen, externe Audio- und Videohardware anschließen und aufwendigere Produktionstechniken wie mehrere Kameras und Mikrofone nutzen möchten.
+                    Mit Webcam oder Mobilgerät können Einsteiger einfach ihre Live-Streams übertragen. Um den Bildschirm zu teilen und komplexere Live-streams abzuhalten, die mehrere Kameras und Mikrofone benutzen, sind Encoder geeignet. Diese können als Softwareanwendung oder Hardware Videos in ein digitales Format umwandeln, die dann auf YouTube-Live gestreamt werden können.
                 </p>
             </div>
         </div>
