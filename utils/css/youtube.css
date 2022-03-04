@@ -89,7 +89,7 @@
         }
 
     }
-    @media screen and (max-width: 450px) 
+    @media screen and (max-width: 500px) 
     {
         #Nutzer{
         max-width: 90%; justify-content: center; 
