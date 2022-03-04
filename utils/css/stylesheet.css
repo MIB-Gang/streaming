@@ -273,7 +273,7 @@ main .tile:nth-child(even) > .tile-content {
     }
 
     .tile-content {
-        flex-flow: row wrap;
+        flex-flow: column wrap;
     }
 
     tile h2, main .tile:nth-child(even) h2 {
@@ -282,7 +282,7 @@ main .tile:nth-child(even) > .tile-content {
     }
 
     main .tile:nth-child(even) > .tile-content {
-        flex-direction: row;
+        flex-direction: column;
         color: var(--on-primary);
     }
 }
