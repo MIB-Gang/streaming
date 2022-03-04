@@ -24,7 +24,7 @@
     --secondary: #FFFFFF;
     --on-secondary: #150A82;
     --highlight: #FF2C6B;
-    --hero-path:  url("../assets/images/hero_home.jpg");
+    --hero-path:  url("../../assets/images/hero_home.jpg");
 }
 
 /* Entfernt weiße Ränder */
