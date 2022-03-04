@@ -7,22 +7,31 @@ var script = document.createElement('script');
 document.head.appendChild(script);    
 script.type = 'text/javascript';
 script.src = "https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js";
-script.onload = function(){
+script.onload = () => {
 
-    $(".navbar").ready(function (){
+    /* $(".navbar").ready(function (){
         $(".navbar").mouseenter(function() {
             $("#navbar-expanded").animate({height:"15rem", opacity:"1"});
         });
         $("#navbar-expanded").mouseleave(function() {
             $("#navbar-expanded").animate({height:"0rem", opacity:"0"});
         });
-    });
+    }); */
 
-    $(window).scroll(function() {
+    $("nav").ready(() => {
+        console.log(window.location.href);
+        $(".nav-single").each(() => {
+            if ($(this).prop("href") == "#Home") {
+                $(this).addClass("nav-active"); /* $(this).parents("li").addClass("active"); */
+            }
+        });
+    })
+
+    $(window).scroll(() => {
         if($(this).scrollTop() > 50) {
-            $(".navbar").addClass("navbar-scroll");
+            $("nav").addClass("nav-scroll");
         } else {
-            $(".navbar").removeClass("navbar-scroll");
+            $("nav").removeClass("nav-scroll");
         }
     });
 

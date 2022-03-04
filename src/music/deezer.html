@@ -7,8 +7,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../../utils/stylesheet.css">
-    <script src="../../utils/script.js"></script>
+    <link rel="stylesheet" href="../../utils/css/stylesheet.css">
+    <script src="../../utils/js/script.js"></script>
 
     <!--? Seiten-Einstellungen -->
     <!-- (alles anpassbar)-->
@@ -19,7 +19,7 @@
             --secondary: #FFFFFF; /* Zweite Farbe (Abwechslung zur ersten Farbe) */
             --on-secondary: #241284 !important; /* Objekte AUF der Zweiten Farbe (z.B. dunkelrot auf weißem Hintergrund) */
             --highlight: #ffd100; /* Hervorgehobene Objekte */
-            --hero-path: url("../assets/images/soundwave.png")!important; /* Bildpfad vom Hero-Banner (im Assets-Ordner) */
+            --hero-path: url("../../assets/images/soundwave.png")!important; /* Bildpfad vom Hero-Banner (im Assets-Ordner) */
         }
         /* #ffd100, var(--primary), #cc1953, var(--on-secondary), #3559a6, #53a81a */
         /*.hero{
@@ -41,26 +41,34 @@
 
     <!--? Navigations-Leiste, die auf jeder Seite vorhanden sein sollte. -->
     <!-- (einfach so lassen, wie's ist)-->
-    <div>
-        <!-- Die Oberkategorien -->
-        <div class="navbar"> 
-            <div>Home</div>
-            <div>Live-Streaming</div>
-            <div>Video on Demand</div>
-            <div>Music on Demand</div>
-            <div>Impressum</div>
-        </div>
-        <!-- Die Unterkategorien, die erst beim aufklappen sichtbar sind. -->
-        <div id="navbar-expanded"> 
-            <ul>
-                <li><a href="../index.html">Home</a></li>
-                <li><a href="../live/youtube.html">YouTube</a></li>
-                <li><a href="../vod/netflix.html">Netflix</a></li>
-                <li><a href="">...</a></li>
-                <li><a href="../impressum/impressum.html">Impressum</a></li>
-            </ul>
-        </div>
-    </div>
+    <nav>
+        <ul>
+            <li><a href="../index.html" class="nav-single">Home</a></li>
+            <li><a href="#">Live-Streaming</a>
+                <ul>
+                    <li><a href="???">???</a></li>
+                    <li><a href="../live/twitch.html">Twitch</a></li>
+                    <li><a href="../live/socialmedia.html">Social Media</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Video on Demand</a>
+                <ul>
+                    <li><a href="../vod/disneyplus.html">Disney Plus</a></li>
+                    <li><a href="../vod/netflix.html">Netflix</a></li>
+                    <li><a href="../vod/primevideo.html">Prime Video</a></li>
+                    <li><a href="../vod/youtube.html">YouTube</a></li>
+                </ul>
+            </li>
+            <li><a href="#" class="nav-active">Music on Demand</a>
+                <ul>
+                    <li><a href="../music/deezer.html">Deezer</a></li>
+                    <li><a href="../music/soundcloud.html">SoundCloud</a></li>
+                    <li><a href="../music/spotify.html">Spotify</a></li>
+                </ul>
+            </li>
+            <li><a href="../quellen/quellen.html" class="nav-single">Quellen</a></li>
+        </ul>
+    </nav>
 
     <!--? Hero-Banner: Das große Bild mit Seitentitel, ganz oben auf der Seite -->
     <!-- (der Titel <h1>...</h1> kann verändert werden)-->
