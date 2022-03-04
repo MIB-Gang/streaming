@@ -38,9 +38,19 @@ h1, h2, h3, h4, h5, h6 {
     font-family: "Raleway";
 }
 
+/* Hero-Überschriften */
+h1{
+    text-align: center;
+    line-height: normal;
+    color: var(--on-primary);
+    margin: 0rem;
+    font-size: 8rem;
+    font-weight: 800;
+}
+
 /* Tile-Überschriften */
 h2 {
-    font-size: 2rem;
+    font-size: 1.5rem;
     margin-top: 0;
 }
 
@@ -52,12 +62,14 @@ p {
 /* Fettgedruckte Textstellen */
 p b {
     font-weight: 800;
-    /* color: var(--highlight); */
+    color: var(--highlight);
 }
 
 /* Bilder bleiben im Rahmen*/
 img {
     overflow: hidden;
+    max-width: 100%;
+    height: auto;
 }
 
 
@@ -65,6 +77,33 @@ img {
 body::-webkit-scrollbar {width: 0.75rem;}
 body::-webkit-scrollbar-track {background: rgb(70, 70, 70);}
 body::-webkit-scrollbar-thumb {background: rgb(200, 200, 200); border-radius: 0.25rem;}
+
+
+/* Hero-Banner */
+.hero {
+    /* background: var(--primary); */
+    background: 
+        linear-gradient(
+            to bottom right, 
+            var(--primary),
+            var(--on-secondary)
+        ),
+        var(--hero-path);
+    height: 48vh;
+    background-blend-mode: multiply;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative; 
+}
+
+/* Hero-Banner-Inhalt */
+.hero-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
 
 
 /* Navigation */
@@ -78,6 +117,8 @@ nav {
 /* Nav-Elemente */
 nav ul {
     display: flex;
+    padding: 0;
+    align-content: center;
     justify-content: center;
 }
 
@@ -119,18 +160,19 @@ nav ul li a:hover {
 /* Dropdown-Menu */
 nav ul li ul {
     display: none;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.42);
-}
-
-/* Dropdown-Menu bei Nav-Element-Hover */
-nav ul li:hover ul {
-    display: flex;
     flex-flow: column nowrap;
     width: 100%;
     position: absolute;
     padding: 0.25rem;
     border-radius: 0.5rem;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.42);
     background-color: var(--secondary);
+    
+}
+
+/* Dropdown-Menu bei Nav-Element-Hover */
+nav ul li:hover ul {
+    display: flex;
 }
 
 /* Dropdown-Menu-Links */
@@ -145,47 +187,31 @@ nav ul li ul a:hover {
     background-color: var(--highlight);
 }
 
-
 /* Navigation bei scrollen */
 .nav-scroll {
     background-color: var(--primary);
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.42);
 }
 
-
-
-.hero {
-    /* background: var(--primary); */
-    background: 
-        linear-gradient(
-            to bottom right, 
-            var(--primary),
-            var(--on-secondary)
-        ),
-        var(--hero-path);
-    height: 48vh;
-    background-blend-mode: multiply;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative; 
+/* Navigations-Button für Mobile */
+.nav-fab {
+    display: none;
+    position: fixed;
+    z-index: 9999;
+    justify-content: center;
+    width: 60px; height: 60px;
+    right: 24px; bottom: 24px;
+    border-radius: 100%;
+    background: var(--highlight);
+    border: none;
+    outline: none;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.42);
 }
 
-.hero-content {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+.nav-fab img {
+    width: 69%;
+    height: 100%;
 }
-
-.hero-content h1{
-    text-align: center;
-    color: var(--on-primary);
-    margin: 0rem;
-    font-size: 12vmax;
-    font-weight: 800;
-}
-
 
 
 /* Block 1 - Hintergrund */
@@ -237,6 +263,15 @@ main .tile:nth-child(even) > .tile-content {
 
 /* Für kleinere Bildschirme */
 @media screen and (max-width: 1400px){
+
+    h1 {
+        font-size: 4rem;
+    }
+
+    .hero {
+        height: 32vh;
+    }
+
     .tile-content {
         flex-flow: row wrap;
     }
@@ -254,11 +289,24 @@ main .tile:nth-child(even) > .tile-content {
 
 /* Für noch kleinere Bildschirme */
 @media screen and (max-width: 860px) {
+    
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    nav {
+        display: none;
+    }
+
+    .nav-fab {
+        display: flex;
+    }
+
+    .hero {
+        height: 48vh;
+    }
+
     .tile-content {
         max-width: 90%;
-    }
-    
-    .navbar {
-        opacity: 0;
     }
 }

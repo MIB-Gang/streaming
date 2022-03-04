@@ -18,10 +18,9 @@
             --on-primary: #FFFFFF; /* Objekte AUF der Hauptfarbe */
             --secondary: #FFFFFF; /* Zweite Farbe (Abwechslung zur ersten Farbe) */
             --on-secondary: #241284 !important; /* Objekte AUF der Zweiten Farbe (z.B. dunkelrot auf weißem Hintergrund) */
-            --highlight: #ffd100; /* Hervorgehobene Objekte */
+            --highlight: #3559a6; /* Hervorgehobene Objekte */
             --hero-path: url("../../assets/images/soundwave.png")!important; /* Bildpfad vom Hero-Banner (im Assets-Ordner) */
         }
-        /* #ffd100, var(--primary), #cc1953, var(--on-secondary), #3559a6, #53a81a */
         /*.hero{
             background-image: 
             linear-gradient(
@@ -30,20 +29,67 @@
             ),
             var(--hero-path);
         }*/
+
+        .angebote img{
+            width: 100%; min-width: 300px; border: 4px solid var(--primary);
+        }
+        .angebote{
+            text-align: center; color: var(--primary); margin: 0 5%;
+        }
+        .tile-together{
+            display: flex;
+            flex-flow: row nowrap;
+            max-width: 60%;
+            margin: 0 auto;
+            padding-bottom:96px;
+            color: var(--on-secondary);
+        }
+        table{
+            text-align: center; margin: 20px auto; width: 90%; min-width: 300px; border-collapse: collapse; border-radius: 20px 20px 20px 20px; overflow: hidden; box-shadow: 0 0 10px var(--highlight);
+        }
+        table thead tr{
+            background-color: var(--highlight);
+            color: white;
+            font-weight: bold;
+        }
+        td,th{
+            padding: 10px 10px;
+        }
+        table tbody tr{
+            border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+        }
+        table tbody tr:nth-of-type(even){
+            background-color: rgb(231, 231, 231);
+        }
+        table tbody tr:last-of-type{
+            border-bottom: none;
+        }
+        #PlusMinus{
+            background-color: #ff800036;
+        }
+        @media screen and (max-width: 850px) {
+            .tile-together{
+                max-width: 80%;
+            }
+            .angebote{
+            margin: 0 1%;
+        }
+        }
+        @media screen and (max-width: 500px) {
+            table, .angebot, p{
+                font-size: small;
+            }
+        }   
     </style>
 
-    <!--? Der Titel des Browser-Tabs -->
-    <!-- (anpassbar)-->
     <title>deezer</title>
 
 </head>
 <body>
-
     <!--? Navigations-Leiste, die auf jeder Seite vorhanden sein sollte. -->
-    <!-- (einfach so lassen, wie's ist)-->
     <nav>
         <ul>
-            <li><a href="../index.html" class="nav-single">Home</a></li>
+            <li><a href="../../index.html" class="nav-single">Home</a></li>
             <li><a href="#">Live-Streaming</a>
                 <ul>
                     <li><a href="???">???</a></li>
@@ -71,7 +117,6 @@
     </nav>
 
     <!--? Hero-Banner: Das große Bild mit Seitentitel, ganz oben auf der Seite -->
-    <!-- (der Titel <h1>...</h1> kann verändert werden)-->
     <div class="hero">
         <div class="hero-content">
             <h1>deezer</h1>
@@ -79,19 +124,15 @@
     </div>
 
     <!--? Main: Hier kommt der eigentliche Seiteninhalt hin. -->
-    <!-- (einfach Box <div class="tile">...</div> kopieren und Inhalt anpassen) -->
     <main>
         <!-- Box mit Inhalt -->
         <div class="tile">
             <div class="tile-content">
                 <h2>Anfänge</h2>
                 <p>
-                    Der Franzose Daniel Marhely gründete BlogMusic im Jahr 2007. Nur ein Jahr später benannte er das Projekt in Deezer um. Überzeugt von seiner Idee das Hören und Teilen von Musik leichter zu machen, fing er an Investoren zu suchen. 2008 kamen dabei bereits 5 Millionen Euro zusammen. Deezer Premium startete 2009, als die Streaming-Plattform 7 Millionen Nutzer zählte. 
-                    Vertriebsparterschaften boten sich an und die Marke wuchs stark an. 2012 wurden insgesamt 70 Millionen Euro eingesammelt. 2013 wurde deezer weltweit verfügbar. <br>
-                    flow 2014... <br>
-
-                    Mittlerweile ist Deezer nach Spotify ein Top-Player in der Musik-Streaming-Branche. Angebot und Qualität sorgen für den Erfolg.
-
+                    Der Franzose Daniel Marhely gründete die Musik-Plattform BlogMusic im Jahr 2007. Nur ein Jahr später benannte er das Projekt in Deezer um. Überzeugt von seiner Idee das Hören und Teilen von Musik leichter zu machen, fing er an Investoren zu suchen. 2008 kamen dabei bereits 5 Millionen Euro zusammen. Deezer Premium startete 2009, als die Streaming-Plattform 7 Millionen Nutzer zählte. 
+                    Vertriebsparterschaften boten sich an und die Marke wuchs stark an. 2012 wurden insgesamt 70 Millionen Euro eingesammelt. 2013 wurde deezer weltweit verfügbar. <br> 
+                    Mittlerweile ist Deezer nach dem Giganten Spotify ein Top-Player in der Musik-Streaming-Branche. Dezember 2019 gab Deezer-Chef Hans-Holger Albrecht an, dass Deezer 14 Millionen aktive Nutzer hat. Im Januar 2019 hatte Deezer 7 Millionen zahlende Abonnenten. 
                 </p>
             </div>
         </div>
@@ -102,7 +143,7 @@
             <div class="tile-content">
                 <h2>Angebot</h2>
                 <p>
-                    Über 90 Millionen Songs, Playlists, PodCasts, Hörbücher und Radiosender sind durch deezer erreichbar, was es zu einem der größten Audiokataloge der Welt macht.
+                    Über 90 Millionen Songs, 100 Millionen Playlists, PodCasts, Hörbücher und Radiosender sind durch Deezer erreichbar, was es zu einem der größten Audiokataloge der Welt macht.
                     Um den Übergang von einer anderen Musik-Streaming-Bibliothek zu deezer zu erleichtern, gibt es eine extra Funktion zum Musik übertragen. Songs und Playlists von anderen Anbietern wie Spotify, TIDAL, Apple Music, YouTube Music, Amazon Music, etc. kommen somit direkt auf Deezer.
                 </p>
             </div>
@@ -111,21 +152,87 @@
         <div class="tile">
             <div class="tile-content">
                 <h2>Preise</h2>
-                 <br>
-                free Deezer ist kostenlos, aber es existieren zwischenzeitlichen Werbeeinblendungen, man muss auf den Offline-Modus verzichten, Musik hört man nur im Zufallsmodus und die Soundqualität ist vermindertert. 
-                In der kostenlosen Variante streamt man mit 128 kbit/s, während der Premiumtarif es auf 320 kbit/s erhöht. Premium ermöglicht es außerdem die Qualität manuell einzustellen. <br>
-                Es gibt eine 30 tägige Testphase für Deezer Premium. Danach zahlt man 10,99€ im Monat. Wenn man sich für ein Jahresabo verpflichtet, sinkt der monatliche Preis auf 8,24€. Als Student zahlt man sogar nur 5,99€. Mit Deezer Family erhält man für den Preis von 16,99€ pro Monat gleich 6 Premium-Konten.
+                <div>
+                    <p> <br>
+                    Deezer free ist kostenlos, aber es existieren zwischenzeitliche Werbeeinblendungen, man muss auf den Offline-Modus verzichten, Musik hört man nur im Zufallsmodus und die Soundqualität ist vermindertert. 
+                    In der kostenlosen Variante streamt man mit 128 kbit/s, während der Premiumtarif dies auf 320 kBit/s erhöht. Der Zugriff auf Deezer High Fidelity Sound ermöglicht verlustfreie Klangqualität durch
+                    <a href="https://www.deezer.com/de/offers/hifi?utm_campaign=acq_de_perfmax_web_all_perf_tnb-directsub&utm_content=nonusers&utm_medium=display&utm_source=google&utm_term=hifi&utm_campaign=acq_de_perfmax_web_all_perf_tnb-directsub&utm_content=alloffers&utm_medium=display_&utm_source=adwords&gclid=CjwKCAiAjoeRBhAJEiwAYY3nDDOvm9wtIo-x5NnVLx8gleu14Kbb8w7eam9GilZOWIRC3wdT150mYxoC71gQAvD_BwE#feature-info"> <abbr title="Free Lossless Audio Codec">16-bit FLAC</abbr></a> und ist im Premiumabo inbegriffen. Die Bitrate beträgt dabei 1411 kBit/s. Premium ermöglicht es außerdem die Qualität manuell einzustellen. Früher gabe es ein eigenes Abo-Modell für den HiFi-Sound, doch der ist seit 2022 in allen Bezahlabos mit enthalten und sorgte damit für eine Preiserhöhung.<br>
+                    Es wird eine 30 tägige Testphase für Deezer Premium angeboten. Danach zahlt man 10,99€ im Monat, wobei man jederzeit das Abo kündigen kann. Wenn man sich für ein Jahresabo verpflichtet, sinkt der monatliche Preis auf 8,24€. Als Student zahlt man sogar nur 5,99€. Mit Deezer Family erhält man für den Preis von 16,99€ pro Monat gleich 6 Premium-Konten. 
+                    </p>
+                </div>
+            </div>
+            <div class="tile-together">
+                <div class="angebote">
+                    <img src="../../assets/images/DeezerAngebote.png" alt="Vergleich Deezer Free unf deezer Premium">
+                </div>
             </div>
         </div>
 
         <div class="tile">
             <div class="tile-content">
-                <h2>Konkurrenz/<br>Der Profit/<br>Marketing</h2>
-                <img src="../assets/images/deezerAngebote.png" alt="Vergleich Deezer Free unf deezer Premium">
+                <h2>Flow</h2>
+                <p> 
+                    Der Anbieter ist stolz auf seine seit 2014 bestehenden Funktion namens Flow. Dieser lernfähigen Algorithmus stellt Playlists und EMpfehlungen zusammen. <br>Indem man einen Song mit Herz oder X markiert, zeigt man seine Musikvorzüge und die Musikempfelungen werden genau auf einen zugeschnitten. Entweder der SOng landet mit dem Herz auf der Favoritenliste oder das X verbannt den Song von den Empfehlungen. Schon direkt nachdem man sich registriert, wird man über seine Vorlieben befragt. 
+                    Wenn man neu ist, sollte man viele Songs bewerten, um den Algorithmus seine Vorkieben näher zu bringen. <br>Je nach aktueller Stimmung kann man außerdem  aus verschiedenen "Moods" auswählen, die passende Playlists anbieten.
+                </p>
             </div>
         </div>
 
-    </main>
+        <div class="tile">
+            <div class="tile-content">
+            <table>
+                <thead>
+                    <tr>
+                        <th colspan="2">Vor- und Nachteile</th>
+                    </tr>
+                </thead>
+                <tbody>          
+                    <tr id="PlusMinus">
+                        <td>+</td>
+                        <td>-</td>
+                    </tr>
+                    <tr>
+                        <td>Riesiges Musikarchiv</td> <td>Reagiert ab und an träge</td>
+                    </tr>
+                    <tr>
+                        <td>Einfache Bedienung</td> <td>Kein Gapless-Playback wie Spotofy<br> (Pausenloses Abspielen)</td>
+                    </tr>
+                    <tr>
+                        <td>Familienaccount</td> <td> Musikimport ausbaufähig</td>
+                    </tr>
+                    <tr><td>Deezer Originals</td> <td>eigene Songs begrenzt hochladbar</td></tr>
+                    <tr><td>In über 180 Ländern verfügbar</td><td></td></tr>
+                </tbody>
+            </table>
+            </div>
+        </div>
+        <div class="tile">
+            <div class="tile-content">
+                <h2>Deezer for Creators</h2>
+                <p> 
+                    Übersetzen!!! Abkürzen!!!<br>
+                    Deezer's new app launches today to help musicians and content creators improve their reach and performance with personalized insights and meaningful stats. “Deezer for Creators” is a smart analytics tool to empower artists, music industry professionals and podcasters to optimize their performance in one convenient mobile app.  <br>
+                    For the first time, artists and podcasters will both have access to the same mobile app to track their musical or spoken word content.* Following our announcement on a mobile analytics tool for podcasters, we've now updated the mobile app for artists previously known as “Analytics” (and  “Backstage” on the Web).  Now, whenever a track is added to an editorial playlist,  artists will automatically receive a notification. <br>
 
+                    Features also include a shareable card that lets artists connect directly with fans. Each shareable card includes the name of the playlist that the artist is featured in. Artists won't be limited to just featured playlists, as they'll also have access to shareable “track cards.” Any time a new track is available within the first seven days of its release, artists will be able to share immediately with fans, as well as post on their social channels. <br>
+
+                    Our “Deezer for Creators” mobile app will continue to offer popular artist features including: <br>
+
+                    Track performance of song or show:
+                        Monitor streaming data and performance on a daily, weekly and monthly basis 
+                        Easy-to-read charts broken down by categories including platform, countries, gender and top playlists <br> <br>
+
+                    “Data can often be overwhelming and perplexing. Our new Deezer for Creators' app breaks it all down in an easy-to-read format that helps you plan your next step. Whether it's to improve your results or plan ahead for your next big launch.
+
+                    It's the only mobile app that provides artists with a success predictor tool to help you measure and adjust marketing plans accordingly,” said Frédéric Antelme, Head of Content at Deezer.  
+
+                    “Deezer for Creators” is not limited to mobile, as artists can also login on desktop. Web users can also update their bio, profile picture and see their streaming highlights. <br>
+
+                    To celebrate the launch, we are also introducing a special discounted HiFi offer for artists. The new offer makes our HiFi subscription available to any creator who has content on Deezer and is registered on Deezer for Creators, at the low price of €7.99. To activate the offer, creators need to redeem the code they receive in their email on the dedicated page on Deezer's website. The offer is valid later this month until Jan 30, 2024.  <br>
+
+                    The Deezer for Creators app is available to download worldwide on iOS and Android now. Existing users can log in using their Backstage or Analytics credentials. New users can apply here to request access. 
+            </div>
+        </div>
+    </main>
 </body>
 </html>
