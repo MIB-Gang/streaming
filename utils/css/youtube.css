@@ -71,6 +71,15 @@
         small{
             margin-left: 20px; color: grey;
         }
+        .tile .tile-content .tile-together{
+            height: 400px;
+        }
+        .tile-together #umsatz{
+            text-align: center; color: var(--primary); margin: 0 5%; margin-top:0px;
+        }
+        #umsatz img{
+            width: 60%; min-width: 230px; border: 4px solid var(--highlight);
+        }
 
         footer{
             text-align: center; margin:20px auto;
