@@ -10,14 +10,14 @@
         }
 
         .Tabelle{
-            text-align: center; margin: 20px auto; width: 90%; min-width: 300px; border-collapse: collapse; border-radius: 20px 20px 20px 20px; overflow: hidden; box-shadow: 0 0 10px rgba(56, 0, 0, 0.356);
+            text-align: center; margin: 20px auto; width: 90%; min-width: 280px; border-collapse: collapse; border-radius: 20px 20px 20px 20px; overflow: hidden; box-shadow: 0 0 10px rgba(56, 0, 0, 0.356);
         }
         .Tabelle thead tr{
-            background-color: red;
+            background-color: var(--highlight);
             color: white;
             font-weight: bold;
         }
-        td,th{
+        .Tabelle td,th{
             padding: 10px 10px;
         }
         .Tabelle tbody tr{
@@ -49,10 +49,10 @@
             margin-right: 20px;
         }
         #Nutzer table{
-             border-collapse: collapse; text-align: center; border-radius:  20px 20px 20px 20px; overflow: hidden; box-shadow: 0 0 10px rgba(56, 0, 0, 0.356);
+             border-collapse: collapse; text-align: center; border-radius:  20px 20px 20px 20px; overflow: hidden; box-shadow: 0 0 10px rgba(56, 0, 0, 0.356); 
         }
         #Nutzer table thead tr{
-            background-color: red;
+            background-color: var(--highlight);
             color: white;
             font-weight: bold;
         }
@@ -92,7 +92,10 @@
     @media screen and (max-width: 500px) 
     {
         #Nutzer{
-        max-width: 90%; justify-content: center; 
+        max-width: 90%; justify-content: center; min-width: 280px;
+        }
+        #Nutzer table td{
+            padding: 5px 5px; width:100px; height: 60px;
         }
         #Nutzer, .Tabelle, ul,  p{
             font-size: small;
