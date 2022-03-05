@@ -303,7 +303,7 @@ main .tile:nth-child(even) > .tile-content {
     }
 
     .hero {
-        height: 48%;
+        height: 32%;
     }
 
     .tile-content {

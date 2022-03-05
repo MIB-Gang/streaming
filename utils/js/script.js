@@ -11,7 +11,12 @@ script.onload = () => {
 
     $(".nav-fab").ready(() => {
         $(".nav-fab").click(() => {
-            
+            // if($("nav").prop("display") == "none") {
+            //     $("nav").prop("display") = "flex";
+            // } else {
+            //     $("nav").prop("display") = "none";
+            // }
+            $("nav ul").prop("display", "flex");
         });
     });
 
