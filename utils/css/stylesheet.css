@@ -57,12 +57,14 @@ h2 {
 /* Texte */
 p {
     margin: 0;
+    hyphens: auto; 
+	text-align: justify;
 }
 
 /* Fettgedruckte Textstellen */
 p b {
     font-weight: 800;
-    color: var(--highlight);
+    /* color: var(--highlight); */
 }
 
 /* Bilder bleiben im Rahmen*/
