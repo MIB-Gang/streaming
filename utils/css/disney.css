@@ -1,6 +1,5 @@
 .hero{
     background-position: bottom !important;
-    background-blend-mode:hard-light;
 }
 
 #anfang{padding-bottom: 5px;}
@@ -8,17 +7,21 @@
 .angebot{
     display: flex; flex-wrap: wrap; width: 90%;  margin: 0 auto 40px;
 } 
-.angebot .angebot-box{
-    cursor:url(http://www.rw-designer.com/cursor-view/58768.png),auto; display: flex; align-items: center; text-align: center; background-image: linear-gradient(var(--on-secondary), var(--primary)); color: white; padding: 20px 30px; margin: 1% 1%; border: #777bd1 3px solid; border-radius: 20px ; flex: 1 1 5%;
+.angebot a{
+    cursor:url(http://www.rw-designer.com/cursor-view/58768.png),auto; display: flex; align-items: center; background-image: linear-gradient(var(--on-secondary), var(--primary)); text-decoration: none; color: white; padding: 20px 30px; margin: 1% 1%; border: #777bd1 3px solid; border-radius: 20px ; flex: 1 1 5%; 
 }
-.angebot .angebot-box:hover {
+.angebot a:hover {
     background-image: linear-gradient(#EFBEB7, var(--highlight));border: #EFBEB7 3px solid; 
 }
+.angebot-box{
+    display: block; margin-left: auto; margin-right: auto; 
+}
 /*Infobox*/
-.angebot-box:hover span{
+a:hover span{
     visibility: visible;
 }
-.angebot-box span{visibility: hidden; position: absolute; margin: 0 0px 110px; font-size: 13px; z-index: 1; width: 150px; background-color:var(--primary); color: white; text-align: center; border-radius: 6px; padding: 5px 1%;
+.angebot-box span{
+    visibility: hidden; position: absolute; margin: 0px 0px 0px; font-size: 13px; z-index: 1; width: 150px; background-color:var(--primary); color: white; text-align: center; border-radius: 6px; padding: 5px 1%;
 }
 
 .Tabelle{
@@ -70,8 +73,11 @@ footer{
 
 @media screen and (max-width: 500px) 
 {
-    .Tabelle, .angebot-box, ul,  p, h4 {
+    .Tabelle, .angebot-box, ul,  p, h4, span {
         font-size: small;
+    }
+    .angebot-box span{
+        visibility: hidden; position: absolute; margin: 0px 0px 0px; font-size: 10px; z-index: 1; width: 100px; background-color:var(--primary); color: white; text-align: center; border-radius: 6px; padding: 5px 1%;
     }
     #ENCANTO-stat{
         margin-left: 5px;
