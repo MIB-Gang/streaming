@@ -112,6 +112,7 @@ body::-webkit-scrollbar-thumb {background: rgb(200, 200, 200); border-radius: 0.
 
 /* Navigation */
 nav {
+    display: inline;
     position: fixed;
     width: 100vw;
     z-index: 1337;
@@ -165,13 +166,13 @@ nav ul li a:hover {
 nav ul li ul {
     display: none;
     flex-flow: column nowrap;
+    z-index: 42069;
     width: 100%;
     position: absolute;
     padding: 0.25rem;
     border-radius: 0.5rem;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.42);
     background-color: var(--secondary);
-    
 }
 
 /* Dropdown-Menu bei Nav-Element-Hover */
@@ -197,12 +198,13 @@ nav ul li ul a:hover {
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.42);
 }
 
-/* Navigations-Button für Mobile */
+/* Mobile Navigation (Button) */
 .nav-fab {
     display: none;
     position: fixed;
     z-index: 9999;
     justify-content: center;
+    align-items: center;
     width: 60px; height: 60px;
     right: 24px; bottom: 24px;
     border-radius: 100%;
@@ -210,13 +212,14 @@ nav ul li ul a:hover {
     border: none;
     outline: none;
     box-shadow: 0 3px 6px rgba(0, 0, 0, 0.42);
+    cursor: pointer;
 }
 
+/* Mobile Navigation (Button-Inhalt) */
 .nav-fab img {
     width: 69%;
     height: 100%;
 }
-
 
 /* Block 1 - Hintergrund */
 .tile {
@@ -225,12 +228,6 @@ nav ul li ul a:hover {
 
 /* Block 2 - Hintergrund*/
 main .tile:nth-child(even) {
-    /* background-image: 
-        linear-gradient(
-            to bottom right, 
-            rgba(79,82,255,0.95),
-            rgba(21,10,130,0.95)
-        ); */
     background-color: var(--primary);
     flex-direction: row-reverse;
 }
@@ -298,8 +295,36 @@ main .tile:nth-child(even) > .tile-content {
         font-size: 2.5rem;
     }
 
+    /* Mobile Navigation als Fullscreen */
     nav {
         display: none;
+        width: 100vw;
+        height: 100vh;
+        background-color: var(--primary);
+    }
+
+    /* Mobile Nav. (Inhalt) */
+    nav ul {
+        flex-flow: column nowrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    /* Mobile Nav. (Text) */
+    nav ul li a {
+        text-align: center;
+    }
+
+    /* Mobile Nav. (Dropdown-Menü) */
+    nav ul li ul {
+        height: 100%;
+        z-index: 1;
+        width: 100vw;
+        position: static;
+        padding: 0.25rem;
+        border-radius: 0;
+        box-shadow: none;
+        background-color: var(--secondary);
     }
 
     .nav-fab {
