@@ -8,6 +8,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../../utils/css/stylesheet.css">
+    <link rel="stylesheet" href="../../utils/css/tabelle.css">
+
     <script src="../../utils/js/script.js"></script>
 
     <!--? Seiten-Einstellungen -->
@@ -17,8 +19,8 @@
             --primary: #F7690F; /* Hauptfarbe (Netflix = rot) */
             --on-primary: #FFFFFF; /* Objekte AUF der Hauptfarbe */
             --secondary: #ffffff; /* Zweite Farbe (Abwechslung zur ersten Farbe) */
-            --on-secondary: #000000; /* Objekte AUF der Zweiten Farbe (z.B. dunkelrot auf weißem Hintergrund) */
-            --highlight: #FF2C6B; /* Hervorgehobene Objekte */
+            --on-secondary: #7c3302; /* Objekte AUF der Zweiten Farbe (z.B. dunkelrot auf weißem Hintergrund) */
+            --highlight: #F7690F; /* Hervorgehobene Objekte */
             --hero-path: url("../../assets/images/hero_soundcloud.jpg"); /* Bildpfad vom Hero-Banner (im Assets-Ordner) */
         }
     </style>
@@ -75,12 +77,13 @@
         <!-- Box mit Inhalt -->
         <div class="tile">
             <div class="tile-content">
-                <h2>Überschrift</h2>
+                <h2>First things first</h2>
                 <p>
-                    Textinhalt. Statt &lt;p&gt; kann man auch ein Bild mit &lt;img src="..."&gt; oder eine Tabelle nutzen.
-                    Um eine "Inhalt-Box" ("tile") der Seite hinzuzufügen, muss einfach dieser Abschnitt mit der Klasse "tile" kopiert 
-                    und innerhalb von &lt;main&gt;...&lt;/main&gt; angefügt werden. Die Text- und Hintergrund-Farben wechseln sich 
-                    automatisch ab.
+                    SoundCloud ist ein Online-Musikdienst zum Austausch und zur Distribution von Audiodateien. 
+                    Er dient als Kooperations- und Werbeplattform für Musiker.
+                    Das Unternehmen ist Mitglied des Kooperationsnetzwerkes der Berliner Musikwirtschaft Berlin Music Commission.
+                    Soundcloud richtet der Service an die Künstler selbst und bietet diesen die Möglichkeit,
+                    Ihre Musik auf einfache Weise zu publizieren und über ein Kommentarsystem Feedback ihrer Fans zu erhalten.
                 </p>
             </div>
         </div>
@@ -93,17 +96,69 @@
                     Es soll Musikern ermöglichen, Aufnahmen auszutauschen. SoundCloud entwickelte sich schnell zu einer Plattform, 
                     die jedem Internetnutzer auf der Welt ohne Registrierungsprozess zur Verfügung steht. Nur wenige Monate später 
                     begann SoundCloud mit Myspace zu konkurrieren, weil es Künstlern ermöglichte, schneller mit Fans zu kommunizieren.
+                    Seit 2012 gilt SoundCloud als ein wichtiger Knotenpunkt für den musikalischen Austausch im Netz.
                 </p>
             </div>
         </div>
         <div class="tile">
             <div class="tile-content">
-                <h2>Überschrift</h2>
+                <h2>Zielgruppe</h2>
                 <p>
-                    Textinhalt. Statt &lt;p&gt; kann man auch ein Bild mit &lt;img src="..."&gt; oder eine Tabelle nutzen.
-                    Um eine "Inhalt-Box" ("tile") der Seite hinzuzufügen, muss einfach dieser Abschnitt mit der Klasse "tile" kopiert 
-                    und innerhalb von &lt;main&gt;...&lt;/main&gt; angefügt werden. Die Text- und Hintergrund-Farben wechseln sich 
-                    automatisch ab.
+                    Der Angebort richtet sich an Künstler als auch an ihre Fans. Geschaffen wurde der Dienst, 
+                    um Musikern eine einfache Möglichkeit zu bieten, 
+                    ihre Musik über das Internet auszutauschen und anderen Personen zugänglich zu machen.
+
+                    Für Musikhörer reicht eine simple Registrierung und schon haben Sie Zugriff auf rund 120 Millionen Musikstücke. 
+                    Darunter natürlich vor allem Tracks von noch unbekannten Künstlern, aber auch bereits namhafter Stars.
+                </p>
+            </div>
+        </div>
+        <div class="tile">
+            <div class="tile-content">
+                <h2>SoundCloud-Tarife</h2>
+                <p>
+                    <table class="Tabelle">
+                        <thead>
+                            <tr>
+                            <th>Soundcloud Free</th>
+                            <th>Soundcloud Go</th>
+                            <th>Soundcloud Go+</th>
+                            </tr>
+                        </thead>
+                        <tbody>  
+                          <tr>
+                            <td>kostenlos</td>
+                            <td>5,99 €/Monat</td>
+                            <td>9,99 €/Monat</td>
+                          </tr>
+                          <tr>
+                            <td>mit Werbeunterbrechungen</td>
+                            <td>werbefrei</td>
+                            <td>werbefrei</td>
+                          </tr>
+                          <tr>
+                            <td>ausschließlich nur online hören</td>
+                            <td>mögliche Offline-Wiedergabe</td>
+                            <td>mögliche Offline-Wiedergabe</td>
+                          </tr>
+                          <tr>
+                              <td>-</td>
+                              <td>-</td>
+                              <td>Zugriff auf alle Tracks in voller Länge</td>
+                          </tr>
+                          <tr>
+                              <td>-</td>
+                              <td>-</td>
+                              <td>Mix Tracks mit ausgewählten DJ-Apps</td>
+                          </tr>
+                          <tr>
+                              <td>-</td>
+                              <td>-</td>
+                              <td>Audio in hoher Qualität</td>
+                          </tr>
+                        </tbody>
+                    </table>
+                    
                 </p>
             </div>
         </div>
