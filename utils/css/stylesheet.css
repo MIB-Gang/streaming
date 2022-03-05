@@ -72,6 +72,8 @@ img {
     overflow: hidden;
     max-width: 100%;
     height: auto;
+    margin-top: 25px;
+    margin-bottom: 25px;
 }
 
 
