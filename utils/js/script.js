@@ -10,7 +10,7 @@ script.src = "https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js";
 script.onload = () => {
 
 
-    /* Wenn Nav-Button geklickt, kriegt Navbar Klasse */
+    /* Wenn Nav-Button geklickt, öffnet Nav als Fullscreen */
     $("body").ready(() => {
         $(".nav-fab").click(() => {
             if(!$("nav").is(":visible")) {
