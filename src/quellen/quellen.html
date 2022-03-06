@@ -5,9 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="../../utils/css/stylesheet.css">
+    <link rel="stylesheet" href="/utils/css/stylesheet.css">
     <!-- <link rel="stylesheet" href="impressum.html"> -->
-    <script src="../../utils/main.js"></script>
+    <script src="/utils/js/script.js"></script>
 
     <style>
         :root {
@@ -16,7 +16,10 @@
             --secondary: #FFFFFF; /* Zweite Farbe (Abwechslung zur ersten Farbe) */
             --on-secondary: #39596b; /* Objekte AUF der Zweiten Farbe (z.B. dunkelrot auf weißem Hintergrund) */
             --highlight: #39596b; /* Hervorgehobene Objekte */
-            --hero-path: url("../../assets/images/link.jpg"); /* Bildpfad vom Hero-Banner (im Assets-Ordner) */
+            --hero-path: url("/assets/images/link.jpg"); /* Bildpfad vom Hero-Banner (im Assets-Ordner) */
+        }
+        main .tile:nth-child(even) a{
+            color:#FFFFFF
         }
     </style>
 
@@ -25,32 +28,34 @@
 <body>
     <nav>
         <ul>
-            <li><a href="../../index.html" class="nav-single">Home</a></li>
+            <li><a href="/index.html" class="nav-single">Home</a></li>
             <li><a href="#">Live-Streaming</a>
                 <ul>
-                    <li><a href="../live/appletv.html">Apple TV+</a></li>
-                    <li><a href="../live/twitch.html">Twitch</a></li>
-                    <li><a href="../live/socialmedia.html">Social Media</a></li>
+                    <li><a href="/src/live/appletv.html">Apple TV+</a></li>
+                    <li><a href="/src/live/twitch.html">Twitch</a></li>
+                    <li><a href="/src/live/socialmedia.html">Social Media</a></li>
                 </ul>
             </li>
             <li><a href="#">Video on Demand</a>
                 <ul>
-                    <li><a href="../vod/disneyplus.html">Disney Plus</a></li>
-                    <li><a href="../vod/netflix.html">Netflix</a></li>
-                    <li><a href="../vod/primevideo.html">Prime Video</a></li>
-                    <li><a href="../vod/youtube.html">YouTube</a></li>
+                    <li><a href="/src/vod/disneyplus.html">Disney Plus</a></li>
+                    <li><a href="/src/vod/netflix.html">Netflix</a></li>
+                    <li><a href="/src/vod/primevideo.html">Prime Video</a></li>
+                    <li><a href="/src/vod/youtube.html">YouTube</a></li>
                 </ul>
             </li>
             <li><a href="#">Music on Demand</a>
                 <ul>
-                    <li><a href="../music/deezer.html">Deezer</a></li>
-                    <li><a href="../music/soundcloud.html">SoundCloud</a></li>
-                    <li><a href="../music/spotify.html">Spotify</a></li>
+                    <li><a href="/src/music/deezer.html">Deezer</a></li>
+                    <li><a href="/src/music/soundcloud.html">SoundCloud</a></li>
+                    <li><a href="/src/music/spotify.html">Spotify</a></li>
                 </ul>
             </li>
-            <li><a href="../quellen/quellen.html" class="nav-single nav-active">Quellen</a></li>
+            <li><a href="/src/quellen/quellen.html" class="nav-single nav-active">Quellen</a></li>
         </ul>
     </nav>
+    <button class="nav-fab"><img src="/assets/icons/icon_menu.svg" alt="Menü-Icon"></button>
+
 
     <div class="hero">
         <div class="hero-content">
@@ -93,7 +98,13 @@
                 <h2>Social Media</h2>
                 <p>
                     <ul>
-                        <li><a href="https://www.wikiwand.com/de/Apple_TV%2B" target="_blank">Wikipedia</a></li>
+                        <li><a href="https://social-streams.com/what-social-media-stream/" target="_blank">Social-streams</a></li>
+                        <li><a href="https://www.iskysoft.com/live-streaming/live-streaming-apps-for-mobile.html" target="_blank">iskysoft</a></li>
+                        <li><a href="https://livestream.com/blog/social-media-streaming-livestream" target="_blank">livestream</a></li>
+                        <li><a href="https://social-streams.com/what-social-media-stream/" target="_blank">Social-streams</a></li>
+                        <li><a href="https://de.statista.com/statistik/daten/studie/746088/umfrage/nutzung-von-live-streaming-angeboten-auf-social-media-plattformen-weltweit/" target="_blank">Statista</a></li>
+
+
                     </ul>
                 </p>
             </div>
@@ -103,7 +114,15 @@
                 <h2>Disney Plus</h2>
                 <p>
                     <ul>
-                        <li><a href="https://www.wikiwand.com/de/Apple_TV%2B" target="_blank">Wikipedia</a></li>
+                        <li>
+                            <a href="https://www.businessinsider.com/disney-plus-launches-new-service-star-increases-price-next-week-2021-2" target="_blank">businessinsider.com</a> (25. Feb. 2021)</li>
+                        <li>
+                            <a href="https://thewaltdisneycompany.com/disney-tops-100-million-global-paid-subscriber-milestone/" target="_blank">thewaltdisneycompany.com</a> (9. März 2021)
+                        </li>  
+                        <li>
+                            <a href="https://www.spiegel.de/kultur/tv/disney-plus-kommt-im-sommer-in-42-weitere-laender-a-5b159c80-7bae-4d09-91a4-7ddf7d717699" target="_blank">spiegel.de</a> (26. Jan. 2022)
+                        </li>
+                            <li><a href="https://trusted.de/disney-plus" target="_blank">trusted.de</a></li>
                     </ul>
                 </p>
             </div>
@@ -123,7 +142,11 @@
                 <h2>Prime Video</h2>
                 <p>
                     <ul>
-                        <li><a href="https://www.wikiwand.com/de/Apple_TV%2B" target="_blank">Wikipedia</a></li>
+                        <li><a href="https://en.wikipedia.org/wiki/Amazon_Prime_Video" target="_blank">Wikipedia</a></li>
+                        <li><a href="https://trusted.de/video-streaming" target="_blank">Trusted.de</a></li>
+                        <li><a href="https://trusted.de/amazon-prime-video" target="_blank">Trusted.de</a></li>
+                        <li><a href="https://www.businessofapps.com/data/amazon-statistics/" target="_blank">Businessofapps</a></li>
+
                     </ul>
                 </p>
             </div>
@@ -133,7 +156,11 @@
                 <h2>Youtube</h2>
                 <p>
                     <ul>
-                        <li><a href="https://www.wikiwand.com/de/Apple_TV%2B" target="_blank">Wikipedia</a></li>
+                        <li><a href="https://www.omnicoreagency.com/youtube-statistics/" target="_blank">omnicoreagency.com: YouTube by the numbers</a> (4. Jan. 2022)</li>    
+                        <li><a href="https://kundenwachstum.de/youtube-marketing/#biete-mehrwert" target="_blank">Kundenwachstum.de</a></li>  
+                        <li><a href="https://de.statista.com/infografik/24290/werbeumsatz-von-youtube/" target="_blank">Statista.com</a></li>   
+                        <li><a href="https://blog.youtube/press/" target="_blank">YouTube for the Press</a></li>
+                        <li><a href="https://support.google.com/youtube/answer/2907883?hl=de" target="_blank">YouTube-Hilfe</a></li>
                     </ul> 
                 </p>
             </div>
@@ -143,7 +170,9 @@
                 <h2>Deezer</h2>
                 <p>
                     <ul>
-                        <li><a href="https://www.wikiwand.com/de/Apple_TV%2B" target="_blank">Wikipedia</a></li>
+                        <li><a href="https://www.deezer.com/de/company" target="_blank">deezer.com</a></li>
+                        <li><a href="https://trusted.de/deezer" target="_blank">trusted.de</a>
+                        <li><a href="https://www.deezer-blog.com/press/deezer-for-creators/" target="_blank">deezer-blog.com</a> (15. Juni 2021)</li></ul>
                     </ul>
                 </p>
             </div>
@@ -153,7 +182,10 @@
                 <h2>Soundcloud</h2>
                 <p>
                     <ul>
-                        <li><a href="https://www.wikiwand.com/de/Apple_TV%2B" target="_blank">Wikipedia</a></li>
+                        <li><a href="https://de.wikipedia.org/wiki/SoundCloud" target="_blank">Wikipedia</a></li>
+                        <li><a href="https://trusted.de/soundcloud" target="_blank">Trusted.de</a></li>
+                        <li><a href="https://www.businessofapps.com/data/soundcloud-statistics/" target="_blank">Businessofapps</a></li>
+
                     </ul>
                 </p>
             </div>
@@ -173,5 +205,10 @@
             </div>
         </div>
     </main>
+
+    <footer>
+        <p>Carolin Hoffmann, Sham Haji Darwish, Tim David Friedrich, Lena Henrike Beckmann</p>
+        <p><b>Streaming (Gruppe 1)</b></p>
+    </footer>
 </body>
 </html>

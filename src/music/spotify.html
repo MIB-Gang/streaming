@@ -7,9 +7,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../../utils/css/stylesheet.css">
-    <link rel="stylesheet" href="../../utils/css/spotify.css">
-    <script src="../../utils/js/script.js"></script>
+    <link rel="stylesheet" href="/utils/css/stylesheet.css">
+    <script src="/utils/js/script.js"></script>
 
     <!--? Seiten-Einstellungen -->
     <!-- (alles anpassbar)-->
@@ -20,7 +19,7 @@
             --secondary: #FFFFFF; /* Zweite Farbe (Abwechslung zur ersten Farbe) */
             --on-secondary: #19a34a; /* Objekte AUF der Zweiten Farbe (z.B. dunkelrot auf weißem Hintergrund) */
             --highlight: #24db64; /* Hervorgehobene Objekte */
-            --hero-path: url("../../assets/images/Caro/spotify.jpg"); /* Bildpfad vom Hero-Banner (im Assets-Ordner) */
+            --hero-path: url("/assets/images/Caro/spotify.jpg"); /* Bildpfad vom Hero-Banner (im Assets-Ordner) */
         }
     </style>
 
@@ -35,32 +34,34 @@
     <!-- (einfach so lassen, wie's ist)-->
     <nav>
         <ul>
-            <li><a href="../../index.html" class="nav-single">Home</a></li>
+            <li><a href="/index.html" class="nav-single">Home</a></li>
             <li><a href="#">Live-Streaming</a>
                 <ul>
-                    <li><a href="../live/appletv.html">Apple TV+</a></li>
-                    <li><a href="../live/twitch.html">Twitch</a></li>
-                    <li><a href="../live/socialmedia.html">Social Media</a></li>
+                    <li><a href="/src/live/appletv.html">Apple TV+</a></li>
+                    <li><a href="/src/live/twitch.html">Twitch</a></li>
+                    <li><a href="/src/live/socialmedia.html">Social Media</a></li>
                 </ul>
             </li>
             <li><a href="#">Video on Demand</a>
                 <ul>
-                    <li><a href="../vod/disneyplus.html">Disney Plus</a></li>
-                    <li><a href="../vod/netflix.html">Netflix</a></li>
-                    <li><a href="../vod/primevideo.html">Prime Video</a></li>
-                    <li><a href="../vod/youtube.html">YouTube</a></li>
+                    <li><a href="/src/vod/disneyplus.html">Disney Plus</a></li>
+                    <li><a href="/src/vod/netflix.html">Netflix</a></li>
+                    <li><a href="/src/vod/primevideo.html">Prime Video</a></li>
+                    <li><a href="/src/vod/youtube.html">YouTube</a></li>
                 </ul>
             </li>
             <li><a href="#" class="nav-active">Music on Demand</a>
                 <ul>
-                    <li><a href="../music/deezer.html">Deezer</a></li>
-                    <li><a href="../music/soundcloud.html">SoundCloud</a></li>
-                    <li><a href="../music/spotify.html">Spotify</a></li>
+                    <li><a href="/src/music/deezer.html">Deezer</a></li>
+                    <li><a href="/src/music/soundcloud.html">SoundCloud</a></li>
+                    <li><a href="/src/music/spotify.html">Spotify</a></li>
                 </ul>
             </li>
-            <li><a href="../quellen/quellen.html" class="nav-single">Quellen</a></li>
+            <li><a href="/src/quellen/quellen.html" class="nav-single">Quellen</a></li>
         </ul>
-    </nav>
+        </nav>
+    <button class="nav-fab"><img src="/assets/icons/icon_menu.svg" alt="Menü-Icon"></button>
+
 
     <!--? Hero-Banner: Das große Bild mit Seitentitel, ganz oben auf der Seite -->
     <!-- (der Titel <h1>...</h1> kann verändert werden)-->
@@ -123,7 +124,7 @@
                     Spotify ist mit rund 365 Millionen aktiven Nutzern, wovon ca. 165 Millionen Premium Nutzer sind, (Stand: 2. Quartal 2021) eines der beliebtesten Audio-Streamingdienste
                     weltweit. Dahinter reihen sich Apple Music und Amazon Music ein (Stand: 2019). 2015 erzielte Spotify einen Umsatz von 1,94 Milliarden Euro,
                     fünf Jahre später stieg dieser auf 7,88 Milliarden Euro an.
-                    <br/><img src="../../assets/images/Caro/spotify_weltweit.jpeg" alt="weltweite Nutzer" width="350" style="margin-left:auto;margin-right:auto;display:block;">
+                    <br/><img src="/assets/images/Caro/spotify_weltweit.jpeg" alt="weltweite Nutzer" width="350" style="margin-left:auto;margin-right:auto;display:block;">
                 </p>
             </div>
         </div>
@@ -158,6 +159,11 @@
             </div>
         </div>
     </main>
+
+    <footer>
+        <p>Carolin Hoffmann, Sham Haji Darwish, Tim David Friedrich, Lena Henrike Beckmann</p>
+        <p><b>Streaming (Gruppe 1)</b></p>
+    </footer>
 
 </body>
 </html>

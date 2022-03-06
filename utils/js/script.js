@@ -9,24 +9,32 @@ script.type = 'text/javascript';
 script.src = "https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js";
 script.onload = () => {
 
-    $(".nav-fab").ready(() => {
+
+    /* Wenn Nav-Button geklickt, kriegt Navbar Klasse */
+    $("body").ready(() => {
         $(".nav-fab").click(() => {
-            // if($("nav").prop("display") == "none") {
-            //     $("nav").prop("display") = "flex";
-            // } else {
-            //     $("nav").prop("display") = "none";
-            // }
-            $("nav ul").prop("display", "flex");
+            if(!$("nav").is(":visible")) {
+                $("nav").show();
+                $(".nav-fab img").prop("src", "/assets/icons/icon_close.svg");
+            } else {
+                $("nav").hide();
+                $(".nav-fab img").prop("src", "/assets/icons/icon_menu.svg");
+            }
         });
     });
 
     /* Wenn Scroll nicht oben, kriegt Navbar Klasse */
     $(window).scroll(() => {
+        if($(window).width() > 860) {
+            $("nav").show();
+        }
         if($(this).scrollTop() > 50) {
             $("nav").addClass("nav-scroll");
         } else {
             $("nav").removeClass("nav-scroll");
         }
     });
+
+    
 
 } 

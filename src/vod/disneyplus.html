@@ -7,9 +7,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../../utils/css/stylesheet.css">
-    <link rel="stylesheet" href="../../utils/css/disney.css">
-    <script src="../../utils/js/script.js"></script>
+    <link rel="stylesheet" href="/utils/css/stylesheet.css">
+    <link rel="stylesheet" href="/utils/css/disney.css">
+    <script src="/utils/js/script.js"></script>
 
     <!--? Seiten-Einstellungen -->
     <!-- (alles anpassbar)-->
@@ -20,7 +20,7 @@
             --secondary: #FFFFFF; /* Zweite Farbe (Abwechslung zur ersten Farbe) */
             --on-secondary: #393E8F !important; /* Objekte AUF der Zweiten Farbe (z.B. dunkelrot auf weißem Hintergrund) */
             --highlight: coral !important; /* Hervorgehobene Objekte */
-            --hero-path: url("../../assets/images/disney_schloss.jpg") !important; /* Bildpfad vom Hero-Banner (im Assets-Ordner) */
+            --hero-path: url("/assets/images/hero_disneyplus.jpg") !important; /* Bildpfad vom Hero-Banner (im Assets-Ordner) */
         }
     </style>
 
@@ -35,32 +35,34 @@
     <!-- (einfach so lassen, wie's ist)-->
     <nav>
         <ul>
-            <li><a href="../../index.html" class="nav-single">Home</a></li>
+            <li><a href="/index.html" class="nav-single">Home</a></li>
             <li><a href="#">Live-Streaming</a>
                 <ul>
-                    <li><a href="../live/appletv.html">Apple TV+</a></li>
-                    <li><a href="../live/twitch.html">Twitch</a></li>
-                    <li><a href="../live/socialmedia.html">Social Media</a></li>
+                    <li><a href="/src/live/appletv.html">Apple TV+</a></li>
+                    <li><a href="/src/live/twitch.html">Twitch</a></li>
+                    <li><a href="/src/live/socialmedia.html">Social Media</a></li>
                 </ul>
             </li>
             <li><a href="#" class="nav-active">Video on Demand</a>
                 <ul>
-                    <li><a href="../vod/disneyplus.html">Disney Plus</a></li>
-                    <li><a href="../vod/netflix.html">Netflix</a></li>
-                    <li><a href="../vod/primevideo.html">Prime Video</a></li>
-                    <li><a href="../vod/youtube.html">YouTube</a></li>
+                    <li><a href="/src/vod/disneyplus.html">Disney Plus</a></li>
+                    <li><a href="/src/vod/netflix.html">Netflix</a></li>
+                    <li><a href="/src/vod/primevideo.html">Prime Video</a></li>
+                    <li><a href="/src/vod/youtube.html">YouTube</a></li>
                 </ul>
             </li>
             <li><a href="#">Music on Demand</a>
                 <ul>
-                    <li><a href="../music/deezer.html">Deezer</a></li>
-                    <li><a href="../music/soundcloud.html">SoundCloud</a></li>
-                    <li><a href="../music/spotify.html">Spotify</a></li>
+                    <li><a href="/src/music/deezer.html">Deezer</a></li>
+                    <li><a href="/src/music/soundcloud.html">SoundCloud</a></li>
+                    <li><a href="/src/music/spotify.html">Spotify</a></li>
                 </ul>
             </li>
-            <li><a href="../quellen/quellen.html" class="nav-single">Quellen</a></li>
+            <li><a href="/src/quellen/quellen.html" class="nav-single">Quellen</a></li>
         </ul>
-    </nav>
+        </nav>
+    <button class="nav-fab"><img src="/assets/icons/icon_menu.svg" alt="Menü-Icon"></button>
+
 
     <!--? Hero-Banner: Das große Bild mit Seitentitel, ganz oben auf der Seite -->
     <!-- (der Titel <h1>...</h1> kann verändert werden)-->
@@ -78,28 +80,37 @@
             <div class="tile-content" id="anfang">
                 <h2>Anfänge</h2>
                 <p>
-                    Disney+ ist der Video-On-Demand-Streaming-Service des amerikanischen Entertainment-Konzerns Disney und wurde am 12 November 2019 ins Leben gerufen. In Deutschland startete der Dienst am 24. März 2020. <br>
+                    Disney+ ist der Video-On-Demand-Streaming-Service des amerikanischen Entertainment-Konzerns Disney und wurde am 12 November 2019 ins Leben gerufen. In Deutschland wurde der Dienst am 24. März 2020 eingeführt. <br>
                     Das Angebot umfasst alte und neue Filme und Serien verschiedener Produnktionsstudios:
                 </p>
             </div>
             <div class="angebot">
-                <div class="angebot-box"><h3>Disney</h3>
-                    <span>Disney-Filme: Animiert und Live-Action</span>
-                </div>
-                <div class="angebot-box"><h3>PIXAR</h3>
-                    <span>PIXAR-Filme: Herzhafte Animationen</span>
-                </div>
-                <div class="angebot-box"><h3>MARVEL</h3>
+                <a href="https://www.disneyplus.com/de-de/brand/disney?cid=DTCI-Synergy-DDN-Site-Acquisition-DESustain-DE-Disney-DisneyPlus-DE-DetailsPage-disney.de_sustain_disney-NA"> 
+                    <div class="angebot-box"><h3>Disney</h3>
+                    <span>Disney-Filme: Animiert und Live-Action</span></div>
+                </a>
+                <a href="https://www.disneyplus.com/de-de/brand/pixar?cid=DTCI-Synergy-DDN-Site-Acquisition-DESustain-DE-Pixar-DisneyPlus-DE-DetailsPage-disney.de_sustain_pixar-NA">
+                    <div class="angebot-box"><h3>PIXAR</h3>
+                        <span>PIXAR-Filme: Herzhafte Animationen</span>
+                    </div>
+                </a>
+                <a href="https://www.disneyplus.com/de-de/brand/marvel?cid=DTCI-Synergy-DDN-Site-Acquisition-DESustain-DE-Marvel-DisneyPlus-DE-DetailsPage-disney.de_sustain_marvel-NA"> <div class="angebot-box"><h3>MARVEL</h3>
                     <span>Das MARVEL-Cinematic-Universe</span>
-                </div>
-                <div class="angebot-box"><h3>STAR WARS</h3><span>Geschichten aus einer weit entfernten Galaxis</span>
-                </div>
-                <div class="angebot-box"><h3>National Geographic</h3>
-                    <span>Naturdokumentationen, ferne Länder und Kulturen.</span>
-                </div>
-                <div class="angebot-box"><h3>STAR</h3>
+                </div></a>
+                <a href="https://www.disneyplus.com/de-de/brand/star-wars?cid=DTCI-Synergy-DDN-Site-Acquisition-DESustain-DE-StarWars-DisneyPlus-DE-DetailsPage-disney.de_sustain_star-wars-NA">
+                    <div class="angebot-box"><h3>STAR WARS</h3><span>Geschichten aus einer weit entfernten Galaxis</span>
+                    </div>
+                </a>
+                <a href="https://www.disneyplus.com/de-de/brand/national-geographic?cid=DTCI-Synergy-DDN-Site-Acquisition-DESustain-DE-NatGeo-DisneyPlus-DE-DetailsPage-disney.de_sustain_national-geographic-NA">
+                    <div class="angebot-box"><h3>National Geographic</h3>
+                    <span>Natur, ferne Länder und Kulturen.</span>
+                    </div>
+                </a>
+                <a href="https://www.disneyplus.com/de-de/brand/star?cid=DTCI-Synergy-DDN-Site-Acquisition-DESustain-DE-Star-DisneyPlus-DE-DetailsPage-disney.de_sustain_star-NA">
+                    <div class="angebot-box"><h3>STAR</h3>
                     <span>"adult-content" Bsp.: The Walking Dead, Grey's Anatomy</span>
-                </div> 
+                    </div> 
+                </a>
         </div>  
 
         </div>
@@ -165,10 +176,10 @@
             <h2>Zugänglichkeit</h2>
             <p>
                 Disney+ wurde 2019 in den USA, Kanada und den Niederlanden auf den Markt gebracht und wurde danach in Europa verbreitet. Der Service ist mitlerweile in 59 Ländern zugänglich. 
-                Bislang ist Disney Plus vor allem in Europa, Nord- und Südamerika verbreitet. In Europa ist der Streamingdienst bislang in 18 Ländern verfügbar: Belgien, Dänemark, Deutschland, Finnland, Frankreich, Irland, Island, Italien, Luxemburg, Monaco, Norwegen, den Niederlanden, Österreich, Portugal, Schweden, der Schweiz, Spanien und dem Vereinigten Königreich.<br>
+                Disney+ ist bislang vor allem in Nord-, Südamerika und Europa verbreitet. In Europa ist der Dienst in 18 Ländern verfügbar: Belgien, Dänemark, Deutschland, Finnland, Frankreich, Irland, Island, Italien, Luxemburg, Monaco, Norwegen, den Niederlanden, Österreich, Portugal, Schweden, der Schweiz, Spanien und dem Vereinigten Königreich.<br>
         
                 Außerhalb Europas wurde der Dienst in Australien, Neu Seeland, Japan, Südkorea, Taiwan, Hong Kong und in Lateinamerika verbreitet. In Indien heißt der Dienst Disney Plus Hotstar und ist der Marktführer. Die Hotstar Marke wird auch in Indonesien, Malaysien und Thailand genutzt, wo es auf einen anderen Geschäftsmodell als in den anderen Ländern basiert.<br>
-                Im Sommer 2022 wird der Dienst in 42 zusätzlichen Ländern verfügbar sein. Darunter sind Polen, Tschechien und Kroatien, aber auch mehrere Länder im Nahen Osten und in Afrika, etwa Israel, Ägypten, Südafrika und die Vereinigten Arabischen Emirate.
+                Im Sommer 2022 wird der Streamingdienst in 42 weiteren Ländern verfügbar sein. Dazu gehören Polen, Tschechien und Kroatien, aber auch mehrere Länder im Nahen Osten und in Afrika, etwa Israel, Ägypten, Südafrika und die Vereinigten Arabischen Emirate.
             </p>
         </div>
     </div>
@@ -232,5 +243,10 @@
     </div>  
     <br>
     </main>
+
+    <footer>
+        <p>Carolin Hoffmann, Sham Haji Darwish, Tim David Friedrich, Lena Henrike Beckmann</p>
+        <p><b>Streaming (Gruppe 1)</b></p>
+    </footer>
 </body>
 </html>

@@ -7,8 +7,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../../utils/css/stylesheet.css">
-    <script src="../../utils/js/script.js"></script>
+    <link rel="stylesheet" href="/utils/css/stylesheet.css">
+    <script src="/utils/js/script.js"></script>
 
     <!--? Seiten-Einstellungen -->
     <!-- (alles anpassbar)-->
@@ -19,7 +19,7 @@
             --secondary: #FFFFFF; /* Zweite Farbe (Abwechslung zur ersten Farbe) */
             --on-secondary: #241284 !important; /* Objekte AUF der Zweiten Farbe (z.B. dunkelrot auf weißem Hintergrund) */
             --highlight: #3559a6; /* Hervorgehobene Objekte */
-            --hero-path: url("../../assets/images/soundwave.png")!important; /* Bildpfad vom Hero-Banner (im Assets-Ordner) */
+            --hero-path: url("/assets/images/hero_deezer.png")!important; /* Bildpfad vom Hero-Banner (im Assets-Ordner) */
         }
         /*.hero{
             background-image: 
@@ -86,32 +86,34 @@
     <!--? Navigations-Leiste, die auf jeder Seite vorhanden sein sollte. -->
     <nav>
         <ul>
-            <li><a href="../../index.html" class="nav-single">Home</a></li>
+            <li><a href="/index.html" class="nav-single">Home</a></li>
             <li><a href="#">Live-Streaming</a>
                 <ul>
-                    <li><a href="../live/appletv.html">Apple TV+</a></li>
-                    <li><a href="../live/twitch.html">Twitch</a></li>
-                    <li><a href="../live/socialmedia.html">Social Media</a></li>
+                    <li><a href="/src/live/appletv.html">Apple TV+</a></li>
+                    <li><a href="/src/live/twitch.html">Twitch</a></li>
+                    <li><a href="/src/live/socialmedia.html">Social Media</a></li>
                 </ul>
             </li>
             <li><a href="#">Video on Demand</a>
                 <ul>
-                    <li><a href="../vod/disneyplus.html">Disney Plus</a></li>
-                    <li><a href="../vod/netflix.html">Netflix</a></li>
-                    <li><a href="../vod/primevideo.html">Prime Video</a></li>
-                    <li><a href="../vod/youtube.html">YouTube</a></li>
+                    <li><a href="/src/vod/disneyplus.html">Disney Plus</a></li>
+                    <li><a href="/src/vod/netflix.html">Netflix</a></li>
+                    <li><a href="/src/vod/primevideo.html">Prime Video</a></li>
+                    <li><a href="/src/vod/youtube.html">YouTube</a></li>
                 </ul>
             </li>
             <li><a href="#" class="nav-active">Music on Demand</a>
                 <ul>
-                    <li><a href="../music/deezer.html">Deezer</a></li>
-                    <li><a href="../music/soundcloud.html">SoundCloud</a></li>
-                    <li><a href="../music/spotify.html">Spotify</a></li>
+                    <li><a href="/src/music/deezer.html">Deezer</a></li>
+                    <li><a href="/src/music/soundcloud.html">SoundCloud</a></li>
+                    <li><a href="/src/music/spotify.html">Spotify</a></li>
                 </ul>
             </li>
-            <li><a href="../quellen/quellen.html" class="nav-single">Quellen</a></li>
+            <li><a href="/src/quellen/quellen.html" class="nav-single">Quellen</a></li>
         </ul>
-    </nav>
+        </nav>
+    <button class="nav-fab"><img src="/assets/icons/icon_menu.svg" alt="Menü-Icon"></button>
+
 
     <!--? Hero-Banner: Das große Bild mit Seitentitel, ganz oben auf der Seite -->
     <div class="hero">
@@ -161,7 +163,7 @@
             </div>
             <div class="tile-together">
                 <div class="angebote">
-                    <img src="../../assets/images/DeezerAngebote.png" alt="Vergleich Deezer Free unf deezer Premium">
+                    <img src="/assets/images/DeezerAngebote.png" alt="Vergleich Deezer Free unf deezer Premium">
                 </div>
             </div>
         </div>
@@ -207,7 +209,7 @@
             <div class="tile-content">
                 <h2>Deezer for Creators</h2>
                 <p> 
-                    Deezer entwickelt auch eine App für Künstler, um ihre Veröffentlichungen auf Deezer zu beobachten und analysieren. Mit “Deezer for Creators” können einfach und mobil Daten über die hergestellten Songs, Podcasts, etc. eingelesen werden, ob es sich um Analytics in einen Zeitraum von Tagen, Wochen oder Monaten handelt oder um Publikumsdaten. Dies ist wichtig, um seine eigene Leistung zu evaluieren. Die App soll die Daten auch selbst verarbeiten und Vorschläge zur Verbesserung anbieten. <br>Die „Creator“ werden benachrichtigt, wenn einer ihrer Songs oder Sprachaufnahmen auf einer von Deezer zusammengestellten Playlist landen. Zudem gibt es für dieses Playlists wie auch für neu veröffentlichte Tracks sogenannte Promokarten, die über Social Media mit den Fans geteilt werden können. Die teilbaren Karten enthalten den Namen der Playlist, in der die jeweiligen Künstler*innen vertreten sind bzw. den Titel des neu releasten Songs. <br>
+                    Deezer entwickelt auch eine App für Künstler, um ihre Veröffentlichungen auf Deezer zu beobachten und analysieren. Mit “Deezer for Creators” können einfach und mobil Daten über die hergestellten Songs, Podcasts, etc. eingelesen werden, ob es sich um Analytics in einen Zeitraum von Tagen, Wochen oder Monaten handelt oder um Publikumsdaten. Dies ist wichtig, um seine eigene Leistung zu evaluieren. Die App soll die Daten auch selbst verarbeiten und Vorschläge zur Verbesserung anbieten. <br>Die „Creator“ werden benachrichtigt, wenn einer ihrer Songs oder Sprachaufnahmen auf einer von Deezer zusammengestellten Playlist landen. Für gerade diese Playlists wie auch für neu veröffentlichte Werke existieren sogenannte Promokarten, die über Social Media mit den Fans geteilt werden können. Die Karten enthalten den Namen der Playlist, in der die jeweiligen Künstler*innen vertreten sind bzw. den Titel des neu veröffentlichten Songs. <br>
                     Deezer behauptet damit, die einzige App explizit für Content-Hersteller erstellt zu haben, die Anzeichen für Erfolg deutet und somit dabei hilft, das Marketing gezielt auszubauen.
                     Die App steht nicht nur Mobil zum Download bereit, sondern sie ist auch auf dem Desktop verfügbar. 
                     Auf der Website <a href="https://creators.deezer.com/user/login" id="creator">creators.deezer.com</a> ist das Aktualisieren der Biografie, des Profilbilds und das Ansehen der Streaming-Highlights möglich.
@@ -215,10 +217,15 @@
             </div>
             <div class="tile-together">
                 <div class="angebote">
-                    <img src="https://www.deezer-blog.com/assets/sites/18/1240x840_logo@2x-1536x1041.png" alt="Deezer for Creators">
+                    <img src="/assets/images/DeezerCreators.png" alt="Deezer for Creators">
                 </div>
             </div>
         </div>
     </main>
+
+    <footer>
+        <p>Carolin Hoffmann, Sham Haji Darwish, Tim David Friedrich, Lena Henrike Beckmann</p>
+        <p><b>Streaming (Gruppe 1)</b></p>
+    </footer>
 </body>
 </html>

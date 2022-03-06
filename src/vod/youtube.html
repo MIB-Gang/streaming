@@ -7,9 +7,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../../utils/css/stylesheet.css">
-    <link rel="stylesheet" href="../../utils/css/youtube.css">
-    <script src="../../utils/js/script.js"></script>
+    <link rel="stylesheet" href="/utils/css/stylesheet.css">
+    <link rel="stylesheet" href="/utils/css/youtube.css">
+    <script src="/utils/js/script.js"></script>
 
     <!--? Seiten-Einstellungen -->
     <!-- (alles anpassbar)-->
@@ -20,7 +20,7 @@
             --secondary: #FFFFFF; /* Zweite Farbe (Abwechslung zur ersten Farbe) */
             --on-secondary: rgb(56, 0, 0) !important; /* Objekte AUF der Zweiten Farbe (z.B. dunkelrot auf weißem Hintergrund) */
             --highlight: #7c7c7c !important; /* Hervorgehobene Objekte */
-            --hero-path: url("../../assets/images/grey_triangles.jpg") !important; /* Bildpfad vom Hero-Banner (im Assets-Ordner) */
+            --hero-path: url("/assets/images/hero_youtube.jpg") !important; /* Bildpfad vom Hero-Banner (im Assets-Ordner) */
         }
     </style>
 
@@ -35,32 +35,34 @@
     <!-- (einfach so lassen, wie's ist)-->
     <nav>
         <ul>
-            <li><a href="../../index.html" class="nav-single">Home</a></li>
+            <li><a href="/index.html" class="nav-single">Home</a></li>
             <li><a href="#">Live-Streaming</a>
                 <ul>
-                    <li><a href="../live/appletv.html">Apple TV+</a></li>
-                    <li><a href="../live/twitch.html">Twitch</a></li>
-                    <li><a href="../live/socialmedia.html">Social Media</a></li>
+                    <li><a href="/src/live/appletv.html">Apple TV+</a></li>
+                    <li><a href="/src/live/twitch.html">Twitch</a></li>
+                    <li><a href="/src/live/socialmedia.html">Social Media</a></li>
                 </ul>
             </li>
             <li><a href="#" class="nav-active">Video on Demand</a>
                 <ul>
-                    <li><a href="../vod/disneyplus.html">Disney Plus</a></li>
-                    <li><a href="../vod/netflix.html">Netflix</a></li>
-                    <li><a href="../vod/primevideo.html">Prime Video</a></li>
-                    <li><a href="../vod/youtube.html">YouTube</a></li>
+                    <li><a href="/src/vod/disneyplus.html">Disney Plus</a></li>
+                    <li><a href="/src/vod/netflix.html">Netflix</a></li>
+                    <li><a href="/src/vod/primevideo.html">Prime Video</a></li>
+                    <li><a href="/src/vod/youtube.html">YouTube</a></li>
                 </ul>
             </li>
             <li><a href="#">Music on Demand</a>
                 <ul>
-                    <li><a href="../music/deezer.html">Deezer</a></li>
-                    <li><a href="../music/soundcloud.html">SoundCloud</a></li>
-                    <li><a href="../music/spotify.html">Spotify</a></li>
+                    <li><a href="/src/music/deezer.html">Deezer</a></li>
+                    <li><a href="/src/music/soundcloud.html">SoundCloud</a></li>
+                    <li><a href="/src/music/spotify.html">Spotify</a></li>
                 </ul>
             </li>
-            <li><a href="../quellen/quellen.html" class="nav-single">Quellen</a></li>
+            <li><a href="/src/quellen/quellen.html" class="nav-single">Quellen</a></li>
         </ul>
-    </nav>
+        </nav>
+    <button class="nav-fab"><img src="/assets/icons/icon_menu.svg" alt="Menü-Icon"></button>
+
 
     <!--? Hero-Banner: Das große Bild mit Seitentitel, ganz oben auf der Seite -->
     <!-- (der Titel <h1>...</h1> kann verändert werden)-->
@@ -92,7 +94,8 @@
             <div class="tile-content">
                 <h2>Anfänge</h2>
                 <p>
-                    <p>Erscheinungsdatum: Februar 2005 Gründungstrio: Jawed Karim, Chad Hurley und Steve Chen Erstes Video: <a href="https://www.youtube.com/watch?v=jNQXAC9IVRw">Me at the zoo</a> von Jawed Karim (23.04.2005) <br> Die Website war von Anfang an ein großer Erfolg und wurde bereits im Oktober 2006 von Google für 1,65 Milliarden Dollar gekauft. <br> Mittlerweile ist YouTube die am zweitmeisten besuchte Website der Welt nach Google. An Werbeeinnahmen verdient Google jährlich mehrere Milliarde Dollar.</p>
+                    <p>Erscheinungsdatum: Februar 2005 Gründungstrio: Jawed Karim, Chad Hurley und Steve Chen <br>
+                        Erstes Video: <a href="https://www.youtube.com/watch?v=jNQXAC9IVRw">Me at the zoo</a> von Jawed Karim (23.04.2005) <br> Die Website war von Anfang an ein großer Erfolg und wurde bereits im Oktober 2006 von Google für 1,65 Milliarden Dollar gekauft. <br> Mittlerweile ist YouTube die am zweitmeisten besuchte Website der Welt nach Google. An Werbeeinnahmen verdient Google jährlich mehrere Milliarde Dollar.</p>
                 </p>
             </div>
         </div>
@@ -101,7 +104,7 @@
             <div class="tile-content">
                 <h2>YouTube Premium</h2>
                 <p>Im November 2014 wurde der Musik Key angeboten, mit dem werbungslos Musikvideos angeschaut werden konnten. Die Idee wurde überholt und Ende Oktober 2015 startete der Service von YouTube Red. Mit diesem zahlungsplichtigen Dienst konnte man Musikvideos ohne Werbung ansehen, aber die Anwendung war eben auch auf dieses Genre beschränkt. Es war ein Flop. <br>
-                Am 17. Mai 2018 wurden YouTube Premium und YouTube Music gestartet. Die Dienste wurden damit aufgeteilt. YouTube Music konzentrierte sich auf Musik und Musikvideos, während YouTube Premium die gesamte Website als werbungsloses Streamingportal anbietet mit weiteren Zusätzen. (Downloads, Hintergrundwiedergabe auf mobilen Geräten, YouTube Music-Abo) 
+                Am 17. Mai 2018 wurden YouTube Premium und YouTube Music gestartet. Die Dienste wurden damit aufgeteilt. YouTube Music konzentrierte sich auf Musik und Musikvideos, während YouTube Premium die gesamte Website als werbungsloses Streamingportal anbietet mit weiteren Zusätzen (Downloads, Hintergrundwiedergabe auf mobilen Geräten, YouTube Music-Abo).
                 <br><br>
                 Aktueller Preis pro Monat: 11,99 Euro / Studententarif: 6,99 Euro / Nur YouTube Music: 9,99</p>
             </div>
@@ -158,16 +161,14 @@
             <div class="tile-content">
                 <h2>Marketing</h2>
                 <p>
-                    Die ersten Werbungen kamen nach der Übernahme durch Google auf deie Website. YouTube ist seither ein unverzichtbares Tool für die Marketingbranche geworden. Als größtes Videoportal und zweitgrößte Suchmachine der Welt nach Google bietet YouTube ein riediges Potenzial, um neue Kunden zu erreichen. Werbung wird vor und während vieler Videos geschaltet oder Influencer präsentieren Produkte in ihren Videos.
-                    55% aller Marketing-Firmen benutzen YouTube mit steigender Tendenz.<br>
-                    Es zirkuliert dabei sehr viel Geld. 2020 investierte Apple Inc. als größter Vermarkter des Jahres 237,15 Millionen US-Dollar in Werbeanzeigen.
-
-                    <br>Wenn es sich, um ein kleine und mittlere Unternehmen (KMU) handelt, kann selbst ein einfacher YouTube-Channel kostengünstig die Reichweite des Unternehmens erweitern. Ein Vorstellungsvideo, Erklärvideos zu den Produkten und Dienstleistungen oder Interviews mit Zufriedenen Kunden können Teil des Online-Marketings werden und den Umgang mit den Kunden modernisieren und verbessern.
+                    Die ersten Werbungen kamen nach der Übernahme durch Google auf die Website. YouTube ist seither ein unverzichtbares Tool für die Marketingbranche geworden. Als größtes Videoportal und zweitgrößte Suchmachine der Welt nach Google bietet YouTube ein riediges Potenzial, um neue Kunden zu erreichen. Werbung wird vor und während vieler Videos geschaltet oder Influencer präsentieren Produkte in ihren Videos. Es zirkuliert dabei sehr viel Geld. 2020 investierte Apple Inc. als größter Vermarkter des Jahres 237,15 Millionen US-Dollar in Werbeanzeigen.
+                    55% aller Marketing-Firmen benutzen YouTube mit steigender Tendenz und steht damit hinter LinkedIn, Instagram und Facebook.<br>
+                    
+                    Wenn es sich, um ein kleine und mittlere Unternehmen (KMU) handelt, kann selbst ein einfacher YouTube-Channel kostengünstig die Reichweite des Unternehmens erweitern. Ein Vorstellungsvideo, Erklärvideos zu den Produkten und Dienstleistungen oder Interviews mit Zufriedenen Kunden können Teil des Online-Marketings werden und den Umgang mit den Kunden modernisieren und verbessern.
                 </p>
             </div>
         </div>
 
-        
         <div class="tile-together">
             <h2>Bekannte Nutzer</h2>
         </div>
@@ -270,6 +271,22 @@
         </div><!--tile-->
 
         <div class="tile">
+            <div class="tile-content" style="padding-bottom: 0px;">
+                <h2>Werbeumsatz</h2>
+                <p> 
+                    Der Google-Konzern Alphabet erwirtschaftet einen Milliarden-Umsatz mit Werbung auf YouTube.  <br>
+                    Um diesen Umsatz zu vergrößern, wird mit der Zeit immer mehr Werbung geschaltet. Dies kann die Menschen, die die Werbung vermeiden wollen, auch dazu bewegen, ein Premium-Abo abzuschließen. Erst letztes Jahr hat Youtube die Zeit für so genannte Mid-Roll-Anzeigen verkürzt, die ein laufendes Video unterbrechen. Früher vergingen 10 Minuten, bis ein Video für Werbezwecke unterbrochen wurde. Nun sind es nur noch 8 Minuten.<br>
+                    Es wird zudem immer schwerer, selbst zu bestimmen, wann und wie oft solche Werbeclips angezeigt werden. So werden Mid-Roll-Anzeigen für alle Kanäle automatisch aktiviert. Dies zu ändern, kann für Kanlalbetreiber aufwendig sein.
+                </p>
+            </div>
+            <div class="tile-together" style="padding-top: 0px;">
+                <div id="umsatz">
+                    <a href="https://de.statista.com/infografik/24290/werbeumsatz-von-youtube/"><img src="/assets/images/Werbeumsatz.jpeg" alt="Infografik: Alphabet steigert Umsatz mit Werbung auf Youtube | Statista"></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="tile">
             <div class="tile-content">
                 <h2>Live-Streaming</h2>
                 <p>
@@ -281,5 +298,10 @@
         </div>
         
     </main>
+
+    <footer>
+        <p>Carolin Hoffmann, Sham Haji Darwish, Tim David Friedrich, Lena Henrike Beckmann</p>
+        <p><b>Streaming (Gruppe 1)</b></p>
+    </footer>
 </body>
 </html>

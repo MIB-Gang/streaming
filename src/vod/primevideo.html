@@ -7,10 +7,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../../utils/css/stylesheet.css">
-    <link rel="stylesheet" href="../../utils/css/primevideo.css">
+    <link rel="stylesheet" href="/utils/css/stylesheet.css">
+    <link rel="stylesheet" href="/utils/css/tabelle.css">
 
-    <script src="../../utils/js/script.js"></script>
+    <script src="/utils/js/script.js"></script>
 
     <!--? Seiten-Einstellungen -->
     <!-- (alles anpassbar)-->
@@ -20,8 +20,8 @@
             --on-primary: #FFFFFF; /* Objekte AUF der Hauptfarbe */
             --secondary: #ffffff; /* Zweite Farbe (Abwechslung zur ersten Farbe) */
             --on-secondary: #00115a; /* Objekte AUF der Zweiten Farbe (z.B. dunkelrot auf weißem Hintergrund) */
-            --highlight: #068BBC; /* Hervorgehobene Objekte */
-            --hero-path: url("../../assets/images/hero_primevideo.png"); /* Bildpfad vom Hero-Banner (im Assets-Ordner) */
+            --highlight: #00eeff; /* Hervorgehobene Objekte */
+            --hero-path: url("/assets/images/hero_primevideo.png"); /* Bildpfad vom Hero-Banner (im Assets-Ordner) */
         }
     </style>
 
@@ -36,38 +36,40 @@
     <!-- (einfach so lassen, wie's ist)-->
     <nav>
         <ul>
-            <li><a href="../../index.html" class="nav-single">Home</a></li>
+            <li><a href="/index.html" class="nav-single">Home</a></li>
             <li><a href="#">Live-Streaming</a>
                 <ul>
-                    <li><a href="../live/appletv.html">Apple TV+</a></li>
-                    <li><a href="../live/twitch.html">Twitch</a></li>
-                    <li><a href="../live/socialmedia.html">Social Media</a></li>
+                    <li><a href="/src/live/appletv.html">Apple TV+</a></li>
+                    <li><a href="/src/live/twitch.html">Twitch</a></li>
+                    <li><a href="/src/live/socialmedia.html">Social Media</a></li>
                 </ul>
             </li>
             <li><a href="#" class="nav-active">Video on Demand</a>
                 <ul>
-                    <li><a href="../vod/disneyplus.html">Disney Plus</a></li>
-                    <li><a href="../vod/netflix.html">Netflix</a></li>
-                    <li><a href="../vod/primevideo.html">Prime Video</a></li>
-                    <li><a href="../vod/youtube.html">YouTube</a></li>
+                    <li><a href="/src/vod/disneyplus.html">Disney Plus</a></li>
+                    <li><a href="/src/vod/netflix.html">Netflix</a></li>
+                    <li><a href="/src/vod/primevideo.html">Prime Video</a></li>
+                    <li><a href="/src/vod/youtube.html">YouTube</a></li>
                 </ul>
             </li>
             <li><a href="#">Music on Demand</a>
                 <ul>
-                    <li><a href="../music/deezer.html">Deezer</a></li>
-                    <li><a href="../music/soundcloud.html">SoundCloud</a></li>
-                    <li><a href="../music/spotify.html">Spotify</a></li>
+                    <li><a href="/src/music/deezer.html">Deezer</a></li>
+                    <li><a href="/src/music/soundcloud.html">SoundCloud</a></li>
+                    <li><a href="/src/music/spotify.html">Spotify</a></li>
                 </ul>
             </li>
-            <li><a href="../quellen/quellen.html" class="nav-single">Quellen</a></li>
+            <li><a href="/src/quellen/quellen.html" class="nav-single">Quellen</a></li>
         </ul>
-    </nav>
+        </nav>
+    <button class="nav-fab"><img src="/assets/icons/icon_menu.svg" alt="Menü-Icon"></button>
+
 
     <!--? Hero-Banner: Das große Bild mit Seitentitel, ganz oben auf der Seite -->
     <!-- (der Titel <h1>...</h1> kann verändert werden)-->
     <div class="hero">
         <div class="hero-content">
-            <h1>prime video</h1>
+            <h1>Prime Video</h1>
         </div>
     </div>
 
@@ -107,23 +109,24 @@
                     Prime Video ist weltweit verfügbar (mit Ausnahme von Festlandchina, Iran, Nordkorea und Syrien). 
                     Ursprünglich war es nur für Einwohner der Vereinigten Staaten, des Vereinigten Königreichs, Japans, Deutschlands und Österreichs verfügbar.
                     Die rund 31.000 Filme und 5.000 Serien des Anbieters gliedern sich in komfortable Abonnements und flexible persönliche Zugänge. 
-                    Hier kommen alle Streaming-Typen auf ihre Kosten, egal ob der neuste Blockbuster kurz nach Kinostart oder eine neue Serie zum Binge-Watching. 
-                    Du zahlst hier rund 8 Euro im Monat und bekommst den vollen Flatrate-Rabatt, 
-                    der auch alle exklusiven und originellen Inhalte beinhaltet.
+                    Hier kommen alle Streaming-Typen auf ihre Kosten, egal ob der neuste Blockbuster kurz nach Kinostart oder eine neue Serie zum Binge-Watching.
                 </p>
             </div>
         </div>
         <div class="tile">
             <div class="tile-content">
-                <h2>Wachstum</h2>
+                <h2>Abomodell</h2>
                 <p>
-                    Amazon hat in den letzten drei Jahren ein enormes Wachstum seines Prime-Video-Angebots verzeichnet. 
-                    Mit "Man in the High Castle" hat Amazon 2015 begonnen, in Originalprogramme zu investieren, 
-                    und hat vor kurzem die MGM Studios für 8,4 Milliarden Dollar übernommen, 
-                    um weitere exklusive Inhalte anzubieten.
+                    Es werden zwei Bezahlmodelle angeboten:<br> 
+                    die Flatrate ebenso den Einzelabruf. Die Flatrate-Inhalte sind an ein Prime-Abonnement von Amazon verbunden, 
+                    das augenblicklich 7,99 € pro Monat kostet und Ihnen Zugriff auf die Amazon-Eigenproduktionen und 
+                    erwählte Spielfilme und Serien gewährt. Des Weiteren sind Leistungen wie Amazon Music, Amazon Reading 
+                    und mehr im Prime-Abo eingebaut. Im Einzelabruf bezahlen Sie keinen monatlichen Beitrag, 
+                    stattdessen erwerben und leihen Videos getrennt für durchschnittlich 3,99 €.
                 </p>
             </div>
         </div>
+
         <div class="tile">
             <div class="tile-content">
                 <h2>Abonnentenzahl</h2>
@@ -163,7 +166,7 @@
         </div>
         <div class="tile">
             <div class="tile-content">
-                <h2>Unterschied zur Andere</h2>
+                <h2>Unterschied zur Anderen</h2>
                 <p>
                     Größtes Alleinstellungsmerkmal von Amazon ist das sehr umfassende Prime-Abonnement. 
                     Prime-Kund:innen bekommen nicht nur Zugang zum VoD-Angebot von Amazon, sondern auch zu Amazon Music, 
@@ -198,13 +201,16 @@
                           </tr>
                         </tbody>
                     </table>
-                    
-                    
                 </p>
             </div>
         </div>
         <!--! HIER ANFÜGEN -->
     </main>
+
+    <footer>
+        <p>Carolin Hoffmann, Sham Haji Darwish, Tim David Friedrich, Lena Henrike Beckmann</p>
+        <p><b>Streaming (Gruppe 1)</b></p>
+    </footer>
 
 </body>
 </html>

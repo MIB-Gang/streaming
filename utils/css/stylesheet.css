@@ -24,56 +24,13 @@
     --secondary: #FFFFFF;
     --on-secondary: #150A82;
     --highlight: #FF2C6B;
-    --hero-path:  url("../../assets/images/hero_home.jpg");
+    --hero-path:  url("/assets/images/hero_home.jpg");
 }
 
 /* Entfernt weiße Ränder */
 body {
     height: 100vh;
     margin: 0;
-}
-
-/* Überschriften */
-h1, h2, h3, h4, h5, h6 {
-    font-family: "Raleway";
-}
-
-/* Hero-Überschriften */
-h1{
-    text-align: center;
-    line-height: normal;
-    color: var(--on-primary);
-    margin: 0rem;
-    font-size: 8rem;
-    font-weight: 800;
-}
-
-/* Tile-Überschriften */
-h2 {
-    font-size: 1.5rem;
-    margin-top: 0;
-}
-
-/* Texte */
-p {
-    margin: 0;
-    hyphens: auto; 
-	text-align: justify;
-}
-
-/* Fettgedruckte Textstellen */
-p b {
-    font-weight: 800;
-    /* color: var(--highlight); */
-}
-
-/* Bilder bleiben im Rahmen*/
-img {
-    overflow: hidden;
-    max-width: 100%;
-    height: auto;
-    margin-top: 25px;
-    margin-bottom: 25px;
 }
 
 
@@ -83,35 +40,9 @@ body::-webkit-scrollbar-track {background: rgb(70, 70, 70);}
 body::-webkit-scrollbar-thumb {background: rgb(200, 200, 200); border-radius: 0.25rem;}
 
 
-/* Hero-Banner */
-.hero {
-    /* background: var(--primary); */
-    background: 
-        linear-gradient(
-            to bottom right, 
-            var(--primary),
-            var(--on-secondary)
-        ),
-        var(--hero-path);
-    height: 48vh;
-    background-blend-mode: multiply;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative; 
-}
-
-/* Hero-Banner-Inhalt */
-.hero-content {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-
-
 /* Navigation */
 nav {
+    display: inline;
     position: fixed;
     width: 100vw;
     z-index: 1337;
@@ -165,13 +96,13 @@ nav ul li a:hover {
 nav ul li ul {
     display: none;
     flex-flow: column nowrap;
+    z-index: 42069;
     width: 100%;
     position: absolute;
     padding: 0.25rem;
     border-radius: 0.5rem;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.42);
     background-color: var(--secondary);
-    
 }
 
 /* Dropdown-Menu bei Nav-Element-Hover */
@@ -197,12 +128,13 @@ nav ul li ul a:hover {
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.42);
 }
 
-/* Navigations-Button für Mobile */
+/* Mobile Navigation (Button) */
 .nav-fab {
     display: none;
     position: fixed;
     z-index: 9999;
     justify-content: center;
+    align-items: center;
     width: 60px; height: 60px;
     right: 24px; bottom: 24px;
     border-radius: 100%;
@@ -210,11 +142,83 @@ nav ul li ul a:hover {
     border: none;
     outline: none;
     box-shadow: 0 3px 6px rgba(0, 0, 0, 0.42);
+    cursor: pointer;
 }
 
+/* Mobile Navigation (Button-Inhalt) */
 .nav-fab img {
     width: 69%;
     height: 100%;
+}
+
+
+/* Überschriften */
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Raleway";
+}
+
+/* Hero-Überschriften */
+h1{
+    text-align: center;
+    line-height: normal;
+    color: var(--on-primary);
+    margin: 0rem;
+    font-size: 8rem;
+    font-weight: 800;
+}
+
+/* Tile-Überschriften */
+h2 {
+    font-size: 1.5rem;
+    margin-top: 0;
+}
+
+/* Texte */
+p {
+    margin: 0;
+    hyphens: auto; 
+	text-align: justify;
+}
+
+/* Fettgedruckte Textstellen */
+p b {
+    font-weight: 800;
+    /* color: var(--highlight); */
+}
+
+/* Bilder bleiben im Rahmen*/
+img {
+    overflow: hidden;
+    max-width: 100%;
+    height: auto;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+/* Hero-Banner */
+.hero {
+    /* background: var(--primary); */
+    background: 
+        linear-gradient(
+            to bottom right, 
+            var(--primary),
+            var(--on-secondary)
+        ),
+        var(--hero-path);
+    height: 48vh;
+    background-blend-mode: multiply;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative; 
+}
+
+/* Hero-Banner-Inhalt */
+.hero-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 
@@ -225,12 +229,6 @@ nav ul li ul a:hover {
 
 /* Block 2 - Hintergrund*/
 main .tile:nth-child(even) {
-    /* background-image: 
-        linear-gradient(
-            to bottom right, 
-            rgba(79,82,255,0.95),
-            rgba(21,10,130,0.95)
-        ); */
     background-color: var(--primary);
     flex-direction: row-reverse;
 }
@@ -265,26 +263,50 @@ main .tile:nth-child(even) > .tile-content {
 }
 
 
+footer {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    width: 100vw;
+    padding-top: 1.5rem; 
+    padding-bottom: 1.5rem;
+    color: var(--on-primary);
+    background-color: var(--primary);
+    box-shadow: 0 -3px 6px rgba(0, 0, 0, 0.42);
+}
+
+footer p {
+    text-align: center;
+    padding-left: 4em;
+    padding-right: 4em;
+}
+
+
 /* Für kleinere Bildschirme */
 @media screen and (max-width: 1400px){
 
+    /* Hero-Überschrift kleiner */
     h1 {
         font-size: 4rem;
     }
 
+    /* Hero weniger hoch */
     .hero {
         height: 32vh;
     }
 
+    /* Überschrift über Text, statt daneben */
     .tile-content {
         flex-flow: column wrap;
     }
 
+    /* Überschriften-Padding links/rechts weg */
     tile h2, main .tile:nth-child(even) h2 {
         padding-left: 0;
         padding-right: 0;
     }
 
+    /* Überschrift über Text, statt daneben */
     main .tile:nth-child(even) > .tile-content {
         flex-direction: column;
         color: var(--on-primary);
@@ -293,23 +315,55 @@ main .tile:nth-child(even) > .tile-content {
 
 /* Für noch kleinere Bildschirme */
 @media screen and (max-width: 860px) {
-    
-    h1 {
-        font-size: 2.5rem;
-    }
 
+    /* Mobile Navigation als Fullscreen */
     nav {
         display: none;
+        width: 100vw;
+        height: 100vh;
+        background-color: var(--primary);
     }
 
+    /* Mobile Nav. (Inhalt) */
+    nav ul {
+        flex-flow: column nowrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    /* Mobile Nav. (Text) */
+    nav ul li a {
+        text-align: center;
+    }
+
+    /* Mobile Nav. (Dropdown-Menü) */
+    nav ul li ul {
+        height: 100%;
+        z-index: 1;
+        width: 100vw;
+        position: static;
+        padding: 0.25rem;
+        border-radius: 0;
+        box-shadow: none;
+        background-color: var(--secondary);
+    }
+
+    /* Navigations-Button sichtbar */
     .nav-fab {
         display: flex;
     }
 
+    /* Hero-Überschrift kleiner */
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    /* Hero weniger hoch */
     .hero {
         height: 32%;
     }
 
+    /* Kleinerer Textrand */
     .tile-content {
         max-width: 90%;
     }
