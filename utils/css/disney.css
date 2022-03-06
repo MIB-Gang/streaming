@@ -66,14 +66,10 @@ td,th{
     text-align: center; color: var(--primary); margin: 0 5%;
 }
 
-footer{
-    text-align: center; margin: 20px auto;
-}
-
 
 @media screen and (max-width: 500px) 
 {
-    .Tabelle, .angebot-box, ul,  p, h4, span {
+    .Tabelle, .angebot-box, h4, span {
         font-size: small;
     }
     .angebot-box span{
