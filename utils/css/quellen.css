@@ -1,0 +1,41 @@
+.tile-content {
+    flex-flow: row nowrap;
+}
+
+main .tile:nth-child(even) > .tile-content {
+    flex-direction: row-reverse nowrap;
+    color: var(--on-primary);
+}
+
+.tile-content > div {
+    display: flex;
+    flex-flow: row wrap;
+    margin: 0;
+    margin-left: 0;
+    margin-right: 0;
+    min-width: 30%;
+
+    /* background-color: rgba(0, 140, 255, 0.25); */
+    border-radius: 20px;
+}
+
+.tile-content > div > div {
+    padding-left: 4rem;
+}
+
+.tile-content a {
+    color: var(--on-secondary);
+}
+
+
+@media screen and (max-width: 1400px) {
+    .tile-content {
+        flex-flow: column nowrap;
+    }
+}
+
+@media screen and (max-width: 860px) {
+    .tile-content > div {
+        flex-flow: column nowrap;
+    }
+}

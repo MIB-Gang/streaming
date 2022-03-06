@@ -169,7 +169,7 @@ h1{
 
 /* Tile-Überschriften */
 h2 {
-    font-size: 1.5rem;
+    font-size: 2rem;
     margin-top: 0;
 }
 
@@ -272,7 +272,7 @@ footer {
     padding-bottom: 1.5rem;
     color: var(--on-primary);
     background-color: var(--primary);
-    box-shadow: 0 -3px 6px rgba(0, 0, 0, 0.42);
+    box-shadow: 0 -3px -6px rgba(0, 0, 0, 0.42);
 }
 
 footer p {
@@ -292,7 +292,7 @@ footer p {
 
     /* Hero weniger hoch */
     .hero {
-        height: 32vh;
+        height: 40vh;
     }
 
     /* Überschrift über Text, statt daneben */
@@ -358,6 +358,10 @@ footer p {
         font-size: 2.5rem;
     }
 
+    h2 {
+        font-size: 1.5rem;
+    }
+
     /* Hero weniger hoch */
     .hero {
         height: 32%;
@@ -366,5 +370,7 @@ footer p {
     /* Kleinerer Textrand */
     .tile-content {
         max-width: 90%;
-    }
+        padding-top: 32px;
+        padding-bottom: 48px;
+    }   
 }
