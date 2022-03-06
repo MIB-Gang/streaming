@@ -267,12 +267,12 @@ footer {
     display: flex;
     flex-flow: column wrap;
     align-items: center;
-    width: 100vw;
+    margin: 0;
     padding-top: 1.5rem; 
     padding-bottom: 1.5rem;
     color: var(--on-primary);
     background-color: var(--primary);
-    box-shadow: 0 -3px -6px rgba(0, 0, 0, 0.42);
+    box-shadow: 0 -3px 10px rgba(0, 0, 0, 0.42);
 }
 
 footer p {
