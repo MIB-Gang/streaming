@@ -14,8 +14,8 @@
     background-image: linear-gradient(#EFBEB7, var(--highlight));border: #EFBEB7 3px solid; 
 }
 .angebot-box{
-    display: block; margin-left: auto; margin-right: auto; 
-}
+    display: block; margin-left: auto; margin-right: auto; min-width: 80px; text-align: center;
+} 
 /*Infobox*/
 a:hover span{
     visibility: visible;
