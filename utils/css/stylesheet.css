@@ -370,7 +370,7 @@ footer p {
     /* Kleinerer Textrand */
     .tile-content {
         max-width: 90%;
-        padding-top: 32px;
-        padding-bottom: 48px;
+        padding-top: 48px;
+        padding-bottom: 72px;
     }   
 }
