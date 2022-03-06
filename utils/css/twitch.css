@@ -10,7 +10,7 @@
     color: #ffffff;
 }
 .Tabelle thead tr{
-    background-color: #674B9B;
+    background-color: var(--primary);
     color: white;
     font-weight: bold;
 }
