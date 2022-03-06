@@ -15,10 +15,10 @@ script.onload = () => {
         $(".nav-fab").click(() => {
             if(!$("nav").is(":visible")) {
                 $("nav").show();
-                $(".nav-fab img").prop("src", "/assets/icons/icon_close.svg");
+                $(".nav-fab img").prop("/src", "/assets/icons/icon_close.svg");
             } else {
                 $("nav").hide();
-                $(".nav-fab img").prop("src", "/assets/icons/icon_menu.svg");
+                $(".nav-fab img").prop("/src", "/assets/icons/icon_menu.svg");
             }
         });
     });
