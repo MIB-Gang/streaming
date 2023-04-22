@@ -103,7 +103,7 @@ small{
     #Nutzer table td{
         padding: 5px 5px; width:100px; height: 60px;
     }
-    #Nutzer, .Tabelle {
+    #Nutzer, .Tabelle, p, li, a{
         font-size: small;
     }
 }

@@ -14,8 +14,8 @@
     background-image: linear-gradient(#EFBEB7, var(--highlight));border: #EFBEB7 3px solid; 
 }
 .angebot-box{
-    display: block; margin-left: auto; margin-right: auto; 
-}
+    display: block; margin-left: auto; margin-right: auto; min-width: 80px; text-align: center;
+} 
 /*Infobox*/
 a:hover span{
     visibility: visible;
@@ -52,24 +52,15 @@ td,th{
     margin: auto 8px;
 }
 
-/*#streaming{
-    display:flex; flex-direction:row; flex-wrap:wrap;
-}
-#streaming div{
-    flex: 1 1 20%;
-}*/
-
 #ENCANTO-stat{
-    width: 40%; min-width: 300px; margin-left: 20px; border: 4px solid var(--primary);
+    width: 60%; min-width: 280px; border: 4px solid var(--primary);
 }
-.statistik{
-    text-align: center; color: var(--primary); margin: 0 5%;
-}
+
 
 
 @media screen and (max-width: 500px) 
 {
-    .Tabelle, .angebot-box, h4, span {
+    .Tabelle, .angebot-box, h4, span ,p {
         font-size: small;
     }
     .angebot-box span{
